@@ -26,7 +26,7 @@ If hosting online, you should upload the repository's files to your host. Once t
 
 ## Versioning
 
-Each release of IG will include a major and minor version number. Major versions will include any breaking changes to functionality or features. Minor versions will be bug-fixes and other non-breaking updates (such as graft/content rules) of the current major version.
+TBD
 
 ## Authors
 * Russell Sinclair

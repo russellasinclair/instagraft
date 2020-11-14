@@ -2,12 +2,12 @@
     "Combatant":{
         "1/3":{
             "npcCR":"1/3",
-            "npcEAC":10,
+            "npcEAC":101,
             "npcKAC":12,
             "npcFort":1,
             "npcRef":1,
             "npcWill":0,
-            "npcHP":6,
+            "npcHP":16,
             "npcAbilityDC":8,
             "npcBaseSpellDC":8,
             "npcAbilityScore1":3,

@@ -20,43 +20,80 @@ var npcTypes = {
     'adjustment' : [{'npcFort' : -2}, {'npcRef' : -2}, {'npcWill' : -2}, {'npcTypeAttackMod': 1}, {'npcSenses' :'Darkvision 60 ft., Low-light vision'}, {'npcOtherAbilities' : 'unliving'}]
   },
   'Dragon':{
-    'trait' : '',
-    'adjustment' : []
+    'description' : 'A dragon is a reptilian creature, usually winged, with magical ' +
+        'or otherwise unusual abilities.',
+    'trait' :  [{'npcImmunities' : 'construct immunities'}],
+    'adjustment' : [{'npcFort' : 2}, {'npcRef' : 2}, {'npcWill' : 2}, {'npcSenses' :'Darkvision 60 ft., Low-light vision'}]
   },
   'Fey':{
-    'trait' : '',
-    'adjustment' : []
+    'description': 'A fey is a creature with supernatural abilities and connections ' +
+        'to nature or to some other force or place.',
+     'trait' : [],
+    'adjustment' : [ {'npcFort' : 2}, {'npcRef' : 2}, {'npcTypeAttackMod': 1}]
   },
   'Humanoid':{
-    'trait' : '',
+    'description' : 'A humanoid usually has two arms, two legs, and one head, or ' +
+        'it has a humanlike torso, arms, and a head. Humanoids have ' +
+        'few or no supernatural or extraordinary abilities, but most ' +
+        'can speak and usually have well-developed societies.' +
+        'Must have a subtype that matches its race (such as\n' +
+        'human, lashunta, or shirren) or that is related to its race (such\n' +
+        'as goblinoid).\n' +
+        'Adjustments: +2 to one type of saving throw.',
+    'trait' : [],
     'adjustment' : []
   },
   'Magical Beast':{
-    'trait' : '',
-    'adjustment' : []
+    'description' : 'Magical beasts are similar to animals but can have ' +
+        'Intelligence modifiers greater than –4 (in which case the ' +
+        'magical beast knows at least one language, though it can’t ' +
+        'necessarily speak). Magical beasts usually have supernatural ' +
+        'or extraordinary abilities.',
+    'trait': [],
+    'adjustment' : [{'npcFort' : 2}, {'npcRef' : 2}, {'npcSenses' :'Darkvision 60 ft., Low-light vision'}, {'npcTypeAttackMod': 1}]
   },
   'Monstrous Humanoid':{
-    'trait' : '',
-    'adjustment' : []
+    'description' : 'Monstrous humanoids are similar to humanoids, but they ' +
+        'have monstrous or animalistic features. They often have ' +
+        'magical abilities as well.',
+    'trait': [],
+    'adjustment' : [{'npcWill' : 2}, {'npcRef' : 2}, {'npcSenses' :'Darkvision 60 ft.'}, {'npcTypeAttackMod': 1}]
   },
   'Ooze':{
-    'trait' : '',
-    'adjustment' : []
+    'description' : 'An ooze is an amorphous or mutable creature. No master or good skills unless the creature\n' +
+        'would have them naturally, rather than through training.',
+    'trait': [{'npcInt' : '-'}],
+    'adjustment' : [{'npcFort' : 2}, {'npcRef' : -2}, {'npcWill' : -2}]
   },
   'Outsider':{
-    'trait' : '',
-    'adjustment' : []
+    'description' : 'An outsider is at least partially composed of the essence ' +
+        '(but not necessarily the material) of a plane other than the ' +
+        'Material Plane. Some creatures start out as another type and ' +
+        'become outsiders when they attain a higher or lower state of ' +
+        'spiritual existence., If the outsider is a member of a ' +
+        'specific race (such as angel, devil, etc.), it must have a subtype ' +
+        'to match its race. +2 to one type of saving throw',
+    'trait': [],
+    'adjustment' : [{'npcSenses' :'Darkvision 60 ft.'}, {'npcTypeAttackMod': 1}]
   },
   'Plant':{
-    'trait' : '',
-    'adjustment' : []
+    'description' : 'This type describes vegetable creatures. Note that regular ' +
+        'plants, such as those growing in gardens or fields, lack Wisdom ' +
+        'and Charisma modifiers and are objects, not creatures, even ' +
+        'though they are alive.',
+    'trait': [{'npcImmunities' : 'plant immunities'}],
+    'adjustment' : [{'npcFort' : 2}, {'npcSenses' :'Low-light vision'}]
   },
   'Undead':{
-    'trait' : '',
-    'adjustment' : []
+    'description' : 'Undead are once-living creatures animated by magic or ' +
+        'advanced technological forces.',
+    'trait': [{'npcImmunities' : 'undead immunities'}, {'npcCon': '-'}],
+    'adjustment' : [{'npcWill' : 2}]
   },
   'Vermin':{
-    'trait' : '',
-    'adjustment' : []
+    'description' : 'This type includes insects, arachnids, other arthropods,\n' +
+        'worms, and similar invertebrates.',
+    'trait': [{'npcInt': '-'}],
+    'adjustment' : [{'npcFort' : 2}, {'npcSenses' :'Darkvision 60 ft.'}]
   }
 }

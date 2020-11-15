@@ -6,6 +6,7 @@ data.npcData = {
   npcCR: '',
   npcXP: null,
   npcType: '',
+  npcTypeDetails: null,
   npcSubtype: '',
   npcGraft: '',
   npcAlignment: '',
@@ -34,6 +35,7 @@ data.npcData = {
   npcSwim: '',
   npcAttackHigh: '',
   npcAttackLow: '',
+  npcTypeAttackMod : 0,
   npcAttacksTemp: {type: '', name: '', bonus: '', damage: ''},
   npcAttacks: {melee: [], multi: [], ranged: []},
   npcRangedDamageEnergy: '',
@@ -100,7 +102,7 @@ data.npcData = {
     'Technomancer',
     'Elementian'],
   types: [
-    'Abberation',
+    'Aberration',
     'Animal',
     'Construct',
     'Dragon',
@@ -378,6 +380,15 @@ function updateClassData() {
 }
 
 function updateTypeData() {
+    npcTypeDetails = getTypeDetails(app.npcData.npcType);
+    for(let i in npcTypeDetails.adjustment) {
+      stat = Object.getOwnPropertyNames(npcTypeDetails.adjustment[i]);
+      app.npcData[stat] += npcTypeDetails.adjustment[i][stat]
+    }
+  for(let i in npcTypeDetails.trait) {
+    stat = Object.getOwnPropertyNames(npcTypeDetails.trait[i]);
+    app.npcData[stat] = npcTypeDetails.trait[i][stat]
+  }
 }
 
 function updateGraft() {
@@ -407,11 +418,21 @@ function updateAbilityScores() {
 }
 
 function getStats(array, cr) {
-  for (let i in app.npcData) {
-    if (arrays[array][cr][i] != undefined) {
-      app.npcData[i] = arrays[array][cr][i];
+  try {
+    for (let i in app.npcData) {
+      if (arrays[array][cr][i] != undefined) {
+        app.npcData[i] = arrays[array][cr][i];
+      }
+      app.npcData.npcXP = xp[cr].toString().
+          replace(/\B(?=(\d{3})+(?!\d))/g, ','); //XP from CR
+      app.npcData.npcPerception = arrays[array][cr].npcGoodSkill; //Perception is a "Good" skill by default
     }
-    app.npcData.npcXP = xp[cr].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ','); //XP from CR
-    app.npcData.npcPerception = arrays[array][cr].npcGoodSkill; //Perception is a "Good" skill by default
+  } catch (error) {
+    console.log('Insufficient information to lookup data')
   }
+}
+
+function getTypeDetails(npcType) {
+  console.log(npcTypes[npcType]);
+  return npcTypes[npcType];
 }

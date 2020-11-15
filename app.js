@@ -101,20 +101,6 @@ data.npcData = {
     'Soldier',
     'Technomancer',
     'Elementian'],
-  types: [
-    'Aberration',
-    'Animal',
-    'Construct',
-    'Dragon',
-    'Fey',
-    'Humanoid',
-    'Magical Beast',
-    'Monstrous Humanoid',
-    'Ooze',
-    'Outsider',
-    'Plant',
-    'Undead',
-    'Vermin'],
   grafts: [
     '--Elemental--',
     'Air',
@@ -326,19 +312,23 @@ var app = new Vue({
       updateAbilityScores();
     },
     updateSize: function() {
-      updateSizeChart();
+      var list = ['height', 'weight', 'space', 'tallReach', 'longReach'];
+      for (let i in list) {
+        this.npcData.sizeChartRecs[list[i]] = sizeChart[this.npcData.npcSize][list[i]];
+      }
     },
     updateSpecies: function() {
       console.log('Need to update stats based on species.');
     },
     updateClass: function() {
-      updateClassData();
+      console.log('updateClassData();')
     },
     updateType: function() {
-      updateTypeData();
+      this.npcData.npcTypeDetails = npcTypes[this.npcData.npcType];
+      genericUpdateData(this.npcData.npcTypeDetails)
     },
     updateGraft: function() {
-      updateGraft();
+      console.log('updateGraft');
     },
     updateSubtype: function() {
       console.log('Need to update stats based on subtype.');
@@ -372,33 +362,15 @@ var app = new Vue({
   },
 });
 
-function updateClassData() {
-  if (app.npcData.npcClass == 'Envoy') {
-    app.npcData.npcRef += 2;
-    app.npcData.npcSens = app.npcData.npcMasterSkill;
+
+function genericUpdateData(details) {
+  for(let i in details.adjustment) {
+    stat = Object.getOwnPropertyNames(details.adjustment[i]);
+    app.npcData[stat] += details.adjustment[i][stat]
   }
-}
-
-function updateTypeData() {
-    npcTypeDetails = getTypeDetails(app.npcData.npcType);
-    for(let i in npcTypeDetails.adjustment) {
-      stat = Object.getOwnPropertyNames(npcTypeDetails.adjustment[i]);
-      app.npcData[stat] += npcTypeDetails.adjustment[i][stat]
-    }
-  for(let i in npcTypeDetails.trait) {
-    stat = Object.getOwnPropertyNames(npcTypeDetails.trait[i]);
-    app.npcData[stat] = npcTypeDetails.trait[i][stat]
-  }
-  app.npcData.npcTypeDetails = npcTypeDetails;
-}
-
-function updateGraft() {
-}
-
-function updateSizeChart() {
-  var list = ['height', 'weight', 'space', 'tallReach', 'longReach'];
-  for (let i in list) {
-    app.npcData.sizeChartRecs[list[i]] = sizeChart[app.npcData.npcSize][list[i]];
+  for(let i in details.trait) {
+    stat = Object.getOwnPropertyNames(details.trait[i]);
+    app.npcData[stat] = details.trait[i][stat]
   }
 }
 
@@ -431,9 +403,4 @@ function getStats(array, cr) {
   } catch (error) {
     console.log('Insufficient information to lookup data')
   }
-}
-
-function getTypeDetails(npcType) {
-  console.log(npcTypes[npcType]);
-  return npcTypes[npcType];
 }

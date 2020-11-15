@@ -1,38 +1,70 @@
 var npcTypes = {
-  'Aberration' : {
-    'description' : 'An aberration has a bizarre anatomy, strange abilities, an ' +
+  // Short list of types used for populating menus
+  'typeList': [
+    'Aberration',
+    'Animal',
+    'Construct',
+    'Dragon',
+    'Fey',
+    'Humanoid',
+    'Magical Beast',
+    'Monstrous Humanoid',
+    'Ooze',
+    'Outsider',
+    'Plant',
+    'Undead',
+    'Vermin'],
+
+  // Details of each type
+  // Traits are values that REPLACE existing data
+  // Adjustment are values that either modify or append to existing data
+  'Aberration': {
+    'description': 'An aberration has a bizarre anatomy, strange abilities, an ' +
         'alien mindset, or any combination of the three.',
-    'trait' : [],
-    'adjustment' : [{'npcWill' : 2}, {'npcSenses' : 'Darkvision 60 ft. '}]
+    'trait': [],
+    'adjustment': [{'npcWill': 2}, {'npcSenses': 'Darkvision 60 ft. '}],
   },
-  'Animal':{
-    'description' : 'An animal is a living, nonhumanoid creature, usually a ' +
+  'Animal': {
+    'description': 'An animal is a living, nonhumanoid creature, usually a ' +
         'vertebrate with no magical abilities and no innate capacity for ' +
         'language or culture.',
-    'trait' : [{'npcInt' : -4 }],
-    'adjustment' : [ {'npcFort' : 2}, {'npcRef' : 2}, {'npcSenses' :'Low-light vision'} ]
+    'trait': [{'npcInt': -4}],
+    'adjustment': [
+      {'npcFort': 2},
+      {'npcRef': 2},
+      {'npcSenses': 'Low-light vision'}],
   },
-  'Construct':{
-    'description' : 'A construct is a magically animated object or an artificially created creature. Must have ' +
+  'Construct': {
+    'description': 'A construct is a magically animated object or an artificially created creature. Must have ' +
         'either the magical or technological subtype; if the construct ' +
         'is mindless, set Intelligence modifier to — and add mindless.',
-    'trait' : [{'npcImmunities' : 'construct immunities'}, {'npcCon' : '-'}],
-    'adjustment' : [{'npcFort' : -2}, {'npcRef' : -2}, {'npcWill' : -2}, {'npcTypeAttackMod': 1}, {'npcSenses' :'Darkvision 60 ft., Low-light vision'}, {'npcOtherAbilities' : 'unliving'}]
+    'trait': [{'npcImmunities': 'construct immunities'}, {'npcCon': '-'}],
+    'adjustment': [
+      {'npcFort': -2},
+      {'npcRef': -2},
+      {'npcWill': -2},
+      {'npcTypeAttackMod': 1},
+      {'npcSenses': 'Darkvision 60 ft., Low-light vision'},
+      {'npcOtherAbilities': 'unliving'}],
   },
-  'Dragon':{
-    'description' : 'A dragon is a reptilian creature, usually winged, with magical ' +
+  'Dragon': {
+    'description': 'A dragon is a reptilian creature, usually winged, with magical ' +
         'or otherwise unusual abilities.',
-    'trait' :  [{'npcImmunities' : 'construct immunities'}],
-    'adjustment' : [{'npcFort' : 2}, {'npcRef' : 2}, {'npcWill' : 2}, {'npcSenses' :'Darkvision 60 ft., Low-light vision'}]
+    'trait': [{'npcImmunities': 'construct immunities'}],
+    'adjustment': [
+      {'npcFort': 2},
+      {'npcRef': 2},
+      {'npcWill': 2},
+      {'npcSenses': 'Darkvision 60 ft., Low-light vision'}],
   },
-  'Fey':{
+  'Fey': {
     'description': 'A fey is a creature with supernatural abilities and connections ' +
         'to nature or to some other force or place.',
-     'trait' : [],
-    'adjustment' : [ {'npcFort' : 2}, {'npcRef' : 2}, {'npcTypeAttackMod': 1}]
+    'trait': [],
+    'adjustment': [{'npcFort': 2}, {'npcRef': 2}, {'npcTypeAttackMod': 1}],
   },
-  'Humanoid':{
-    'description' : 'A humanoid usually has two arms, two legs, and one head, or ' +
+  'Humanoid': {
+    'description': 'A humanoid usually has two arms, two legs, and one head, or ' +
         'it has a humanlike torso, arms, and a head. Humanoids have ' +
         'few or no supernatural or extraordinary abilities, but most ' +
         'can speak and usually have well-developed societies.' +
@@ -40,33 +72,41 @@ var npcTypes = {
         'human, lashunta, or shirren) or that is related to its race (such ' +
         'as goblinoid). ' +
         'Adjustments: +2 to one type of saving throw.',
-    'trait' : [],
-    'adjustment' : []
+    'trait': [],
+    'adjustment': [],
   },
-  'Magical Beast':{
-    'description' : 'Magical beasts are similar to animals but can have ' +
+  'Magical Beast': {
+    'description': 'Magical beasts are similar to animals but can have ' +
         'Intelligence modifiers greater than –4 (in which case the ' +
         'magical beast knows at least one language, though it can’t ' +
         'necessarily speak). Magical beasts usually have supernatural ' +
         'or extraordinary abilities.',
     'trait': [],
-    'adjustment' : [{'npcFort' : 2}, {'npcRef' : 2}, {'npcSenses' :'Darkvision 60 ft., Low-light vision'}, {'npcTypeAttackMod': 1}]
+    'adjustment': [
+      {'npcFort': 2},
+      {'npcRef': 2},
+      {'npcSenses': 'Darkvision 60 ft., Low-light vision'},
+      {'npcTypeAttackMod': 1}],
   },
-  'Monstrous Humanoid':{
-    'description' : 'Monstrous humanoids are similar to humanoids, but they ' +
+  'Monstrous Humanoid': {
+    'description': 'Monstrous humanoids are similar to humanoids, but they ' +
         'have monstrous or animalistic features. They often have ' +
         'magical abilities as well.',
     'trait': [],
-    'adjustment' : [{'npcWill' : 2}, {'npcRef' : 2}, {'npcSenses' :'Darkvision 60 ft.'}, {'npcTypeAttackMod': 1}]
+    'adjustment': [
+      {'npcWill': 2},
+      {'npcRef': 2},
+      {'npcSenses': 'Darkvision 60 ft.'},
+      {'npcTypeAttackMod': 1}],
   },
-  'Ooze':{
-    'description' : 'An ooze is an amorphous or mutable creature. No master or good skills unless the creature\n' +
+  'Ooze': {
+    'description': 'An ooze is an amorphous or mutable creature. No master or good skills unless the creature\n' +
         'would have them naturally, rather than through training.',
-    'trait': [{'npcInt' : '-'}],
-    'adjustment' : [{'npcFort' : 2}, {'npcRef' : -2}, {'npcWill' : -2}]
+    'trait': [{'npcInt': '-'}],
+    'adjustment': [{'npcFort': 2}, {'npcRef': -2}, {'npcWill': -2}],
   },
-  'Outsider':{
-    'description' : 'An outsider is at least partially composed of the essence ' +
+  'Outsider': {
+    'description': 'An outsider is at least partially composed of the essence ' +
         '(but not necessarily the material) of a plane other than the ' +
         'Material Plane. Some creatures start out as another type and ' +
         'become outsiders when they attain a higher or lower state of ' +
@@ -74,26 +114,26 @@ var npcTypes = {
         'specific race (such as angel, devil, etc.), it must have a subtype ' +
         'to match its race. +2 to one type of saving throw',
     'trait': [],
-    'adjustment' : [{'npcSenses' :'Darkvision 60 ft.'}, {'npcTypeAttackMod': 1}]
+    'adjustment': [{'npcSenses': 'Darkvision 60 ft.'}, {'npcTypeAttackMod': 1}],
   },
-  'Plant':{
-    'description' : 'This type describes vegetable creatures. Note that regular ' +
+  'Plant': {
+    'description': 'This type describes vegetable creatures. Note that regular ' +
         'plants, such as those growing in gardens or fields, lack Wisdom ' +
         'and Charisma modifiers and are objects, not creatures, even ' +
         'though they are alive.',
-    'trait': [{'npcImmunities' : 'plant immunities'}],
-    'adjustment' : [{'npcFort' : 2}, {'npcSenses' :'Low-light vision'}]
+    'trait': [{'npcImmunities': 'plant immunities'}],
+    'adjustment': [{'npcFort': 2}, {'npcSenses': 'Low-light vision'}],
   },
-  'Undead':{
-    'description' : 'Undead are once-living creatures animated by magic or ' +
+  'Undead': {
+    'description': 'Undead are once-living creatures animated by magic or ' +
         'advanced technological forces.',
-    'trait': [{'npcImmunities' : 'undead immunities'}, {'npcCon': '-'}],
-    'adjustment' : [{'npcWill' : 2}]
+    'trait': [{'npcImmunities': 'undead immunities'}, {'npcCon': '-'}],
+    'adjustment': [{'npcWill': 2}],
   },
-  'Vermin':{
-    'description' : 'This type includes insects, arachnids, other arthropods,\n' +
+  'Vermin': {
+    'description': 'This type includes insects, arachnids, other arthropods,\n' +
         'worms, and similar invertebrates.',
     'trait': [{'npcInt': '-'}],
-    'adjustment' : [{'npcFort' : 2}, {'npcSenses' :'Darkvision 60 ft.'}]
-  }
-}
+    'adjustment': [{'npcFort': 2}, {'npcSenses': 'Darkvision 60 ft.'}],
+  },
+};

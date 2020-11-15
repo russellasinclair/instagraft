@@ -57,7 +57,7 @@
         </select>
         <select v-model="npcData.npcType" @change="updateType">
             <option selected value="">Creature Type</option>
-            <option v-for="type in npcData.types" v-bind:value="type">
+            <option v-for="type in npcTypes.typeList" v-bind:value="type">
                 {{type}}
             </option>
         </select>

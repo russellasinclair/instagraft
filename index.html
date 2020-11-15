@@ -282,9 +282,9 @@
                 <span>{{npcData.npcSpecies}} {{npcData.npcClass}}</span><br>
                 {{ npcData.npcAlignment }} {{ npcData.npcSize }} {{ npcData.npcType }} <span
                         v-if="npcData.npcSubtype != ''">({{ npcData.npcSubtype }})</span><br>
-                <b>Init</b> +{{ npcData.npcInitiative }};
+                <b>Init</b> <span v-if="npcData.npcInitiative >= 0">+</span>{{ npcData.npcInitiative }};
                 <span v-if="npcData.npcSenses != ''"><b>Senses</b> {{npcData.npcSenses}}; </span>
-                <b>Perception</b> +{{npcData.npcPerception}}<br>
+                <b>Perception</b> <span v-if="npcData.npcPerception >= 0">+</span>{{npcData.npcPerception}}<br>
                 <span v-if="npcData.npcAura != ''"><b>Aura</b> {{npcData.npcAura}}</span>
             </p>
             <h2>Defense</h2>
@@ -372,6 +372,10 @@
                 </div>
                 </p>
             </div>
+            <h2>Detailed Information</h2>
+            <p>
+                <span v-if="npcData.npcType!=''"><b>{{ npcData.npcType }}</b> {{npcData.npcTypeDetails.description}} </span>
+            </p>
         </div>
     </div>
 </div>

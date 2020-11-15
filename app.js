@@ -389,6 +389,7 @@ function updateTypeData() {
     stat = Object.getOwnPropertyNames(npcTypeDetails.trait[i]);
     app.npcData[stat] = npcTypeDetails.trait[i][stat]
   }
+  app.npcData.npcTypeDetails = npcTypeDetails;
 }
 
 function updateGraft() {

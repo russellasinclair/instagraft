@@ -36,9 +36,9 @@ var npcTypes = {
         'it has a humanlike torso, arms, and a head. Humanoids have ' +
         'few or no supernatural or extraordinary abilities, but most ' +
         'can speak and usually have well-developed societies.' +
-        'Must have a subtype that matches its race (such as\n' +
-        'human, lashunta, or shirren) or that is related to its race (such\n' +
-        'as goblinoid).\n' +
+        'Must have a subtype that matches its race (such as ' +
+        'human, lashunta, or shirren) or that is related to its race (such ' +
+        'as goblinoid). ' +
         'Adjustments: +2 to one type of saving throw.',
     'trait' : [],
     'adjustment' : []

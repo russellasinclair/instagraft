@@ -238,6 +238,8 @@
     <input type="text" v-model="npcData.npcEnv" placeholder="Describe environment, planet, etc.">
     <input type="text" v-model="npcData.npcOrg" placeholder="Describe organization, size, etc.">
     <div class="customHr">.</div>
+
+            <span v-if="0===1">
     <span class="sidenav-text"><b>Manual Adjustments</b><br>
     The manual fields below will be <i>overridden</i> if you make changes to the standard fields above!</span>
     <input class="input-50" type="text" v-model="npcData.npcXP" placeholder="Experience Points" title="XP"><span
@@ -276,7 +278,10 @@
            title="Wisdom Modifier"><span class="sidenav-text"> Wisdom</span><br>
     <input class="input-50" type="text" v-model.number="npcData.npcCha" placeholder="Charisma Mod"
            title="Charisma Modifier"><span class="sidenav-text"> Charisma</span><br>
-        </span></div>
+        </span>
+    </span>
+
+    </div>
 
     <div class="content">
         <div>
@@ -381,6 +386,7 @@
             </p>
         </div>
     </div>
+
 </div>
 
 <script src="./js/arrays.js"></script>

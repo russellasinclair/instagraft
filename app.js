@@ -8,11 +8,14 @@ data.npcData = {
   npcType: '',
   npcTypeDetails: null,
   npcSubtype: '',
+  npcSubtypeDetails: null,
   npcGraft: '',
+  npcGraftDetails: null,
   npcAlignment: '',
   npcSize: '',
   npcSpecies: '',
   npcClass: '',
+  npcClassDetails: null,
   npcInitiative: null,
   npcSenses: '',
   npcPerception: null,
@@ -33,9 +36,9 @@ data.npcData = {
   npcBurrow: '',
   npcFly: '',
   npcSwim: '',
-  npcAttackHigh: '',
-  npcAttackLow: '',
-  npcTypeAttackMod : 0,
+  npcAttackHigh: 0,
+  npcAttackLow: 0,
+  npcTypeAttackMod: 0,
   npcAttacksTemp: {type: '', name: '', bonus: '', damage: ''},
   npcAttacks: {melee: [], multi: [], ranged: []},
   npcRangedDamageEnergy: '',
@@ -92,7 +95,6 @@ data.npcData = {
   npcOrg: '',
   npcSpecials: [],
   npcSpecialsTemp: {name: '', description: ''},
-
   sizeChartRecs: {
     'height': '',
     'weight': '',
@@ -103,24 +105,21 @@ data.npcData = {
 };
 
 data.displayInformation = {
-  subtypes : npcSubTypes.subtypes,
+  subtypes: npcSubTypes.subtypes,
   classes: npcClasses.cclasses,
   grafts: npcGrafts.grafts,
   sizes: sizeChart.sizes,
-  types : npcTypes.typeList
-}
+  types: npcTypes.typeList,
+};
 
 var app = new Vue({
   el: '#app',
   data: data,
-  npcTypeList : npcTypes.typeList,
+  npcTypeList: npcTypes.typeList,
   methods: {
-    getTypeList: function () {
-      this.npcTypes.typeList;
-    },
     addAbility: function() {
-      if (this.npcData.npcSpecialsTemp.name != '' &&
-          this.npcData.npcSpecialsTemp.description != '') {
+      if (this.npcData.npcSpecialsTemp.name !== '' &&
+          this.npcData.npcSpecialsTemp.description !== '') {
         this.npcData.npcSpecials.push({
           name: this.npcData.npcSpecialsTemp.name,
           description: this.npcData.npcSpecialsTemp.description,
@@ -140,10 +139,10 @@ var app = new Vue({
       this.npcData.npcSpecials.splice(index, 1);
     },
     addAttack: function() {
-      if (this.npcData.npcAttacksTemp.name != ''
-          && this.npcData.npcAttacksTemp.description != ''
-          && this.npcData.npcAttacksTemp.bonus != ''
-          && this.npcData.npcAttacksTemp.type != '') {
+      if (this.npcData.npcAttacksTemp.name !== ''
+          && this.npcData.npcAttacksTemp.description !== ''
+          && this.npcData.npcAttacksTemp.bonus !== ''
+          && this.npcData.npcAttacksTemp.type !== '') {
         this.npcData.npcAttacks[this.npcData.npcAttacksTemp.type].push({
           name: this.npcData.npcAttacksTemp.name,
           bonus: this.npcData.npcAttacksTemp.bonus,
@@ -167,40 +166,27 @@ var app = new Vue({
       this.npcData.npcAttacks[type].splice(index, 1);
     },
     displayClassInList: function(array, classname) {
-      if (array == 'Expert') {
+      if (array === 'Expert') {
         switch (classname) {
           case 'Envoy':
-            return true;
-            break;
           case 'Mechanic':
-            return true;
-            break;
           case 'Operative':
             return true;
-            break;
         }
       }
-      if (array == 'Combatant') {
+      if (array === 'Combatant') {
         switch (classname) {
           case 'Soldier':
-            return true;
-            break;
           case 'Solarian':
-            return true;
-            break;
           case 'Elementian':
             return true;
-            break;
         }
       }
-      if (array == 'Spellcaster') {
+      if (array === 'Spellcaster') {
         switch (classname) {
           case 'Mystic':
-            return true;
-            break;
           case 'Technomancer':
             return true;
-            break;
         }
       }
       return false;
@@ -210,48 +196,55 @@ var app = new Vue({
       updateAbilityScores();
     },
     updateSize: function() {
-      var list = ['height', 'weight', 'space', 'tallReach', 'longReach'];
+      let list = ['height', 'weight', 'space', 'tallReach', 'longReach'];
       for (let i in list) {
+        // noinspection JSUnfilteredForInLoop
         this.npcData.sizeChartRecs[list[i]] = sizeChart[this.npcData.npcSize][list[i]];
       }
     },
     updateSpecies: function() {
-      console.log('Need to update stats based on species.');
+      console.log('Stub - no Species Mods');
     },
     updateClass: function() {
-      console.log('updateClassData();')
+      this.npcData.npcClassDetails = npcClasses[this.npcData.npcClass];
+      genericUpdateData(this.npcData.npcClassDetails);
     },
     updateType: function() {
       this.npcData.npcTypeDetails = npcTypes[this.npcData.npcType];
-      genericUpdateData(this.npcData.npcTypeDetails)
+      genericUpdateData(this.npcData.npcTypeDetails);
     },
     updateGraft: function() {
-      console.log('updateGraft');
+      this.npcData.npcGraftDetails = npcGrafts[this.npcData.npcGraft];
+      genericUpdateData(this.npcData.npcGraftDetails);
     },
     updateSubtype: function() {
-      console.log('Need to update stats based on subtype.');
+      this.npcData.npcSubtypeDetails = npcSubTypes[this.npcData.npcSubtype];
+      genericUpdateData(this.npcData.npcSubtypeDetails);
     },
     showWarning: function(warning) {
-      if (warning == 'abilities') {
-        if (this.npcData.npcAbilityScore1Assigned == '') {
+      if (warning === 'abilities') {
+        if (this.npcData.npcAbilityScore1Assigned === '') {
           return false;
         }
-        if (this.npcData.npcAbilityScore2Assigned == '') {
+        if (this.npcData.npcAbilityScore2Assigned === '') {
           return false;
         }
-        if (this.npcData.npcAbilityScore3Assigned == '') {
+        if (this.npcData.npcAbilityScore3Assigned === '') {
           return false;
         }
-        if (this.npcData.npcAbilityScore1Assigned ==
+        if (this.npcData.npcAbilityScore1Assigned ===
             this.npcData.npcAbilityScore2Assigned) {
           return true;
-        } else if (this.npcData.npcAbilityScore1Assigned ==
+        }
+        if (this.npcData.npcAbilityScore1Assigned ===
             this.npcData.npcAbilityScore3Assigned) {
           return true;
-        } else if (this.npcData.npcAbilityScore2Assigned ==
+        }
+        if (this.npcData.npcAbilityScore2Assigned ===
             this.npcData.npcAbilityScore3Assigned) {
           return true;
-        } else return false;
+        }
+        return false;
       }
     },
     updateAbilities: function() {
@@ -260,26 +253,30 @@ var app = new Vue({
   },
 });
 
-
 function genericUpdateData(details) {
-  for(let i in details.adjustment) {
-    stat = Object.getOwnPropertyNames(details.adjustment[i]);
-    app.npcData[stat] += details.adjustment[i][stat]
+  console.log(details);
+  for (let i in details.adjustment) {
+    let stat = Object.getOwnPropertyNames(details.adjustment[i]);
+    app.npcData[stat] += details.adjustment[i][stat];
   }
-  for(let i in details.trait) {
-    stat = Object.getOwnPropertyNames(details.trait[i]);
-    app.npcData[stat] = details.trait[i][stat]
+  for (let i in details.trait) {
+    let stat = Object.getOwnPropertyNames(details.trait[i]);
+    app.npcData[stat] = details.trait[i][stat];
+  }
+  if (app.npcData.npcTypeAttackMod !== 0) {
+    app.npcData.npcAttackHigh += app.npcData.npcTypeAttackMod;
+    app.npcData.npcAttackLow += app.npcData.npcTypeAttackMod;
   }
 }
 
 function updateAbilityScores() {
-  var list = ['Str', 'Dex', 'Con', 'Int', 'Wis', 'Cha'];
+  let list = ['Str', 'Dex', 'Con', 'Int', 'Wis', 'Cha'];
   for (let i in list) {
-    if (app.npcData.npcAbilityScore1Assigned == list[i]) {
+    if (app.npcData.npcAbilityScore1Assigned === list[i]) {
       app.npcData['npc' + list[i]] = app.npcData.npcAbilityScore1;
-    } else if (app.npcData.npcAbilityScore2Assigned == list[i]) {
+    } else if (app.npcData.npcAbilityScore2Assigned === list[i]) {
       app.npcData['npc' + list[i]] = app.npcData.npcAbilityScore2;
-    } else if (app.npcData.npcAbilityScore3Assigned == list[i]) {
+    } else if (app.npcData.npcAbilityScore3Assigned === list[i]) {
       app.npcData['npc' + list[i]] = app.npcData.npcAbilityScore3;
     } else {
       app.npcData['npc' + list[i]] = 0;
@@ -291,7 +288,7 @@ function updateAbilityScores() {
 function getStats(array, cr) {
   try {
     for (let i in app.npcData) {
-      if (arrays[array][cr][i] != undefined) {
+      if (arrays[array][cr][i] !== undefined) {
         app.npcData[i] = arrays[array][cr][i];
       }
       app.npcData.npcXP = xp[cr].toString().
@@ -299,6 +296,6 @@ function getStats(array, cr) {
       app.npcData.npcPerception = arrays[array][cr].npcGoodSkill; //Perception is a "Good" skill by default
     }
   } catch (error) {
-    console.log('Insufficient information to lookup data')
+    console.log('Insufficient information to lookup data');
   }
 }

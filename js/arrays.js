@@ -1,4 +1,4 @@
-var arrays = {
+const arrays = {
   'Combatant': {
     '1/3': {
       'npcCR': '1/3',

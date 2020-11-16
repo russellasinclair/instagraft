@@ -1,4 +1,4 @@
-var cclasses = {
+const npcClasses = {
   cclasses: [
     'Envoy',
     'Mechanic',
@@ -7,5 +7,5 @@ var cclasses = {
     'Solarian',
     'Soldier',
     'Technomancer',
-    'Elementian'],
+    'Elementian']
 };

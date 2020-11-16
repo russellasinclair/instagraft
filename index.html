@@ -51,25 +51,25 @@
         </select><br>
         <select v-model="npcData.npcSize" @change="updateSize">
             <option selected value="">Creature Size</option>
-            <option v-for="size in npcData.sizes" v-bind:value="size">
+            <option v-for="size in displayInformation.sizes" v-bind:value="size">
                 {{size}}
             </option>
         </select>
         <select v-model="npcData.npcType" @change="updateType">
-            <option selected value="">Creature Type</option>
-            <option v-for="type in npcTypes.typeList" v-bind:value="type">
+            <option selected value="">Type</option>
+            <option v-for="type in displayInformation.types" v-bind:value="type">
                 {{type}}
             </option>
         </select>
         <select v-model="npcData.npcSubtype" @change="updateSubtype">
-            <option selected value="">Creature Sub-Type</option>
-            <option v-for="subtype in npcData.subtypes" v-bind:value="subtype">
+            <option selected value="">Sub-Type</option>
+            <option v-for="subtype in displayInformation.subtypes" v-bind:value="subtype">
                 {{subtype}}
             </option>
         </select>
         <select v-model="npcData.npcGraft" @change="updateGraft">
-            <option selected value="">Creature Template Graft</option>
-            <option v-for="template in npcData.npcGrafts" v-bind:value="template">
+            <option selected value="">Template</option>
+            <option v-for="template in displayInformation.grafts" v-bind:value="template">
                 {{template}}
             </option>
         </select>
@@ -88,7 +88,7 @@
         <input type="text" v-model="npcData.npcSpecies" placeholder="name of species"><br>
         <select v-model="npcData.npcClass" @change="updateClass">
             <option selected value="">No Class</option>
-            <option v-for="classname in npcData.classes" v-bind:value="classname"
+            <option v-for="classname in displayInformation.classes" v-bind:value="classname"
                     v-if="displayClassInList(npcData.npcArray,classname)">
                 {{ classname }}
             </option>
@@ -379,12 +379,14 @@
         </div>
     </div>
 </div>
+
 <script src="./js/arrays.js"></script>
-<script src="./js/sizeChart.js"></script>
-<script src="./js/xp.js"></script>
-<script src="./js/types.js"></script>
 <script src="./js/classes.js"></script>
-<script src="./app.js">
-</script>
+<script src="./js/grafts.js"></script>
+<script src="./js/sizeChart.js"></script>
+<script src="./js/subtypes.js"></script>
+<script src="./js/types.js"></script>
+<script src="./js/xp.js"></script>
+<script src="./app.js"></script>
 </body>
 </html>

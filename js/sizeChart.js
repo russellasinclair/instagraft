@@ -1,4 +1,16 @@
-var sizeChart = {
+const sizeChart = {
+  sizes: [
+    'Ultrafine',
+    'Fine',
+    'Dimunitive',
+    'Tiny',
+    'Small',
+    'Medium',
+    'Large',
+    'Huge',
+    'Gargantuan',
+    'Colossal',
+    'Supercolossal'],
   'Fine': {
     'height': '6 in. or less',
     'weight': '1/8 lb. or less',

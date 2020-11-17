@@ -105,9 +105,13 @@ data.npcData = {
 };
 
 data.displayInformation = {
+  selectedGraft: '',
   subtypes: npcSubTypes.subtypes,
-  classes: npcClasses.cclasses,
-  grafts: npcGrafts.grafts,
+  classesList: npcClasses.grafts,
+  templateGraftList: templateGrafts.grafts,
+  elementalGraftList: elemGrafts.grafts,
+  envGraftList: envGrafts.grafts,
+  occultGraftList: occultGrafts.grafts,
   sizes: sizeChart.sizes,
   types: npcTypes.typeList,
 };
@@ -214,7 +218,23 @@ var app = new Vue({
       genericUpdateData(this.npcData.npcTypeDetails);
     },
     updateGraft: function() {
-      this.npcData.npcGraftDetails = npcGrafts[this.npcData.npcGraft];
+      let graft;
+      switch (this.displayInformation.selectedGraft) {
+        case 'Elemental' :
+          graft = elemGrafts;
+          break;
+        case 'Environmental' :
+          graft = envGrafts;
+          break;
+        case 'Occult' :
+          graft = occultGrafts;
+          break;
+        case 'Template' :
+          graft = templateGrafts;
+          break;
+      }
+      console.log(graft[this.npcData.npcGraft]);
+      this.npcData.npcGraftDetails = graft[this.npcData.npcGraft];
       genericUpdateData(this.npcData.npcGraftDetails);
     },
     updateSubtype: function() {
@@ -254,13 +274,12 @@ var app = new Vue({
 });
 
 function genericUpdateData(details) {
-  console.log(details);
   for (let i in details.adjustment) {
-    let stat = Object.getOwnPropertyNames(details.adjustment[i]);
+    let stat = Object.getOwnPropertyNames(details.adjustment[i])[0];
     app.npcData[stat] += details.adjustment[i][stat];
   }
   for (let i in details.trait) {
-    let stat = Object.getOwnPropertyNames(details.trait[i]);
+    let stat = Object.getOwnPropertyNames(details.trait[i])[0];
     app.npcData[stat] = details.trait[i][stat];
   }
   if (app.npcData.npcTypeAttackMod !== 0) {

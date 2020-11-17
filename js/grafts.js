@@ -1,29 +1,5 @@
-const npcGrafts = {
-  grafts : [
- //   '--Elemental--',
-    'Air',
-    'Earth',
-    'Fire',
-    'Ice',
-    'Lightning',
-    'Magma',
-    'Water',
-  //  '--Environmental--',
-    'Airborne',
-    'Aquatic',
-    'Arboreal',
-    'Arctic',
-    'Desert',
-    'Forest',
-    'Marsh',
-    'Mountain',
-    'Plains',
-    'Radioactive',
-    'Solar',
-    'Space',
-    'Subterranean',
-    'Thermic',
-  //  '--Template--',
+const templateGrafts = {
+  grafts: [
     'Aerial (CR 1+)',
     'Aqueous (CR 1+)',
     'Astral',
@@ -40,8 +16,28 @@ const npcGrafts = {
     'Synthetic',
     'Two-Headed (CR 3+)',
     'Umbral',
-    //'--Occult--',
-    'Obscured',
-    'Nightmare',
-    'Transposed']
-}
+  ],
+
+  'Aerial (CR 1+)': {
+    'description': 'Aerial creatures are native denizens of the Elemental Plane of\n' +
+        '  Air, gas giant planets, or similar landless environments, and\n' +
+        '  have unique adaptations to help them survive there.',
+    'trait': [],
+    'adjustment': [{'npcSenses': 'Darkvision 60 ft. '}],
+  },
+  'Aqueous (CR 1+)': {'description': '', 'train': [], 'adjustment': []},
+  'Astral': {'description': '', 'train': [], 'adjustment': []},
+  'Celestial': {'description': '', 'train': [], 'adjustment': []},
+  'Cthonic (CR 1+)': {'description': '', 'train': [], 'adjustment': []},
+  'Cybernetic (CR 1/2+)': {'description': '', 'train': [], 'adjustment': []},
+  'Entropic': {'description': '', 'train': [], 'adjustment': []},
+  'Fiendish': {'description': '', 'train': [], 'adjustment': []},
+  'Fiery (CR 1+)': {'description': '', 'train': [], 'adjustment': []},
+  'Giant (CR 1+)': {'description': '', 'train': [], 'adjustment': []},
+  'Miniature': {'description': '', 'train': [], 'adjustment': []},
+  'Phrenic': {'description': '', 'train': [], 'adjustment': []},
+  'Resolute': {'description': '', 'train': [], 'adjustment': []},
+  'Synthetic': {'description': '', 'train': [], 'adjustment': []},
+  'Two-Headed (CR 3+)': {'description': '', 'train': [], 'adjustment': []},
+  'Umbral': {'description': '', 'train': [], 'adjustment': []},
+};

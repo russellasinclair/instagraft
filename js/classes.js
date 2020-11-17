@@ -1,5 +1,5 @@
 const npcClasses = {
-  cclasses: [
+  grafts: [
     'Envoy',
     'Mechanic',
     'Mystic',
@@ -7,5 +7,13 @@ const npcClasses = {
     'Solarian',
     'Soldier',
     'Technomancer',
-    'Elementian']
+    'Elementian'],
+  'Envoy': {'description': '', 'train': [], 'adjustment': []},
+  'Mechanic': {'description': '', 'train': [], 'adjustment': []},
+  'Mystic': {'description': '', 'train': [], 'adjustment': []},
+  'Operative': {'description': '', 'train': [], 'adjustment': []},
+  'Solarian': {'description': '', 'train': [], 'adjustment': []},
+  'Soldier': {'description': '', 'train': [], 'adjustment': []},
+  'Technomancer': {'description': '', 'train': [], 'adjustment': []},
+  'Elementian': {'description': '', 'train': [], 'adjustment': []},
 };

@@ -70,12 +70,41 @@
                 {{subtype}}
             </option>
         </select>
+        <select v-model="npcData.npcClass" @change="updateClass">
+            <option selected value="">Class</option>
+            <option v-for="classname in displayInformation.classesList" v-bind:value="classname"
+                    v-if="displayClassInList(npcData.npcArray,classname)">
+                {{ classname }}
+            </option>
+        </select>
+        <select v-model="displayInformation.selectedGraft">
+            <option selected value="">Select Graft Type</option>
+            <option>Elemental</option>
+            <option>Environmental</option>
+            <option>Occult</option>
+            <option>Template</option>
+        </select>
         <select v-model="npcData.npcGraft" @change="updateGraft">
-            <option selected value="">Template</option>
-            <option v-for="template in displayInformation.grafts" v-bind:value="template">
+            <option selected value="">Select Graft</option>
+            <option v-for="template in displayInformation.templateGraftList" v-bind:value="template"
+                    v-if="displayInformation.selectedGraft==='Template'">
+                {{template}}
+            </option>
+            <option v-for="template in displayInformation.elementalGraftList" v-bind:value="template"
+                    v-if="displayInformation.selectedGraft==='Elemental'">
+                {{template}}
+            </option>
+            <option v-for="template in displayInformation.occultGraftList" v-bind:value="template"
+                    v-if="displayInformation.selectedGraft==='Occult'">
+                {{template}}
+            </option>
+            <option v-for="template in displayInformation.elementalGraftList" v-bind:value="template"
+                    v-if="displayInformation.selectedGraft==='Environmental'">
                 {{template}}
             </option>
         </select>
+
+
         <select v-model="npcData.npcAlignment">
             <option value="">Alignment</option>
             <option>LG</option>
@@ -89,13 +118,6 @@
             <option>CE</option>
         </select><br>
         <input type="text" v-model="npcData.npcSpecies" placeholder="name of species"><br>
-        <select v-model="npcData.npcClass" @change="updateClass">
-            <option selected value="">No Class</option>
-            <option v-for="classname in displayInformation.classes" v-bind:value="classname"
-                    v-if="displayClassInList(npcData.npcArray,classname)">
-                {{ classname }}
-            </option>
-        </select>
         <div class="customHr">.</div>
         <span class="sidenav-text"><b>Ability Scores by CR</b></span>
         <select v-model="npcData.npcAbilityScore1Assigned" @change="updateAbilities()">
@@ -382,13 +404,17 @@
             </div>
             <h2>Detailed Information</h2>
             <p>
-                <span v-if="npcData.npcType!=''"><b>{{ npcData.npcType }}</b> {{npcData.npcTypeDetails.description}} </span>
+                <span v-if="npcData.npcType!=''"><b>{{ npcData.npcType
+                    }}</b> {{npcData.npcTypeDetails.description}} </span>
             </p>
         </div>
     </div>
 
 </div>
 
+<script src="./js/elemental-grafts.js"></script>
+<script src="./js/occult-grafts.js"></script>
+<script src="./js/environmental-grafts.js"></script>
 <script src="./js/arrays.js"></script>
 <script src="./js/classes.js"></script>
 <script src="./js/grafts.js"></script>

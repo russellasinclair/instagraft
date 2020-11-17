@@ -1,4 +1,4 @@
-const npcTypes = {
+var npcTypes = {
   // Short list of types used for populating menus
   typeList: [
     'Aberration',
@@ -18,13 +18,13 @@ const npcTypes = {
   // Details of each type
   // Traits are values that REPLACE existing data
   // Adjustment are values that either modify or append to existing data
-  Aberration: {
+  'Aberration': {
     'description': 'An aberration has a bizarre anatomy, strange abilities, an ' +
         'alien mindset, or any combination of the three.',
     'trait': [],
-    'adjustment': [{'npcWill': 2}, {'npcSenses': 'Darkvision 60 ft. '}],
+    'adjustment': [{'npcSenses': 'Darkvision 60 ft. '}, {'npcWill': 2}],
   },
-  Animal: {
+  'Animal': {
     'description': 'An animal is a living, nonhumanoid creature, usually a ' +
         'vertebrate with no magical abilities and no innate capacity for ' +
         'language or culture.',
@@ -34,7 +34,7 @@ const npcTypes = {
       {'npcRef': 2},
       {'npcSenses': 'Low-light vision'}],
   },
-  Construct: {
+  'Construct': {
     'description': 'A construct is a magically animated object or an artificially created creature. Must have ' +
         'either the magical or technological subtype; if the construct ' +
         'is mindless, set Intelligence modifier to — and add mindless.',
@@ -47,7 +47,7 @@ const npcTypes = {
       {'npcSenses': 'Darkvision 60 ft., Low-light vision'},
       {'npcOtherAbilities': 'unliving'}],
   },
-  Dragon: {
+  'Dragon': {
     'description': 'A dragon is a reptilian creature, usually winged, with magical ' +
         'or otherwise unusual abilities.',
     'trait': [{'npcImmunities': 'construct immunities'}],
@@ -57,13 +57,13 @@ const npcTypes = {
       {'npcWill': 2},
       {'npcSenses': 'Darkvision 60 ft., Low-light vision'}],
   },
-  Fey: {
+  'Fey': {
     'description': 'A fey is a creature with supernatural abilities and connections ' +
         'to nature or to some other force or place.',
     'trait': [],
     'adjustment': [{'npcFort': 2}, {'npcRef': 2}, {'npcTypeAttackMod': 1}],
   },
-  Humanoid: {
+  'Humanoid': {
     'description': 'A humanoid usually has two arms, two legs, and one head, or ' +
         'it has a humanlike torso, arms, and a head. Humanoids have ' +
         'few or no supernatural or extraordinary abilities, but most ' +

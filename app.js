@@ -218,6 +218,7 @@ var app = new Vue({
       genericUpdateData(this.npcData.npcTypeDetails);
     },
     updateGraft: function() {
+      // https://www.aonsrd.com/TemplateGrafts.aspx?ItemName=All&Family=None
       let graft;
       switch (this.displayInformation.selectedGraft) {
         case 'Elemental' :

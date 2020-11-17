@@ -23,7 +23,7 @@ const templateGrafts = {
         '  Air, gas giant planets, or similar landless environments, and\n' +
         '  have unique adaptations to help them survive there.',
     'trait': [],
-    'adjustment': [{'npcSenses': 'Darkvision 60 ft. '}],
+    'adjustment': [{'npcSenses': 'Darkvision 60 ft.'}],
   },
   'Aqueous (CR 1+)': {'description': '', 'train': [], 'adjustment': []},
   'Astral': {'description': '', 'train': [], 'adjustment': []},

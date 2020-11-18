@@ -2,7 +2,7 @@ const arrays = {
   'Combatant': {
     '1/3': {
       'npcCR': '1/3',
-      'npcEAC': 101,
+      'npcEAC': 10,
       'npcKAC': 12,
       'npcFort': 1,
       'npcRef': 1,

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Instant Graftification</title>
+<title>Instant Graftification</title>
     <script src="./js/vue.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -323,7 +323,9 @@
                 <span v-if="npcData.npcRP >= 1"><b>RP</b> {{npcData.npcRP}};</span>
                 <b>EAC</b> {{npcData.npcEAC}};
                 <b>KAC</b> {{npcData.npcKAC}}<br>
-                <b>Fort</b> +{{npcData.npcFort}}; <b>Ref</b> +{{npcData.npcRef}}; <b>Will</b> +{{npcData.npcWill}}<br>
+                <b>Fort</b> +{{npcData.npcFort}}; <b>Ref</b> +{{npcData.npcRef}}; <b>Will</b> +{{npcData.npcWill}};
+                {{npcData.npcSaveBonus}}
+                <br>
                 <span v-if="npcData.npcDefensiveAbilities != ''"><b>Defensive Abilities</b> {{npcData.npcDefensiveAbilities}}; </span>
                 <span v-if="npcData.npcDR != ''"><b>DR</b> {{npcData.npcDR}}; </span>
                 <span v-if="npcData.npcImmunities != ''"><b>Immunities</b> {{npcData.npcImmunities}}; </span>
@@ -406,6 +408,9 @@
             <p>
                 <span v-if="npcData.npcType!=''"><b>{{ npcData.npcType
                     }}</b> {{npcData.npcTypeDetails.description}} </span>
+                <br>
+                <span v-if="npcData.npcSubtype!=''"><b>{{ npcData.npcSubtype
+                    }}</b> {{npcData.npcSubtypeDetails.description}} </span>
             </p>
         </div>
     </div>

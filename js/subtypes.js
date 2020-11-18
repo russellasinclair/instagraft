@@ -82,11 +82,35 @@ const npcSubTypes = {
   'Aeon': {
     'description': 'Aeons are a race of neutral outsiders who maintain the balance of reality.',
     'trait': [], 'adjustment': [
-      {'npcImmunities': 'Immunity to cold, critical hits, and poison;'},
+      {'npcImmunities': 'Immunity to cold, critical hits, and poison'},
+      {'npcResistances': 'Resistance 10 to electricity and fire'}],
+    'specials': [
+      {'npcSpecialsTemp': {'Envisaging (Su)': 'Aeons communicate without language, first scanning beings for their thoughts and intentions and then projecting psychic flashes of a single concept in response. These flashes are usually a combination of visual and aural stimulation that communicate the aeon’s intent or understanding. An aeon’s envisaging functions as a nonverbal form of telepathy with a range of 100 feet, and it counts as a language for the purposes of telepathy and truespeech. Aeons can’t read the thoughts of creatures immune to mind-affecting effects.'}},
+      {'npcSpecialsTemp': {'Extension of All (Ex)': 'Aeons can communicate telepathically with other aeons over vast distances. This ability works even across planes, albeit less effectively, allowing the communication of only vague impressions and feelings.'}},
     ],
   },
-  'Aanung-an': {'description': '', 'trait': [], 'adjustment': []},
-  'Agathion': {'description': '', 'trait': [], 'adjustment': []},
+  'Aanung-an': {
+    'description': 'Any creature that dies while performing dark rituals for evil purposes risks rising again as one of the occult dead. ' +
+        '(Required Creature Type: Undead. Suggested Array: Spellcaster. Suggested Ability Scores: Intelligence, Wisdom, Charisma. Mysticism as a master skill)',
+    'specials': [
+      {'npcSpecialsTemp': {'Ritual Scar (Su)': 'An aanung-an that starts its turn grappling a creature can attempt to carve a ritual scar into its victim’s body as a standard action, afflicting it with potent magic. The aanung-an attempts a Mysticism check (DC = 20 + target’s level or CR). On a success, the aanung-an renews the grapple, and the target takes 1d6+4 slashing damage as the aanung-an claws a symbol into its body. The target must then succeed at a DC 15 Will saving throw or suffer one of the following effects of the aanung-an’s choice: bestow curse, slow, or suggestion. These effects function at the aanung-an’s caster level. Certain aanung-ans might inflict different or unique effects with this ability, at the GM’s discretion.'}},
+    ],
+    'trait': [],
+    'adjustment': [
+      {'npcSenses': 'Blindsense (thought) 30 ft.'},
+    ],
+  },
+  'Agathion': {
+    'description': 'Agathions are celestials, or good outsiders, native to Nirvana.',
+    'trait': [],
+    'adjustment': [
+      {'npcSenses': 'Low-light vision'},
+      {'npcSaveBonus': '+4 to saving throws against poison;'},
+      {'npcImmunities': 'electricity, petrification'},
+      {'npcResistances': 'resistance 10 to cold and sonic'},
+      {'npcOtherAbilities': 'healing channel (as per the healer mystic connection power); truespeech; speak with animals (as per the xenodruid mystic connection power)'}],
+  },
+
   'Air': {'description': '', 'trait': [], 'adjustment': []},
   'Android': {'description': '', 'trait': [], 'adjustment': []},
   'Angel': {'description': '', 'trait': [], 'adjustment': []},

@@ -26,6 +26,7 @@ data.npcData = {
   npcFort: null,
   npcRef: null,
   npcWill: null,
+  npcSaveBonus: '',
   npcDR: '',
   npcImmunities: '',
   npcWeaknesses: '',
@@ -282,6 +283,13 @@ function genericUpdateData(details) {
   for (let i in details.trait) {
     let stat = Object.getOwnPropertyNames(details.trait[i])[0];
     app.npcData[stat] = details.trait[i][stat];
+  }
+  for (let i in details.specials) {
+    let stat = Object.getOwnPropertyNames(
+        details.specials[i].npcSpecialsTemp)[0];
+    app.npcData.npcSpecialsTemp.name = stat;
+    app.npcData.npcSpecialsTemp.description = details.specials[i].npcSpecialsTemp[stat];
+    app.addAbility();
   }
   if (app.npcData.npcTypeAttackMod !== 0) {
     app.npcData.npcAttackHigh += app.npcData.npcTypeAttackMod;

@@ -38,23 +38,25 @@ var npcTypes = {
     'description': 'A construct is a magically animated object or an artificially created creature. Must have ' +
         'either the magical or technological subtype; if the construct ' +
         'is mindless, set Intelligence modifier to — and add mindless.',
-    'trait': [{'npcImmunities': 'construct immunities'}, {'npcCon': '-'}],
+    'trait': [{'npcCon': '-'}],
     'adjustment': [
       {'npcFort': -2},
       {'npcRef': -2},
       {'npcWill': -2},
       {'npcTypeAttackMod': 1},
+      {'npcImmunities': 'construct immunities'},
       {'npcSenses': 'Darkvision 60 ft., Low-light vision'},
       {'npcOtherAbilities': 'unliving'}],
   },
   'Dragon': {
     'description': 'A dragon is a reptilian creature, usually winged, with magical ' +
         'or otherwise unusual abilities.',
-    'trait': [{'npcImmunities': 'construct immunities'}],
+    'trait': [],
     'adjustment': [
       {'npcFort': 2},
       {'npcRef': 2},
       {'npcWill': 2},
+      {'npcImmunities': 'construct immunities'},
       {'npcSenses': 'Darkvision 60 ft., Low-light vision'}],
   },
   'Fey': {
@@ -121,14 +123,17 @@ var npcTypes = {
         'plants, such as those growing in gardens or fields, lack Wisdom ' +
         'and Charisma modifiers and are objects, not creatures, even ' +
         'though they are alive.',
-    'trait': [{'npcImmunities': 'plant immunities'}],
-    'adjustment': [{'npcFort': 2}, {'npcSenses': 'Low-light vision'}],
+    'trait': [],
+    'adjustment': [
+      {'npcImmunities': 'plant immunities'},
+      {'npcFort': 2},
+      {'npcSenses': 'Low-light vision'}],
   },
   'Undead': {
     'description': 'Undead are once-living creatures animated by magic or ' +
         'advanced technological forces.',
-    'trait': [{'npcImmunities': 'undead immunities'}, {'npcCon': '-'}],
-    'adjustment': [{'npcWill': 2}],
+    'trait': [{'npcCon': '-'}],
+    'adjustment': [{'npcImmunities': 'undead immunities'}, {'npcWill': 2}],
   },
   'Vermin': {
     'description': 'This type includes insects, arachnids, other arthropods,\n' +

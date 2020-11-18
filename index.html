@@ -21,7 +21,8 @@
             <option>Combatant</option>
             <option>Expert</option>
             <option>Spellcaster</option>
-        </select><br>
+        </select>
+        <br>
         <select v-model="npcData.npcCR" @change="updateCR">
             <option value="">Select a CR.</option>
             <option>1/3</option>
@@ -307,6 +308,7 @@
 
     <div class="content">
         <div>
+            <img src="./img/StarfinderLogo.jpg" alt="Starfinder" class="center">
             <h1>{{ npcData.npcName }} (CR {{npcData.npcCR}})</h1>
             <p><b>{{ npcData.npcXP }} XP </b><br>
                 <span>{{npcData.npcSpecies}} {{npcData.npcClass}}</span><br>

@@ -110,9 +110,16 @@ const npcSubTypes = {
       {'npcResistances': 'resistance 10 to cold and sonic'},
       {'npcOtherAbilities': 'healing channel (as per the healer mystic connection power); truespeech; speak with animals (as per the xenodruid mystic connection power)'}],
   },
-
-  'Air': {'description': '', 'trait': [], 'adjustment': []},
-  'Android': {'description': '', 'trait': [], 'adjustment': []},
+  'Air': {
+    'description': 'This subtype is usually applied to outsiders with a connection to the Plane of Air. (Gains Acrobatics as a master or good skill.)',
+    'trait': [],
+    'adjustment': [{'npcOtherAbilities': 'Flight (Perfect Maneuverability);'}],
+  },
+  'Android': {
+    'description': 'This subtype is applied to androids and creatures related to androids.(if the NPC is of the android race, it also gains the constructed, flat affect, and upgrade slot racial traits.)',
+    'trait': [],
+    'adjustment': [{'npcSenses': 'Low-light vision; Darkvision 60 ft.;'}],
+  },
   'Angel': {'description': '', 'trait': [], 'adjustment': []},
   'Aquatic': {'description': '', 'trait': [], 'adjustment': []},
   'Archon': {'description': '', 'trait': [], 'adjustment': []},

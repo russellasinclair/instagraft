@@ -120,10 +120,44 @@ const npcSubTypes = {
     'trait': [],
     'adjustment': [{'npcSenses': 'Low-light vision; Darkvision 60 ft.;'}],
   },
-  'Angel': {'description': '', 'trait': [], 'adjustment': []},
-  'Aquatic': {'description': '', 'trait': [], 'adjustment': []},
-  'Archon': {'description': '', 'trait': [], 'adjustment': []},
-  'Azata': {'description': '', 'trait': [], 'adjustment': []},
+  'Angel': {
+    'description': 'Angels are celestials, or good outsiders, native to the good-aligned Outer Planes.',
+    'trait': [],
+    'adjustment': [
+      {'npcSenses': 'Low-light vision; Darkvision 60 ft.;'},
+      {'npcImmunities': 'immunity to acid, cold, and petrification;'},
+      {'npcResistances': 'resistance 10 to electricity and fire;'},
+      {'npcOtherAbilities': 'truespeech;'},
+      {'npcSaveBonus': ' +4 to saving throws against poison'},
+    ],
+    'specials': [
+      {'npcSpecialsTemp': {'Protective Aura (Su)': 'For angels of CR 3 to CR 15, this ability grants creatures within the aura (usually 20 feet), including the angel, a divine bonus (usually +2) to AC against attacks made by evil creatures and a divine bonus (usually +4) to saving throws against effects created by evil creatures. The protective aura of a more powerful or a weaker angel might grant a larger or smaller bonus and have a larger or smaller radius, respectively.'}}],
+  },
+  'Aquatic': {
+    'description': 'These creatures are often native to environments that are mostly or entirely underwater. (Athletics as a master or good skill; if it can breathe air, it also gains the amphibious universal creature rule.)',
+    'trait': [],
+    'adjustment': [],
+  },
+  'Archon': {
+    'description': 'Archons are celestials, or good outsiders, native to Heaven. ( many archons can cast teleport as an at-will spell-like ability (caster level equal to its CR))',
+    'trait': [],
+    'adjustment': [
+      {'npcSenses': 'Low-light vision; Darkvision 60 ft.;'},
+      {'npcSaveBonus': '+4 to saving throws against poison; '},
+      {'npcImmunities': 'immunity to electricity and petrification;'},
+      {'npcResistances': 'resistance 10 to cold and fire;'},
+      {'npcOtherAbilities': 'truespeech;'}],
+    'specials': [
+      {'npcSpecialsTemp': {'Aura of Menace (Su)': 'This ability imposes a divine penalty (usually –2) to the AC, attacks, and saving throws of each hostile creature within the aura (usually 20 feet) that fails a Will save. This penalty lasts for 24 hours or until that creature deals damage to the archon who generated the aura. A creature that has resisted or broken the effect can’t be affected again by the same archon’s aura for 24 hours. The aura of a more powerful or weaker archon might impose a larger or smaller penalty and might have a larger or smaller radius, respectively.'}}],
+  },
+  'Azata': {
+    'description': 'Azatas are celestials, or good outsiders, native to Elysium.',
+    'trait': [],
+    'adjustment': [
+      {'npcSenses': 'Low-light vision; Darkvision 60 ft.;'},
+      {'npcImmunities': 'immunity to electricity and petrification;'},
+      {'npcOtherAbilities': 'truespeech;'}],
+  },
   'Brenneri': {'description': '', 'trait': [], 'adjustment': []},
   'Cold': {'description': '', 'trait': [], 'adjustment': []},
   'Daemon': {'description': '', 'trait': [], 'adjustment': []},

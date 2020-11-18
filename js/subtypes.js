@@ -82,8 +82,8 @@ const npcSubTypes = {
   'Aeon': {
     'description': 'Aeons are a race of neutral outsiders who maintain the balance of reality.',
     'trait': [], 'adjustment': [
-      {'npcImmunities': 'Immunity to cold, critical hits, and poison'},
-      {'npcResistances': 'Resistance 10 to electricity and fire'}],
+      {'npcImmunities': 'Immunity to cold, critical hits, and poison; '},
+      {'npcResistances': 'Resistance 10 to electricity and fire; '}],
     'specials': [
       {'npcSpecialsTemp': {'Envisaging (Su)': 'Aeons communicate without language, first scanning beings for their thoughts and intentions and then projecting psychic flashes of a single concept in response. These flashes are usually a combination of visual and aural stimulation that communicate the aeon’s intent or understanding. An aeon’s envisaging functions as a nonverbal form of telepathy with a range of 100 feet, and it counts as a language for the purposes of telepathy and truespeech. Aeons can’t read the thoughts of creatures immune to mind-affecting effects.'}},
       {'npcSpecialsTemp': {'Extension of All (Ex)': 'Aeons can communicate telepathically with other aeons over vast distances. This ability works even across planes, albeit less effectively, allowing the communication of only vague impressions and feelings.'}},
@@ -97,38 +97,38 @@ const npcSubTypes = {
     ],
     'trait': [],
     'adjustment': [
-      {'npcSenses': 'Blindsense (thought) 30 ft.'},
+      {'npcSenses': 'Blindsense (thought) 30 ft.; '},
     ],
   },
   'Agathion': {
     'description': 'Agathions are celestials, or good outsiders, native to Nirvana.',
     'trait': [],
     'adjustment': [
-      {'npcSenses': 'Low-light vision'},
-      {'npcSaveBonus': '+4 to saving throws against poison;'},
-      {'npcImmunities': 'electricity, petrification'},
-      {'npcResistances': 'resistance 10 to cold and sonic'},
-      {'npcOtherAbilities': 'healing channel (as per the healer mystic connection power); truespeech; speak with animals (as per the xenodruid mystic connection power)'}],
+      {'npcSenses': 'Low-light vision; '},
+      {'npcSaveBonus': '+4 to saving throws against poison; '},
+      {'npcImmunities': 'electricity; petrification; '},
+      {'npcResistances': 'resistance 10 to cold and sonic; '},
+      {'npcOtherAbilities': 'healing channel (as per the healer mystic connection power); truespeech; speak with animals (as per the xenodruid mystic connection power); '}],
   },
   'Air': {
     'description': 'This subtype is usually applied to outsiders with a connection to the Plane of Air. (Gains Acrobatics as a master or good skill.)',
     'trait': [],
-    'adjustment': [{'npcOtherAbilities': 'Flight (Perfect Maneuverability);'}],
+    'adjustment': [{'npcOtherAbilities': 'Flight (Perfect Maneuverability); '}],
   },
   'Android': {
     'description': 'This subtype is applied to androids and creatures related to androids.(if the NPC is of the android race, it also gains the constructed, flat affect, and upgrade slot racial traits.)',
     'trait': [],
-    'adjustment': [{'npcSenses': 'Low-light vision; Darkvision 60 ft.;'}],
+    'adjustment': [{'npcSenses': 'Low-light vision; Darkvision 60 ft.; '}],
   },
   'Angel': {
     'description': 'Angels are celestials, or good outsiders, native to the good-aligned Outer Planes.',
     'trait': [],
     'adjustment': [
-      {'npcSenses': 'Low-light vision; Darkvision 60 ft.;'},
-      {'npcImmunities': 'immunity to acid, cold, and petrification;'},
-      {'npcResistances': 'resistance 10 to electricity and fire;'},
-      {'npcOtherAbilities': 'truespeech;'},
-      {'npcSaveBonus': ' +4 to saving throws against poison'},
+      {'npcSenses': 'Low-light vision; Darkvision 60 ft.; '},
+      {'npcImmunities': 'immunity to acid, cold, and petrification; '},
+      {'npcResistances': 'resistance 10 to electricity and fire; '},
+      {'npcOtherAbilities': 'truespeech; '},
+      {'npcSaveBonus': ' +4 to saving throws against poison; '},
     ],
     'specials': [
       {'npcSpecialsTemp': {'Protective Aura (Su)': 'For angels of CR 3 to CR 15, this ability grants creatures within the aura (usually 20 feet), including the angel, a divine bonus (usually +2) to AC against attacks made by evil creatures and a divine bonus (usually +4) to saving throws against effects created by evil creatures. The protective aura of a more powerful or a weaker angel might grant a larger or smaller bonus and have a larger or smaller radius, respectively.'}}],
@@ -142,11 +142,11 @@ const npcSubTypes = {
     'description': 'Archons are celestials, or good outsiders, native to Heaven. ( many archons can cast teleport as an at-will spell-like ability (caster level equal to its CR))',
     'trait': [],
     'adjustment': [
-      {'npcSenses': 'Low-light vision; Darkvision 60 ft.;'},
+      {'npcSenses': 'Low-light vision; Darkvision 60 ft.; '},
       {'npcSaveBonus': '+4 to saving throws against poison; '},
-      {'npcImmunities': 'immunity to electricity and petrification;'},
-      {'npcResistances': 'resistance 10 to cold and fire;'},
-      {'npcOtherAbilities': 'truespeech;'}],
+      {'npcImmunities': 'immunity to electricity and petrification; '},
+      {'npcResistances': 'resistance 10 to cold and fire; '},
+      {'npcOtherAbilities': 'truespeech; '}],
     'specials': [
       {'npcSpecialsTemp': {'Aura of Menace (Su)': 'This ability imposes a divine penalty (usually –2) to the AC, attacks, and saving throws of each hostile creature within the aura (usually 20 feet) that fails a Will save. This penalty lasts for 24 hours or until that creature deals damage to the archon who generated the aura. A creature that has resisted or broken the effect can’t be affected again by the same archon’s aura for 24 hours. The aura of a more powerful or weaker archon might impose a larger or smaller penalty and might have a larger or smaller radius, respectively.'}}],
   },
@@ -154,9 +154,9 @@ const npcSubTypes = {
     'description': 'Azatas are celestials, or good outsiders, native to Elysium.',
     'trait': [],
     'adjustment': [
-      {'npcSenses': 'Low-light vision; Darkvision 60 ft.;'},
-      {'npcImmunities': 'immunity to electricity and petrification;'},
-      {'npcOtherAbilities': 'truespeech;'}],
+      {'npcSenses': 'Low-light vision; Darkvision 60 ft.; '},
+      {'npcImmunities': 'immunity to electricity and petrification; '},
+      {'npcOtherAbilities': 'truespeech; '}],
   },
   'Brenneri': {'description': '', 'trait': [], 'adjustment': []},
   'Cold': {'description': '', 'trait': [], 'adjustment': []},

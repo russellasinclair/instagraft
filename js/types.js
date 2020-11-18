@@ -22,7 +22,7 @@ var npcTypes = {
     'description': 'An aberration has a bizarre anatomy, strange abilities, an ' +
         'alien mindset, or any combination of the three.',
     'trait': [],
-    'adjustment': [{'npcSenses': 'Darkvision 60 ft. '}, {'npcWill': 2}],
+    'adjustment': [{'npcSenses': 'Darkvision 60 ft.; '}, {'npcWill': 2}],
   },
   'Animal': {
     'description': 'An animal is a living, nonhumanoid creature, usually a ' +
@@ -32,7 +32,7 @@ var npcTypes = {
     'adjustment': [
       {'npcFort': 2},
       {'npcRef': 2},
-      {'npcSenses': 'Low-light vision'}],
+      {'npcSenses': 'Low-light vision; '}],
   },
   'Construct': {
     'description': 'A construct is a magically animated object or an artificially created creature. Must have ' +
@@ -44,8 +44,8 @@ var npcTypes = {
       {'npcRef': -2},
       {'npcWill': -2},
       {'npcTypeAttackMod': 1},
-      {'npcImmunities': 'construct immunities'},
-      {'npcSenses': 'Darkvision 60 ft., Low-light vision'},
+      {'npcImmunities': 'construct immunities; '},
+      {'npcSenses': 'Darkvision 60 ft.; Low-light vision; '},
       {'npcOtherAbilities': 'unliving'}],
   },
   'Dragon': {
@@ -56,8 +56,8 @@ var npcTypes = {
       {'npcFort': 2},
       {'npcRef': 2},
       {'npcWill': 2},
-      {'npcImmunities': 'construct immunities'},
-      {'npcSenses': 'Darkvision 60 ft., Low-light vision'}],
+      {'npcImmunities': 'construct immunities; '},
+      {'npcSenses': 'Darkvision 60 ft.; Low-light vision; '}],
   },
   'Fey': {
     'description': 'A fey is a creature with supernatural abilities and connections ' +
@@ -73,7 +73,7 @@ var npcTypes = {
         'Must have a subtype that matches its race (such as ' +
         'human, lashunta, or shirren) or that is related to its race (such ' +
         'as goblinoid). ' +
-        'Adjustments: +2 to one type of saving throw.',
+        'Adjustments: +2 to one type of saving throw; ',
     'trait': [],
     'adjustment': [],
   },
@@ -87,7 +87,7 @@ var npcTypes = {
     'adjustment': [
       {'npcFort': 2},
       {'npcRef': 2},
-      {'npcSenses': 'Darkvision 60 ft., Low-light vision'},
+      {'npcSenses': 'Darkvision 60 ft.; Low-light vision; '},
       {'npcTypeAttackMod': 1}],
   },
   'Monstrous Humanoid': {
@@ -98,7 +98,7 @@ var npcTypes = {
     'adjustment': [
       {'npcWill': 2},
       {'npcRef': 2},
-      {'npcSenses': 'Darkvision 60 ft.'},
+      {'npcSenses': 'Darkvision 60 ft.; '},
       {'npcTypeAttackMod': 1}],
   },
   'Ooze': {
@@ -125,20 +125,20 @@ var npcTypes = {
         'though they are alive.',
     'trait': [],
     'adjustment': [
-      {'npcImmunities': 'plant immunities'},
+      {'npcImmunities': 'plant immunities; '},
       {'npcFort': 2},
-      {'npcSenses': 'Low-light vision'}],
+      {'npcSenses': 'Low-light vision; '}],
   },
   'Undead': {
     'description': 'Undead are once-living creatures animated by magic or ' +
         'advanced technological forces.',
     'trait': [{'npcCon': '-'}],
-    'adjustment': [{'npcImmunities': 'undead immunities'}, {'npcWill': 2}],
+    'adjustment': [{'npcImmunities': 'undead immunities; '}, {'npcWill': 2}],
   },
   'Vermin': {
     'description': 'This type includes insects, arachnids, other arthropods,\n' +
         'worms, and similar invertebrates.',
     'trait': [{'npcInt': '-'}],
-    'adjustment': [{'npcFort': 2}, {'npcSenses': 'Darkvision 60 ft.'}],
+    'adjustment': [{'npcFort': 2}, {'npcSenses': 'Darkvision 60 ft; '}],
   },
 };

@@ -111,9 +111,10 @@ const npcSubTypes = {
       {'npcOtherAbilities': 'healing channel (as per the healer mystic connection power); truespeech; speak with animals (as per the xenodruid mystic connection power); '}],
   },
   'Air': {
-    'description': 'This subtype is usually applied to outsiders with a connection to the Plane of Air. (Gains Acrobatics as a master or good skill.)',
+    'description': 'This subtype is usually applied to outsiders with a connection to the Plane of Air.',
     'trait': [],
     'adjustment': [{'npcOtherAbilities': 'Flight (Perfect Maneuverability); '}],
+    'masterSkills': ['npcAthl'], // or good
   },
   'Android': {
     'description': 'This subtype is applied to androids and creatures related to androids.(if the NPC is of the android race, it also gains the constructed, flat affect, and upgrade slot racial traits.)',
@@ -134,9 +135,10 @@ const npcSubTypes = {
       {'npcSpecialsTemp': {'Protective Aura (Su)': 'For angels of CR 3 to CR 15, this ability grants creatures within the aura (usually 20 feet), including the angel, a divine bonus (usually +2) to AC against attacks made by evil creatures and a divine bonus (usually +4) to saving throws against effects created by evil creatures. The protective aura of a more powerful or a weaker angel might grant a larger or smaller bonus and have a larger or smaller radius, respectively.'}}],
   },
   'Aquatic': {
-    'description': 'These creatures are often native to environments that are mostly or entirely underwater. (Athletics as a master or good skill; if it can breathe air, it also gains the amphibious universal creature rule.)',
+    'description': 'These creatures are often native to environments that are mostly or entirely underwater. (if it can breathe air, it also gains the amphibious universal creature rule.)',
     'trait': [],
     'adjustment': [],
+    'masterSkills': ['npcAthl'], // or good
   },
   'Archon': {
     'description': 'Archons are celestials, or good outsiders, native to Heaven. ( many archons can cast teleport as an at-will spell-like ability (caster level equal to its CR))',
@@ -158,7 +160,18 @@ const npcSubTypes = {
       {'npcImmunities': 'immunity to electricity and petrification; '},
       {'npcOtherAbilities': 'truespeech; '}],
   },
-  'Brenneri': {'description': '', 'trait': [], 'adjustment': []},
+  'Brenneri': {
+    'description': 'This subtype is applied to brenneris and creatures related to brenneris.' +
+        'if the NPC is of the ' +
+        'brenneri race (page 8, AA3), it also gains the favored object and ' +
+        'hold breath racial traits',
+    'trait': [],
+    'adjustment': [
+      {'npcSenses': 'Darkvision 60 ft.; '},
+      {'npcOtherAbilities': 'swim speed; '}],
+    'masterSkills': ['npcSens', 'npcDipl'],
+    'goodSkills': [],
+  },
   'Cold': {'description': '', 'trait': [], 'adjustment': []},
   'Daemon': {'description': '', 'trait': [], 'adjustment': []},
   'Damai': {'description': '', 'trait': [], 'adjustment': []},

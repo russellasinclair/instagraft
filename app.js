@@ -295,6 +295,14 @@ function genericUpdateData(details) {
     app.npcData.npcAttackHigh += app.npcData.npcTypeAttackMod;
     app.npcData.npcAttackLow += app.npcData.npcTypeAttackMod;
   }
+  for (let i in details.masterSkills) {
+    let stat = details.masterSkills[i];
+    app.npcData[stat] += app.npcData.npcMasterSkill;
+  }
+  for (let i in details.goodSkills) {
+    let stat = details.goodSkills[i];
+    app.npcData[stat] += app.npcData.npcGoodSkill;
+  }
 }
 
 function updateAbilityScores() {

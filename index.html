@@ -82,7 +82,7 @@
         </select>
         <select v-model="displayInformation.selectedGraft">
             <option selected value="">Select Graft Type</option>
-            <option>Elemental</option>
+            <option>Summoning</option>
             <option>Environmental</option>
             <option>Occult</option>
             <option>Template</option>
@@ -93,15 +93,15 @@
                     v-if="displayInformation.selectedGraft==='Template'">
                 {{template}}
             </option>
-            <option v-for="template in displayInformation.elementalGraftList" v-bind:value="template"
-                    v-if="displayInformation.selectedGraft==='Elemental'">
+            <option v-for="template in displayInformation.summoningGraftList" v-bind:value="template"
+                    v-if="displayInformation.selectedGraft==='Summoning'">
                 {{template}}
             </option>
             <option v-for="template in displayInformation.occultGraftList" v-bind:value="template"
                     v-if="displayInformation.selectedGraft==='Occult'">
                 {{template}}
             </option>
-            <option v-for="template in displayInformation.elementalGraftList" v-bind:value="template"
+            <option v-for="template in displayInformation.summoningGraftList" v-bind:value="template"
                     v-if="displayInformation.selectedGraft==='Environmental'">
                 {{template}}
             </option>
@@ -429,7 +429,7 @@
 </div>
 
 <script src="./js/otherGrafts.js"></script>
-<script src="./js/elemental-grafts.js"></script>
+<script src="./js/summoningGrafts.js"></script>
 <script src="./js/occult-grafts.js"></script>
 <script src="./js/environmental-grafts.js"></script>
 <script src="./js/arrays.js"></script>

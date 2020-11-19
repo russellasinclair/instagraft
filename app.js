@@ -111,7 +111,7 @@ data.displayInformation = {
   subtypes: npcSubTypes.subtypes,
   classesList: npcClasses.grafts,
   templateGraftList: templateGrafts.grafts,
-  elementalGraftList: elemGrafts.grafts,
+  summoningGraftList: summoningGrafts.grafts,
   envGraftList: envGrafts.grafts,
   occultGraftList: occultGrafts.grafts,
   sizes: sizeChart.sizes,
@@ -222,8 +222,8 @@ var app = new Vue({
     updateGraft: function() {
       let graft;
       switch (this.displayInformation.selectedGraft) {
-        case 'Elemental' :
-          graft = elemGrafts;
+        case 'Summoning' :
+          graft = summoningGrafts;
           break;
         case 'Environmental' :
           graft = envGrafts;

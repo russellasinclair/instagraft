@@ -19,15 +19,12 @@ var npcTypes = {
   // Traits are values that REPLACE existing data
   // Adjustment are values that either modify or append to existing data
   'Aberration': {
-    'description': 'An aberration has a bizarre anatomy, strange abilities, an ' +
-        'alien mindset, or any combination of the three.',
+    'description': 'An aberration has a bizarre anatomy, strange abilities, an alien mindset, or any combination of the three.',
     'trait': [],
     'adjustment': [{'npcSenses': 'Darkvision 60 ft.; '}, {'npcWill': 2}],
   },
   'Animal': {
-    'description': 'An animal is a living, nonhumanoid creature, usually a ' +
-        'vertebrate with no magical abilities and no innate capacity for ' +
-        'language or culture.',
+    'description': 'An animal is a living, nonhumanoid creature, usually a vertebrate with no magical abilities and no innate capacity for language or culture.',
     'trait': [{'npcInt': -4}],
     'adjustment': [
       {'npcFort': 2},
@@ -35,9 +32,7 @@ var npcTypes = {
       {'npcSenses': 'Low-light vision; '}],
   },
   'Construct': {
-    'description': 'A construct is a magically animated object or an artificially created creature. Must have ' +
-        'either the magical or technological subtype; if the construct ' +
-        'is mindless, set Intelligence modifier to — and add mindless.',
+    'description': 'A construct is a magically animated object or an artificially created creature. Must have either the magical or technological subtype; if the construct is mindless, set Intelligence modifier to — and add mindless.',
     'trait': [{'npcCon': '-'}],
     'adjustment': [
       {'npcFort': -2},
@@ -49,8 +44,7 @@ var npcTypes = {
       {'npcOtherAbilities': 'unliving'}],
   },
   'Dragon': {
-    'description': 'A dragon is a reptilian creature, usually winged, with magical ' +
-        'or otherwise unusual abilities.',
+    'description': 'A dragon is a reptilian creature, usually winged, with magical or otherwise unusual abilities.',
     'trait': [],
     'adjustment': [
       {'npcFort': 2},
@@ -60,29 +54,17 @@ var npcTypes = {
       {'npcSenses': 'Darkvision 60 ft.; Low-light vision; '}],
   },
   'Fey': {
-    'description': 'A fey is a creature with supernatural abilities and connections ' +
-        'to nature or to some other force or place.',
+    'description': 'A fey is a creature with supernatural abilities and connections to nature or to some other force or place.',
     'trait': [],
     'adjustment': [{'npcFort': 2}, {'npcRef': 2}, {'npcTypeAttackMod': 1}],
   },
   'Humanoid': {
-    'description': 'A humanoid usually has two arms, two legs, and one head, or ' +
-        'it has a humanlike torso, arms, and a head. Humanoids have ' +
-        'few or no supernatural or extraordinary abilities, but most ' +
-        'can speak and usually have well-developed societies.' +
-        'Must have a subtype that matches its race (such as ' +
-        'human, lashunta, or shirren) or that is related to its race (such ' +
-        'as goblinoid). ' +
-        'Adjustments: +2 to one type of saving throw; ',
+    'description': 'A humanoid usually has two arms, two legs, and one head, or it has a humanlike torso, arms, and a head. Humanoids have few or no supernatural or extraordinary abilities, but most can speak and usually have well-developed societies. Must have a subtype that matches its race (such as human, lashunta, or shirren) or that is related to its race (such as goblinoid). Adjustments: +2 to one type of saving throw; ',
     'trait': [],
     'adjustment': [],
   },
   'Magical Beast': {
-    'description': 'Magical beasts are similar to animals but can have ' +
-        'Intelligence modifiers greater than –4 (in which case the ' +
-        'magical beast knows at least one language, though it can’t ' +
-        'necessarily speak). Magical beasts usually have supernatural ' +
-        'or extraordinary abilities.',
+    'description': 'Magical beasts are similar to animals but can have Intelligence modifiers greater than –4 (in which case the magical beast knows at least one language, though it can’t necessarily speak). Magical beasts usually have supernatural or extraordinary abilities.',
     'trait': [],
     'adjustment': [
       {'npcFort': 2},
@@ -91,9 +73,7 @@ var npcTypes = {
       {'npcTypeAttackMod': 1}],
   },
   'Monstrous Humanoid': {
-    'description': 'Monstrous humanoids are similar to humanoids, but they ' +
-        'have monstrous or animalistic features. They often have ' +
-        'magical abilities as well.',
+    'description': 'Monstrous humanoids are similar to humanoids, but they have monstrous or animalistic features. They often have magical abilities as well.',
     'trait': [],
     'adjustment': [
       {'npcWill': 2},
@@ -102,27 +82,17 @@ var npcTypes = {
       {'npcTypeAttackMod': 1}],
   },
   'Ooze': {
-    'description': 'An ooze is an amorphous or mutable creature. No master or good skills unless the creature\n' +
-        'would have them naturally, rather than through training.',
+    'description': 'An ooze is an amorphous or mutable creature. No master or good skills unless the creature would have them naturally, rather than through training.',
     'trait': [{'npcInt': '-'}],
     'adjustment': [{'npcFort': 2}, {'npcRef': -2}, {'npcWill': -2}],
   },
   'Outsider': {
-    'description': 'An outsider is at least partially composed of the essence ' +
-        '(but not necessarily the material) of a plane other than the ' +
-        'Material Plane. Some creatures start out as another type and ' +
-        'become outsiders when they attain a higher or lower state of ' +
-        'spiritual existence., If the outsider is a member of a ' +
-        'specific race (such as angel, devil, etc.), it must have a subtype ' +
-        'to match its race. +2 to one type of saving throw',
+    'description': 'An outsider is at least partially composed of the essence (but not necessarily the material) of a plane other than the Material Plane. Some creatures start out as another type and become outsiders when they attain a higher or lower state of spiritual existence., If the outsider is a member of a specific race (such as angel, devil, etc.), it must have a subtype to match its race. +2 to one type of saving throw',
     'trait': [],
     'adjustment': [{'npcSenses': 'Darkvision 60 ft.'}, {'npcTypeAttackMod': 1}],
   },
   'Plant': {
-    'description': 'This type describes vegetable creatures. Note that regular ' +
-        'plants, such as those growing in gardens or fields, lack Wisdom ' +
-        'and Charisma modifiers and are objects, not creatures, even ' +
-        'though they are alive.',
+    'description': 'This type describes vegetable creatures. Note that regular plants, such as those growing in gardens or fields, lack Wisdom and Charisma modifiers and are objects, not creatures, even though they are alive.',
     'trait': [],
     'adjustment': [
       {'npcImmunities': 'plant immunities; '},
@@ -130,14 +100,12 @@ var npcTypes = {
       {'npcSenses': 'Low-light vision; '}],
   },
   'Undead': {
-    'description': 'Undead are once-living creatures animated by magic or ' +
-        'advanced technological forces.',
+    'description': 'Undead are once-living creatures animated by magic or advanced technological forces.',
     'trait': [{'npcCon': '-'}],
     'adjustment': [{'npcImmunities': 'undead immunities; '}, {'npcWill': 2}],
   },
   'Vermin': {
-    'description': 'This type includes insects, arachnids, other arthropods,\n' +
-        'worms, and similar invertebrates.',
+    'description': 'This type includes insects, arachnids, other arthropods, worms, and similar invertebrates.',
     'trait': [{'npcInt': '-'}],
     'adjustment': [{'npcFort': 2}, {'npcSenses': 'Darkvision 60 ft; '}],
   },

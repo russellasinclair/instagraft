@@ -77,7 +77,8 @@ const npcSubTypes = {
     'Levialogos',
     'Soulless',
     'Soulshell',
-    'Uramae'],
+    'Uramae',
+  ],
 
   'Aeon': {
     'description': 'Aeons are a race of neutral outsiders who maintain the balance of reality.',
@@ -90,8 +91,7 @@ const npcSubTypes = {
     ],
   },
   'Aanung-an': {
-    'description': 'Any creature that dies while performing dark rituals for evil purposes risks rising again as one of the occult dead. ' +
-        '(Required Creature Type: Undead. Suggested Array: Spellcaster. Suggested Ability Scores: Intelligence, Wisdom, Charisma. Mysticism as a master skill)',
+    'description': 'Any creature that dies while performing dark rituals for evil purposes risks rising again as one of the occult dead. (Required Creature Type: Undead. Suggested Array: Spellcaster. Suggested Ability Scores: Intelligence, Wisdom, Charisma. Mysticism as a master skill)',
     'specials': [
       {'npcSpecialsTemp': {'Ritual Scar (Su)': 'An aanung-an that starts its turn grappling a creature can attempt to carve a ritual scar into its victim’s body as a standard action, afflicting it with potent magic. The aanung-an attempts a Mysticism check (DC = 20 + target’s level or CR). On a success, the aanung-an renews the grapple, and the target takes 1d6+4 slashing damage as the aanung-an claws a symbol into its body. The target must then succeed at a DC 15 Will saving throw or suffer one of the following effects of the aanung-an’s choice: bestow curse, slow, or suggestion. These effects function at the aanung-an’s caster level. Certain aanung-ans might inflict different or unique effects with this ability, at the GM’s discretion.'}},
     ],
@@ -161,10 +161,7 @@ const npcSubTypes = {
       {'npcOtherAbilities': 'truespeech; '}],
   },
   'Brenneri': {
-    'description': 'This subtype is applied to brenneris and creatures related to brenneris.' +
-        'if the NPC is of the ' +
-        'brenneri race (page 8, AA3), it also gains the favored object and ' +
-        'hold breath racial traits',
+    'description': 'This subtype is applied to brenneris and creatures related to brenneris. If the NPC is of the brenneri race (page 8, AA3), it also gains the favored object and hold breath racial traits',
     'trait': [],
     'adjustment': [
       {'npcSenses': 'Darkvision 60 ft.; '},

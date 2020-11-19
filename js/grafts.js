@@ -19,9 +19,7 @@ const templateGrafts = {
   ],
 
   'Aerial (CR 1+)': {
-    'description': 'Aerial creatures are native denizens of the Elemental Plane of\n' +
-        '  Air, gas giant planets, or similar landless environments, and\n' +
-        '  have unique adaptations to help them survive there.',
+    'description': 'Aerial creatures are native denizens of the Elemental Plane of Air, gas giant planets, or similar landless environments, and have unique adaptations to help them survive there.',
     'trait': [],
     'adjustment': [{'npcSenses': 'Darkvision 60 ft.'}],
   },

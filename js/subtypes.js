@@ -172,7 +172,13 @@ const npcSubTypes = {
     'masterSkills': ['npcSens', 'npcDipl'],
     'goodSkills': [],
   },
-  'Cold': {'description': '', 'trait': [], 'adjustment': []},
+  'Cold': {
+    'description': 'Creatures with this subtype are usually native to frigid environments.',
+    'trait': [], 'adjustment': [
+      {'npcImmunities': 'immunity to cold; '},
+      {'npcWeaknesses': 'vulnerable to fire; '},
+    ],
+  },
   'Daemon': {'description': '', 'trait': [], 'adjustment': []},
   'Damai': {'description': '', 'trait': [], 'adjustment': []},
   'Demon': {'description': '', 'trait': [], 'adjustment': []},

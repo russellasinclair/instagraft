@@ -96,6 +96,9 @@ const menuData = {
     'Dessamar',
     'Dirindi',
     'Dwarf',
+    'Drow',
+    'Elf',
+    'Half-Elf',
   ],
   templateGrafts: [
     'Aerial (CR 1+)',

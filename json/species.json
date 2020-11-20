@@ -17,5 +17,17 @@
   },
   "Dwarf": {
     "description": "gains the slow but steady, stonecunning, traditional enemies, and weapon familiarity racial traits."
+  },
+  "Drow": {
+    "description": " if the NPC is of the drow race, it gains darkvision 60 ft. instead of low-light vision, as well as the drow immunities, drow magic, and light blindness racial traits"
+  },
+  "Elf": {
+    "description": " if the NPC is of the elven race, it gains the elven immunities and elven magic racial traits and Mysticism as a master skill; "
+  },
+  "Half-Elf": {
+    "description": "if the NPC is of the half-elven race, it gains the elven blood racial trait and an extra good skill."
+  },
+  "Espraksa": {
+    "description": " If the NPC is of the espraksa race, it takes a –2 penalty to saving throws against mind-affecting effects, has a land speed of 30 feet and an extraordinary fly speed of 30 feet with average maneuverability, and gains the cold inured and snatch racial traits and the natural weapons (P) universal creature rule. An espraksa also gains Diplomacy and Sense Motive as good skills (although many espraksas have Sense Motive as a master skill)."
   }
 }

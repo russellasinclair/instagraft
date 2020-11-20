@@ -283,40 +283,59 @@
     ]
   },
   "Earth": {
-    "description": "",
-    "reference": "",
+    "description": "This subtype is usually applied to outsiders with a connection to the Plane of Earth.",
+    "reference": "Alien Archive 3 pg. 148, Alien Archive pg. 134, Alien Archive 2 pg. 136",
     "trait": [],
-    "adjustment": []
+    "adjustment": [
+      {
+        "npcOtherAbilities": "Burrow speed; "
+      },
+      {
+        "npcSenses": "blindsense or blindsight (vibration) with a varied range; "
+      }
+    ]
   },
   "Elemental": {
-    "description": "",
-    "reference": "",
-    "trait": [],
-    "adjustment": []
+    "description": "An elemental is a creature composed entirely of matter from one of the four Elemental Planes.",
+    "reference": "Alien Archive 2 pg. 136, Alien Archive pg. 134",
+    "adjustment": [
+      {
+        "npcImmunities": "Elemental immunities; "
+      }
+    ]
   },
   "Elf": {
-    "description": "",
-    "reference": "",
+    "description": "This subtype is applied to elves and creatures related to elves. (See Species)",
+    "reference": "Alien Archive pg. 135",
     "trait": [],
-    "adjustment": []
+    "adjustment": [
+      {
+        "npcSenses": "Low-light vision; "
+      }
+    ],
+    "masterSkills": [
+      "npcPerc"
+    ]
   },
   "Espraksa": {
-    "description": "",
-    "reference": "",
-    "trait": [],
-    "adjustment": []
+    "description": "This subtype is applied to espraksas and creatures related to espraksas. (see species)",
+    "reference": "Alien Archive 3 pg. 148"
   },
   "Extraplanar": {
-    "description": "",
-    "reference": "",
-    "trait": [],
-    "adjustment": []
+    "description": "This subtype is applied to any creature when it is on a plane other than its native plane. A creature that travels the planes can gain or lose this subtype as it goes from plane to plane. Creature entries assume that encounters with those creatures take place on the Material Plane.",
+    "reference": "Alien Archive 3 pg. 148"
   },
   "Fire": {
-    "description": "",
-    "reference": "",
-    "trait": [],
-    "adjustment": []
+    "description": "This subtype is usually applied to outsiders with a connection to the Plane of Fire and creatures with a strong affinity to fire.",
+    "reference": " Alien Archive 3 pg. 148, Alien Archive 2 pg. 136, Alien Archive pg. 135",
+    "adjustment": [
+      {
+        "npcImmunities": "Immunity to fire; "
+      },
+      {
+        "npcWeaknesses": "vulnerable to cold"
+      }
+    ]
   },
   "Giant": {
     "description": "",

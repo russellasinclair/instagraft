@@ -113,6 +113,8 @@ const menuData = {
     'Orc',
     'Pathra',
     'Phentomite',
+    'Reptoid',
+    'Ryphorian',
   ],
   templateGrafts: [
     'Aerial (CR 1+)',

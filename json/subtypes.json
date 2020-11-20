@@ -616,22 +616,26 @@
     ]
   },
   "Reptoid": {
-    "description": "",
-    "reference": "",
-    "trait": [],
-    "adjustment": []
+    "description": "This subtype is applied to the shapechanging aliens known as reptoids and creatures related to reptoids. (see species)",
+    "reference": "Alien Archive pg. 136",
+    "adjustment": [
+      {
+        "npcSenses": "low-light vision; "
+      }
+    ]
   },
   "Reptoid Hybrid": {
-    "description": "",
-    "reference": "",
-    "trait": [],
-    "adjustment": []
+    "description": "A reptoid hybrid is a generally outcast humanoid who resembles their reptoid parent. (Required Creature Type: Humanoid (reptoid, one other humanoid subtype)..\nTraits: As the non-reptoid humanoid. A reptoid hybrid has no reptoid traits other than their appearance.)",
+    "reference": "Starfinder #27: Deceivers’ Moon pg. 59"
   },
   "Ryphorian": {
-    "description": "",
-    "reference": "",
-    "trait": [],
-    "adjustment": []
+    "description": "This subtype is applied to ryphorians and creatures related to ryphorians. (See Species)",
+    "reference": "Alien Archive pg. 136",
+    "adjustment": [
+      {
+        "npcSenses": "low-light vision; "
+      }
+    ]
   },
   "Sarcesian": {
     "description": "",

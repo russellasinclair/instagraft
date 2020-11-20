@@ -71,5 +71,11 @@
   },
   "Phentomite": {
     "description": "phentomite race, it also gains the acclimated and heat tracking special abilities and Acrobatics and Athletics as master skills"
+  },
+  "Reptoid": {
+    "description": " if the NPC is of the reptoid race, it also gains the change shape, cold-blooded, and natural weapons racial traits."
+  },
+  "Ryphorian": {
+    "description": "if the NPC is of the ryphorian race, it also gains an additional special ability of any type, the trimorphic racial trait, and Perception as a master skill."
   }
 }

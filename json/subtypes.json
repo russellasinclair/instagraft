@@ -638,64 +638,101 @@
     ]
   },
   "Sarcesian": {
-    "description": "",
-    "reference": "",
-    "trait": [],
-    "adjustment": []
+    "description": "This subtype is applied to sarcesians and creatures related to sarcesians. (see species)",
+    "reference": "Alien Archive pg. 136",
+    "adjustment": [
+      {
+        "npcSenses": "low-light vision; "
+      }
+    ]
   },
   "Shakalta": {
-    "description": "",
-    "reference": "",
+    "description": "This subtype is applied to shakaltas and creatures related to shakaltas. (see species)",
+    "reference": "Alien Archive 3 pg. 149",
     "trait": [],
     "adjustment": []
   },
   "Shapechanger": {
-    "description": "",
-    "reference": "",
-    "trait": [],
-    "adjustment": []
+    "description": "This subtype is applied to creatures that can dramatically alter their forms.",
+    "reference": "Alien Archive 2 pg. 137, Alien Archive pg. 136",
+    "specials": [
+      {
+        "npcSpecialsTemp": {
+          "Change Shape": "Source Alien Archive 2 pg. 149, Alien Archive pg. 152\nThe creature has the ability to assume the appearance of a specific creature or type of creature, but it retains most of its own physical qualities. If the form assumed has any of the following abilities, the creature gains them while in that form: blindsight (scent), darkvision, low-light vision, and swim 30 feet. The creature can retain its own breathing ability, or it can assume the ability to breathe in any environment the assumed shape can breathe in (including the no breath ability, which enables it to survive in the vacuum of space). If the ability does not specify what the creature can change shape into, it can assume the form of any creature of the humanoid type, but it can’t mimic a specific humanoid. Change shape grants a +10 bonus to Disguise checks to appear as a creature of the type and subtype of the new form, and the DC of the creature’s Disguise check is not modified as a result of altering major features or disguising itself as a different race or creature type.\n\nA creature can assume a form that is one size category smaller or larger than its original form and become that size. Unless otherwise stated, it can remain in an alternate form indefinitely. Some creatures can transform into unique forms with special modifiers and abilities. These creatures adjust their ability scores, as noted in their description."
+        }
+      }
+    ]
   },
   "Shatori": {
-    "description": "",
-    "reference": "",
-    "trait": [],
-    "adjustment": []
+    "description": "This subtype is applied to shatoris and creatures related to shatoris. (see Species)",
+    "reference": "Alien Archive 3 pg. 149"
   },
   "Shimreen": {
-    "description": "",
-    "reference": "",
-    "trait": [],
-    "adjustment": []
+    "description": "This subtype is applied to shimreens and creatures related to shimreens.(See Species)",
+    "reference": "Alien Archive 3 pg. 149"
   },
   "Shirren": {
-    "description": "",
-    "reference": "",
-    "trait": [],
-    "adjustment": []
+    "description": "This subtype is applied to shirrens and creatures related to shirrens.",
+    "reference": "Alien Archive pg. 136",
+    "adjustment": [
+      {
+        "npcSenses": " Blindsense (vibration) 30 ft."
+      }
+    ]
   },
   "Skittermander": {
-    "description": "",
-    "reference": "",
-    "trait": [],
-    "adjustment": []
+    "description": "This subtype is applied to skittermanders and creatures related to skittermanders.(see Species)",
+    "reference": "Alien Archive 3 pg. 149, Alien Archive pg. 136",
+    "adjustment": [
+      {
+        "npcSenses": "Low-light vision;"
+      }
+    ]
   },
   "Spectra": {
-    "description": "",
-    "reference": "",
-    "trait": [],
-    "adjustment": []
+    "description": "Spectra are neutral outsiders native to the Drift.",
+    "reference": "Alien Archive 3 pg. 149",
+    "adjustment": [
+      {
+        "npcOtherAbilities": "void adaptation; DR 5/chaotic, evil, good, or law (CR 8; increases to DR/10 at CR 13, increases to DR/15 at CR 18); machine telepathy (see below); truespeech; slip drive; spaceflight (Mysticism)"
+      },
+      {
+        "npcImmunities": "Immunity to electricity; "
+      },
+      {
+        "npcResistances": "resistance 5 to cold and sonic; spell resistance equal to 10 + CR; "
+      }
+    ],
+    "specials": [
+      {
+        "npcSpecialsTemp": {
+          "Machine Telepathy (Ex)": "A spectra can communicate with and through technological devices within a certain range (usually 100 feet), as well as with other creatures that have machine telepathy. A spectra can also attempt Computers and Engineering checks at this range."
+        }
+      },
+      {
+        "npcSpecialsTemp": {
+          "Slip Drive (Ex)": "A spectra has an internal biomechanical Drift engine that allows it to travel freely between the Drift and other planes, as well as between two non-Drift planes, using the normal rules for Drift navigation. A slip drive has an effective Drift engine rating equal to the half the spectra’s CR, and a spectra need remain stationary for only 1 round (6 seconds) before engaging its slip drive."
+        }
+      }
+    ],
+    "masterSkills": [
+      "npcMyst",
+      "npcEngi",
+      "npcComp"
+    ]
   },
   "Strix": {
-    "description": "",
-    "reference": "",
-    "trait": [],
-    "adjustment": []
+    "description": "This subtype is applied to strix and creatures related to strix. (See species)",
+    "reference": "Alien Archive 2 pg. 137",
+    "adjustment": [
+      {
+        "npcSenses": "Darkvision 60 ft.;"
+      }
+    ]
   },
   "Swarm": {
-    "description": "",
-    "reference": "",
-    "trait": [],
-    "adjustment": []
+    "description": "This subtype is applied to any collection of Fine, Diminutive, or Tiny creatures (usually vermin) that acts as a single creature. A swarm has a single pool of Hit Points, a single initiative modifier, and a single EAC and KAC. It attempts saving throws as a single creature. A single swarm usually occupies a square (if it is made up of nonflying creatures) or a cube (if it is made up of flying creatures) 10 feet on a side, but its reach is 0 feet. A swarm can move through cracks or holes large enough for its component creatures to fit through.\n\nIn order to attack, a swarm moves into an opponent’s space, which provokes an attack of opportunity. Spellcasting or concentrating on spells within the area of a swarm requires a successful caster level check (DC = 20 + spell level). Using skills that involve patience and concentration, such as Computers, within the area of a swarm requires a successful DC 20 Will saving throw.\nTraits: Swarm defenses, swarm immunities, distraction, swarm attack.",
+    "reference": "Alien Archive 2 pg. 137, Alien Archive pg. 136"
   },
   "Troop": {
     "description": "",

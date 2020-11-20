@@ -2,23 +2,23 @@ var data = {};
 // https://www.aonsrd.com/TemplateGrafts.aspx?ItemName=All&Family=None
 
 data.npcData = {
-  npcArray: '',
-  npcName: '',
-  npcCR: '',
+  npcArray: "",
+  npcName: "",
+  npcCR: "",
   npcXP: null,
-  npcType: '',
+  npcType: "",
   npcTypeDetails: null,
-  npcSubtype: '',
+  npcSubtype: "",
   npcSubtypeDetails: null,
-  npcGraft: '',
+  npcGraft: "",
   npcGraftDetails: null,
-  npcAlignment: '',
-  npcSize: '',
-  npcSpecies: '',
-  npcClass: '',
+  npcAlignment: "",
+  npcSize: "",
+  npcSpecies: "",
+  npcClass: "",
   npcClassDetails: null,
   npcInitiative: null,
-  npcSenses: '',
+  npcSenses: "",
   npcPerception: null,
   npcHP: null,
   npcRP: null,
@@ -27,87 +27,87 @@ data.npcData = {
   npcFort: null,
   npcRef: null,
   npcWill: null,
-  npcSaveBonus: '',
-  npcDR: '',
-  npcImmunities: '',
-  npcWeaknesses: '',
-  npcResistances: '',
-  npcSR: '',
-  npcSpeed: '',
-  npcClimb: '',
-  npcBurrow: '',
-  npcFly: '',
-  npcSwim: '',
+  npcSaveBonus: "",
+  npcDR: "",
+  npcImmunities: "",
+  npcWeaknesses: "",
+  npcResistances: "",
+  npcSR: "",
+  npcSpeed: "",
+  npcClimb: "",
+  npcBurrow: "",
+  npcFly: "",
+  npcSwim: "",
   npcAttackHigh: 0,
   npcAttackLow: 0,
   npcTypeAttackMod: 0,
-  npcAttacksTemp: {type: '', name: '', bonus: '', damage: ''},
+  npcAttacksTemp: {type: "", name: "", bonus: "", damage: ""},
   npcAttacks: {melee: [], multi: [], ranged: []},
-  npcRangedDamageEnergy: '',
-  npcRangedDamageKinetic: '',
-  npcMeleeDamageStandard: '',
-  npcMeleeDamageThreeAttacks: '',
-  npcMeleeDamageFourAttacks: '',
-  npcDefensiveAbilities: '',
-  npcOffensiveAbilities: '',
-  npcSpellLikeAbilities: '',
-  npcOtherAbilities: '',
-  npcAura: '',
-  npcSpace: '',
-  npcReach: '',
+  npcRangedDamageEnergy: "",
+  npcRangedDamageKinetic: "",
+  npcMeleeDamageStandard: "",
+  npcMeleeDamageThreeAttacks: "",
+  npcMeleeDamageFourAttacks: "",
+  npcDefensiveAbilities: "",
+  npcOffensiveAbilities: "",
+  npcSpellLikeAbilities: "",
+  npcOtherAbilities: "",
+  npcAura: "",
+  npcSpace: "",
+  npcReach: "",
   npcAbilityScore1: 0,
   npcAbilityScore2: 0,
   npcAbilityScore3: 0,
-  npcAbilityScore1Assigned: '',
-  npcAbilityScore2Assigned: '',
-  npcAbilityScore3Assigned: '',
+  npcAbilityScore1Assigned: "",
+  npcAbilityScore2Assigned: "",
+  npcAbilityScore3Assigned: "",
   npcSpecialsCount: 0,
   npcMasterSkill: 0,
   npcMasterSkillCount: 0,
   npcGoodSkill: 0,
   npcGoodSkillCount: 0,
-  npcAcro: '',
-  npcAthl: '',
-  npcBluf: '',
-  npcComp: '',
-  npcCult: '',
-  npcDipl: '',
-  npcDisg: '',
-  npcEngi: '',
-  npcInti: '',
-  npcLife: '',
-  npcMedi: '',
-  npcMyst: '',
-  npcPerc: '',
-  npcPhys: '',
-  npcPilo: '',
-  npcProf: '',
-  npcProfName: '',
-  npcSens: '',
-  npcSlei: '',
-  npcStea: '',
-  npcSurv: '',
+  npcAcro: "",
+  npcAthl: "",
+  npcBluf: "",
+  npcComp: "",
+  npcCult: "",
+  npcDipl: "",
+  npcDisg: "",
+  npcEngi: "",
+  npcInti: "",
+  npcLife: "",
+  npcMedi: "",
+  npcMyst: "",
+  npcPerc: "",
+  npcPhys: "",
+  npcPilo: "",
+  npcProf: "",
+  npcProfName: "",
+  npcSens: "",
+  npcSlei: "",
+  npcStea: "",
+  npcSurv: "",
   npcStr: 0,
   npcDex: 0,
   npcCon: 0,
   npcInt: 0,
   npcWis: 0,
   npcCha: 0,
-  npcEnv: '',
-  npcOrg: '',
+  npcEnv: "",
+  npcOrg: "",
   npcSpecials: [],
-  npcSpecialsTemp: {name: '', description: ''},
+  npcSpecialsTemp: {name: "", description: ""},
   sizeChartRecs: {
-    'height': '',
-    'weight': '',
-    'space': '',
-    'tallReach': '',
-    'longReach': '',
-  },
+    "height": "",
+    "weight": "",
+    "space": "",
+    "tallReach": "",
+    "longReach": ""
+  }
 };
 
 data.displayInformation = {
-  selectedGraft: '',
+  selectedGraft: "",
   subtypes: menuData.subtypes,
   classesList: menuData.classes,
   speciesList: menuData.species,
@@ -117,28 +117,28 @@ data.displayInformation = {
   occultGraftList: menuData.occultGrafts,
   otherGrafts: menuData.otherGrafts,
   sizes: menuData.sizes,
-  types: menuData.typeList,
+  types: menuData.typeList
 };
 
 var app = new Vue({
-  el: '#app',
+  el: "#app",
   data: data,
   methods: {
     addAbility: function() {
-      if (this.npcData.npcSpecialsTemp.name !== '' &&
-          this.npcData.npcSpecialsTemp.description !== '') {
+      if (this.npcData.npcSpecialsTemp.name !== "" &&
+          this.npcData.npcSpecialsTemp.description !== "") {
         this.npcData.npcSpecials.push({
           name: this.npcData.npcSpecialsTemp.name,
-          description: this.npcData.npcSpecialsTemp.description,
+          description: this.npcData.npcSpecialsTemp.description
         });
-        this.npcData.npcSpecialsTemp.name = '';
-        this.npcData.npcSpecialsTemp.description = '';
+        this.npcData.npcSpecialsTemp.name = "";
+        this.npcData.npcSpecialsTemp.description = "";
       }
     },
     editAbility: function(index) {
       this.npcData.npcSpecialsTemp = {
         name: this.npcData.npcSpecials[index].name,
-        description: this.npcData.npcSpecials[index].description,
+        description: this.npcData.npcSpecials[index].description
       };
       this.deleteAbility(index);
     },
@@ -146,17 +146,17 @@ var app = new Vue({
       this.npcData.npcSpecials.splice(index, 1);
     },
     addAttack: function() {
-      if (this.npcData.npcAttacksTemp.name !== ''
-          && this.npcData.npcAttacksTemp.description !== ''
-          && this.npcData.npcAttacksTemp.bonus !== ''
-          && this.npcData.npcAttacksTemp.type !== '') {
+      if (this.npcData.npcAttacksTemp.name !== ""
+          && this.npcData.npcAttacksTemp.description !== ""
+          && this.npcData.npcAttacksTemp.bonus !== ""
+          && this.npcData.npcAttacksTemp.type !== "") {
         this.npcData.npcAttacks[this.npcData.npcAttacksTemp.type].push({
           name: this.npcData.npcAttacksTemp.name,
           bonus: this.npcData.npcAttacksTemp.bonus,
-          damage: this.npcData.npcAttacksTemp.damage,
+          damage: this.npcData.npcAttacksTemp.damage
         });
         this.npcData.npcAttacksTemp = {
-          type: '', name: '', bonus: '', damage: '',
+          type: "", name: "", bonus: "", damage: ""
         };
       }
     },
@@ -165,7 +165,7 @@ var app = new Vue({
         type: type,
         name: this.npcData.npcAttacks[type][index].name,
         bonus: this.npcData.npcAttacks[type][index].bonus,
-        damage: this.npcData.npcAttacks[type][index].damage,
+        damage: this.npcData.npcAttacks[type][index].damage
       };
       this.deleteAttack(type, index);
     },
@@ -173,26 +173,26 @@ var app = new Vue({
       this.npcData.npcAttacks[type].splice(index, 1);
     },
     displayClassInList: function(array, classname) {
-      if (array === 'Expert') {
+      if (array === "Expert") {
         switch (classname) {
-          case 'Envoy':
-          case 'Mechanic':
-          case 'Operative':
+          case "Envoy":
+          case "Mechanic":
+          case "Operative":
             return true;
         }
       }
-      if (array === 'Combatant') {
+      if (array === "Combatant") {
         switch (classname) {
-          case 'Soldier':
-          case 'Solarian':
-          case 'Elementian':
+          case "Soldier":
+          case "Solarian":
+          case "Elementian":
             return true;
         }
       }
-      if (array === 'Spellcaster') {
+      if (array === "Spellcaster") {
         switch (classname) {
-          case 'Mystic':
-          case 'Technomancer':
+          case "Mystic":
+          case "Technomancer":
             return true;
         }
       }
@@ -203,55 +203,55 @@ var app = new Vue({
       updateAbilityScores();
     },
     updateSize: function() {
-      let list = ['height', 'weight', 'space', 'tallReach', 'longReach'];
+      let list = ["height", "weight", "space", "tallReach", "longReach"];
       for (let i in list) {
         this.npcData.sizeChartRecs[list[i]] = sizeChart[this.npcData.npcSize][list[i]];
       }
     },
     updateSpecies: function() {
-      console.log('Stub - no Species Mods');
+      console.log("Stub - no Species Mods");
     },
     updateClass: function() {
-      parseData('./json/classes.json', this.npcData.npcClass,
-          'npcClassDetails');
+      parseData("./json/classes.json", this.npcData.npcClass,
+          "npcClassDetails");
     },
     updateType: function() {
-      parseData('./json/types.json', this.npcData.npcType, 'npcTypeDetails');
+      parseData("./json/types.json", this.npcData.npcType, "npcTypeDetails");
     },
     updateGraft: function() {
       let graft;
       switch (this.displayInformation.selectedGraft) {
-        case 'Summoning' :
-          graft = './json/summoningGrafts.json';
+        case "Summoning" :
+          graft = "./json/summoningGrafts.json";
           break;
-        case 'Environmental' :
-          graft = './json/envGrafts.json';
+        case "Environmental" :
+          graft = "./json/envGrafts.json";
           break;
-        case 'Occult' :
-          graft = './json/occultGrafts.json';
+        case "Occult" :
+          graft = "./json/occultGrafts.json";
           break;
-        case 'Template' :
-          graft = './json/templateGrafts.json';
+        case "Template" :
+          graft = "./json/templateGrafts.json";
           break;
-        case 'Other' :
-          graft = './json/otherGrafts.json';
+        case "Other" :
+          graft = "./json/otherGrafts.json";
           break;
       }
-      parseData(graft, this.npcData.npcGraft, 'npcGraftDetails');
+      parseData(graft, this.npcData.npcGraft, "npcGraftDetails");
     },
     updateSubtype: function() {
-      parseData('./json/subtypes.json', this.npcData.npcSubtype,
-          'npcSubtypeDetails');
+      parseData("./json/subtypes.json", this.npcData.npcSubtype,
+          "npcSubtypeDetails");
     },
     showWarning: function(warning) {
-      if (warning === 'abilities') {
-        if (this.npcData.npcAbilityScore1Assigned === '') {
+      if (warning === "abilities") {
+        if (this.npcData.npcAbilityScore1Assigned === "") {
           return false;
         }
-        if (this.npcData.npcAbilityScore2Assigned === '') {
+        if (this.npcData.npcAbilityScore2Assigned === "") {
           return false;
         }
-        if (this.npcData.npcAbilityScore3Assigned === '') {
+        if (this.npcData.npcAbilityScore3Assigned === "") {
           return false;
         }
         if (this.npcData.npcAbilityScore1Assigned ===
@@ -271,8 +271,8 @@ var app = new Vue({
     },
     updateAbilities: function() {
       updateAbilityScores();
-    },
-  },
+    }
+  }
 });
 
 function genericUpdateData(details, fullData) {
@@ -307,16 +307,16 @@ function genericUpdateData(details, fullData) {
 }
 
 function updateAbilityScores() {
-  let list = ['Str', 'Dex', 'Con', 'Int', 'Wis', 'Cha'];
+  let list = ["Str", "Dex", "Con", "Int", "Wis", "Cha"];
   for (let i in list) {
     if (app.npcData.npcAbilityScore1Assigned === list[i]) {
-      app.npcData['npc' + list[i]] = app.npcData.npcAbilityScore1;
+      app.npcData["npc" + list[i]] = app.npcData.npcAbilityScore1;
     } else if (app.npcData.npcAbilityScore2Assigned === list[i]) {
-      app.npcData['npc' + list[i]] = app.npcData.npcAbilityScore2;
+      app.npcData["npc" + list[i]] = app.npcData.npcAbilityScore2;
     } else if (app.npcData.npcAbilityScore3Assigned === list[i]) {
-      app.npcData['npc' + list[i]] = app.npcData.npcAbilityScore3;
+      app.npcData["npc" + list[i]] = app.npcData.npcAbilityScore3;
     } else {
-      app.npcData['npc' + list[i]] = 0;
+      app.npcData["npc" + list[i]] = 0;
     }
   }
   app.npcData.npcInitiative = app.npcData.npcDex;
@@ -329,11 +329,11 @@ function getStats(array, cr) {
         app.npcData[i] = arrays[array][cr][i];
       }
       app.npcData.npcXP = xp[cr].toString().
-          replace(/\B(?=(\d{3})+(?!\d))/g, ','); //XP from CR
+          replace(/\B(?=(\d{3})+(?!\d))/g, ","); //XP from CR
       app.npcData.npcPerception = arrays[array][cr].npcGoodSkill; //Perception is a "Good" skill by default
     }
   } catch (error) {
-    console.log('Insufficient information to lookup data');
+    console.log("Insufficient information to lookup data");
   }
 }
 
@@ -345,7 +345,7 @@ function parseData(filename, graftName, details) {
       genericUpdateData(graft[graftName], details);
     }
   };
-  xhttp.open('GET', filename);
+  xhttp.open("GET", filename);
   xhttp.send();
 }
 

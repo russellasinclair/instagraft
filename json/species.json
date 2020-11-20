@@ -77,5 +77,26 @@
   },
   "Ryphorian": {
     "description": "if the NPC is of the ryphorian race, it also gains an additional special ability of any type, the trimorphic racial trait, and Perception as a master skill."
+  },
+  "Sarcesian": {
+    "description": "sarcesian race, it also gains the void flyer special ability and an additional good skill."
+  },
+  "Shakalta": {
+    "description": "the shakalta race, it has immunity to disease and poison, as well as void adaptation. It also has the aura of light, bonded souls, psychic shunt, shakalta telepathy, and starlight sustenance racial traits. A shakalta can use the following spells as spell-like abilities: at will—dancing lights and energy ray (electricity or fire only)."
+  },
+  "Shatori": {
+    "description": "the shatori race, it has the Boneyard conditioning, psychometry, and shared stillness racial traits. A shatori can use the following spells as spell-like abilities: at will—detect magic, grave words, and stabilize."
+  },
+  "Shimreen": {
+    "description": "the shimreen race, it gains resistance 5 to electricity and the amplify, radiant, and shift limb racial traits."
+  },
+  "Shirren": {
+    "description": " shirren race, it also gains the communalism and limited telepathy racial traits and Culture and Diplomacy as good skills."
+  },
+  "Skittermander": {
+    "description": "skittermander race, it also gains the grappler, hyper, and six-armed racial traits. If the NPC is of the stridermander race, it also gains the camouflage, feeding tendril, and gorge racial traits."
+  },
+  "Strix": {
+    "description": " strix race, it also gains the strix mobility, suspicious, and tinkerer racial traits, and gains Perception as a master skill and Stealth as a good skill."
   }
 }

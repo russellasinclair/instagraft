@@ -56,5 +56,11 @@
   },
   "Khizar": {
     "description": "khizar race, it also gains the carbonic respiration, evergreen, and limited telepathy (including communication with non-mindless creatures of the plant type) racial traits, and gains Life Science and Survival as good skills."
+  },
+  "Lashunta": {
+    "description": "lashunta race, it gains the limited telepathy racial trait and can cast the following spells as spell-like abilities: 1/day—detect thoughts; at will—daze and psychokinetic hand."
+  },
+  "Maraquoi": {
+    "description": "if the NPC is of the maraquoi race, it also gains blindsense (sound) 30 ft., a climb speed of 20 ft., the prehensile tail racial trait, and Survival as a master skill."
   }
 }

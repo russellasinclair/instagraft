@@ -459,22 +459,48 @@
     ]
   },
   "Lashunta": {
-    "description": "",
-    "reference": "",
-    "trait": [],
-    "adjustment": []
+    "description": "This subtype is applied to lashuntas and creatures related to lashuntas. (see species)",
+    "reference": "Alien Archive pg. 136"
   },
   "Maraquoi": {
-    "description": "",
-    "reference": "",
-    "trait": [],
-    "adjustment": []
+    "description": "This subtype is applied to maraquoi and creatures related to maraquoi. (see Species)",
+    "reference": "Alien Archive pg. 136",
+    "adjustment": [
+      {
+        "npcSenses": "Low-light vision;"
+      }
+    ]
   },
   "Mindscape": {
-    "description": "",
-    "reference": "",
-    "trait": [],
-    "adjustment": []
+    "description": "Use the following template graft to create a mindscape creature based on any existing creature, or to make a new creation unique to a mindscape.",
+    "reference": "Starfinder #23: Hive of Minds pg. 56",
+    "adjustment": [
+      {
+        "npcOtherAbilities": "Formless demise, mindscape dependency, mindscape simulacrum, semi-mindless."
+      }
+    ],
+    "specials": [
+      {
+        "npcSpecialsTemp": {
+          "Formless Demise (Su)": "A slain mindscape creature disappears in a brief explosion of psychic shards. Each non-mindscape creature within 10 feet of a slain mindscape creature must succeed at a Will save or be staggered for 1 round."
+        }
+      },
+      {
+        "npcSpecialsTemp": {
+          "Mindscape Dependency (Su)": "A mindscape creature can exist only within the mindscape in which it was created. It cannot survive outside, and it dies if it is forcibly removed from the mindscape, but the mindscape usually recreates it 1d4 rounds later."
+        }
+      },
+      {
+        "npcSpecialsTemp": {
+          "Mindscape Simulacrum (Su)": "A mindscape creature retains its original creature type, but while it is within its mindscape, it also counts as an outsider with the native subtype for the purposes of spells or effects that target it."
+        }
+      },
+      {
+        "npcSpecialsTemp": {
+          "Semi-Mindless (Ex)": "A mindscape creature gains a +4 bonus to saves against mind-affecting effects. A mindscape creature with the confused condition that rolls an “act normally” result must roll again and use the second result."
+        }
+      }
+    ]
   },
   "Native": {
     "description": "",

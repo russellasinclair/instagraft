@@ -108,20 +108,21 @@ data.npcData = {
 
 data.displayInformation = {
   selectedGraft: '',
-  subtypes: npcSubTypes.subtypes,
-  classesList: npcClasses.grafts,
-  templateGraftList: templateGrafts.grafts,
-  summoningGraftList: summoningGrafts.grafts,
-  envGraftList: envGrafts.grafts,
-  occultGraftList: occultGrafts.grafts,
-  sizes: sizeChart.sizes,
-  types: npcTypes.typeList,
+  subtypes: menuData.subtypes,
+  classesList: menuData.classes,
+  speciesList: menuData.species,
+  templateGraftList: menuData.templateGrafts,
+  summoningGraftList: menuData.summoningGraftList,
+  envGraftList: menuData.envGrafts,
+  occultGraftList: menuData.occultGrafts,
+  otherGrafts: menuData.otherGrafts,
+  sizes: menuData.sizes,
+  types: menuData.typeList,
 };
 
 var app = new Vue({
   el: '#app',
   data: data,
-  npcTypeList: npcTypes.typeList,
   methods: {
     addAbility: function() {
       if (this.npcData.npcSpecialsTemp.name !== '' &&
@@ -204,7 +205,6 @@ var app = new Vue({
     updateSize: function() {
       let list = ['height', 'weight', 'space', 'tallReach', 'longReach'];
       for (let i in list) {
-        // noinspection JSUnfilteredForInLoop
         this.npcData.sizeChartRecs[list[i]] = sizeChart[this.npcData.npcSize][list[i]];
       }
     },
@@ -212,36 +212,36 @@ var app = new Vue({
       console.log('Stub - no Species Mods');
     },
     updateClass: function() {
-      this.npcData.npcClassDetails = npcClasses[this.npcData.npcClass];
-      genericUpdateData(this.npcData.npcClassDetails);
+      parseData('./json/classes.json', this.npcData.npcClass,
+          'npcClassDetails');
     },
     updateType: function() {
-      this.npcData.npcTypeDetails = npcTypes[this.npcData.npcType];
-      genericUpdateData(this.npcData.npcTypeDetails);
+      parseData('./json/types.json', this.npcData.npcType, 'npcTypeDetails');
     },
     updateGraft: function() {
       let graft;
       switch (this.displayInformation.selectedGraft) {
         case 'Summoning' :
-          graft = summoningGrafts;
+          graft = './json/summoningGrafts.json';
           break;
         case 'Environmental' :
-          graft = envGrafts;
+          graft = './json/envGrafts.json';
           break;
         case 'Occult' :
-          graft = occultGrafts;
+          graft = './json/occultGrafts.json';
           break;
         case 'Template' :
-          graft = templateGrafts;
+          graft = './json/templateGrafts.json';
+          break;
+        case 'Other' :
+          graft = './json/otherGrafts.json';
           break;
       }
-      console.log(graft[this.npcData.npcGraft]);
-      this.npcData.npcGraftDetails = graft[this.npcData.npcGraft];
-      genericUpdateData(this.npcData.npcGraftDetails);
+      parseData(graft, this.npcData.npcGraft, 'npcGraftDetails');
     },
     updateSubtype: function() {
-      this.npcData.npcSubtypeDetails = npcSubTypes[this.npcData.npcSubtype];
-      genericUpdateData(this.npcData.npcSubtypeDetails);
+      parseData('./json/subtypes.json', this.npcData.npcSubtype,
+          'npcSubtypeDetails');
     },
     showWarning: function(warning) {
       if (warning === 'abilities') {
@@ -275,7 +275,8 @@ var app = new Vue({
   },
 });
 
-function genericUpdateData(details) {
+function genericUpdateData(details, fullData) {
+  app.npcData[fullData] = details;
   for (let i in details.adjustment) {
     let stat = Object.getOwnPropertyNames(details.adjustment[i])[0];
     app.npcData[stat] += details.adjustment[i][stat];
@@ -335,3 +336,16 @@ function getStats(array, cr) {
     console.log('Insufficient information to lookup data');
   }
 }
+
+function parseData(filename, graftName, details) {
+  let xhttp = new XMLHttpRequest();
+  xhttp.onloadend = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      let graft = JSON.parse(xhttp.responseText);
+      genericUpdateData(graft[graftName], details);
+    }
+  };
+  xhttp.open('GET', filename);
+  xhttp.send();
+}
+

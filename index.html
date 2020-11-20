@@ -85,6 +85,7 @@
             <option>Summoning</option>
             <option>Environmental</option>
             <option>Occult</option>
+            <option>Other</option>
             <option>Template</option>
         </select>
         <select v-model="npcData.npcGraft" @change="updateGraft">
@@ -99,6 +100,10 @@
             </option>
             <option v-for="template in displayInformation.occultGraftList" v-bind:value="template"
                     v-if="displayInformation.selectedGraft==='Occult'">
+                {{template}}
+            </option>
+            <option v-for="template in displayInformation.otherGrafts" v-bind:value="template"
+                    v-if="displayInformation.selectedGraft==='Other'">
                 {{template}}
             </option>
             <option v-for="template in displayInformation.summoningGraftList" v-bind:value="template"
@@ -415,27 +420,18 @@
             </div>
             <h2>Detailed Information</h2>
             <p>
-                <span v-if="npcData.npcType!=''"><b>{{ npcData.npcType
-                    }}</b> {{npcData.npcTypeDetails.description}} </span>
+                <span v-if="npcData.npcTypeDetails!=null"><b> {{ npcData.npcType
+                    }} </b> {{npcData.npcTypeDetails.description}} </span>
                 <br>
-                <span v-if="npcData.npcSubtype!=''"><b>{{ npcData.npcSubtype
-                    }}</b> {{npcData.npcSubtypeDetails.description}} </span>
+                <span v-if="npcData.npcSubtypeDetails!=null"><b> {{ npcData.npcSubtype
+                    }} </b> {{npcData.npcSubtypeDetails.description}} </span>
             </p>
         </div>
     </div>
-
 </div>
-
-<script src="./js/otherGrafts.js"></script>
-<script src="./js/summoningGrafts.js"></script>
-<script src="./js/occult-grafts.js"></script>
-<script src="./js/environmental-grafts.js"></script>
+<script src="./js/menus.js"></script>
 <script src="./js/arrays.js"></script>
-<script src="./js/classes.js"></script>
-<script src="./js/grafts.js"></script>
 <script src="./js/sizeChart.js"></script>
-<script src="./js/subtypes.js"></script>
-<script src="./js/types.js"></script>
 <script src="./js/xp.js"></script>
 <script src="./app.js"></script>
 </body>

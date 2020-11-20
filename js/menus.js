@@ -98,7 +98,11 @@ const menuData = {
     'Dwarf',
     'Drow',
     'Elf',
+    'Gnome',
+    'Gray',
     'Half-Elf',
+    'Hobgoblin',
+    'Kanobo',
   ],
   templateGrafts: [
     'Aerial (CR 1+)',

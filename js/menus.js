@@ -89,7 +89,7 @@ const menuData = {
     'Technomancer',
     'Elementian'],
   species: [
-    '', // Undefined
+    'N/A',
     'Android',
     'Brenneri',
     'Damai',
@@ -290,5 +290,14 @@ const menuData = {
     'Water Mephit (Mephit)',
     'Water Wysp (Wysp)',
     'White Dragon (Dragon (Chromatic))',
+  ],
+  elementalGrafts: [
+    'Air',
+    'Earth',
+    'Fire',
+    'Ice',
+    'Lightning',
+    'Magma',
+    'Water',
   ],
 };

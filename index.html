@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Instant Graftification</title>
+    <title>Instant Graftification</title>
     <script src="./js/vue.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" type="text/css" href="./css/print.css" media="print"/>
 </head>
@@ -123,7 +123,12 @@
             <option>NE</option>
             <option>CE</option>
         </select><br>
-        <input type="text" v-model="npcData.npcSpecies" placeholder="name of species"><br>
+        <select v-model="npcData.npcSpecies" @change="updateSpecies">
+            <option selected value="">Species</option>
+            <option v-for="species in displayInformation.speciesList" v-bind:value="species">
+                {{ species }}
+            </option>
+        </select>
         <div class="customHr">.</div>
         <span class="sidenav-text"><b>Ability Scores by CR</b></span>
         <select v-model="npcData.npcAbilityScore1Assigned" @change="updateAbilities()">
@@ -271,11 +276,11 @@
     <span class="sidenav-text"><b>Manual Adjustments</b><br>
     The manual fields below will be <i>overridden</i> if you make changes to the standard fields above!</span>
     <input class="input-50" type="text" v-model="npcData.npcXP" placeholder="Experience Points" title="XP"><span
-                class="sidenav-text"> XP</span><br>
+                    class="sidenav-text"> XP</span><br>
     <input class="input-50" type="text" v-model.number="npcData.npcHP" placeholder="Health Points" title="HP"><span
-                class="sidenav-text"> HP</span><br>
+                    class="sidenav-text"> HP</span><br>
     <input class="input-50" type="text" v-model.number="npcData.npcRP" placeholder="Resolve Points" title="RP"><span
-                class="sidenav-text"> RP</span><br>
+                    class="sidenav-text"> RP</span><br>
     <input type="text" v-model="npcData.npcType" placeholder="Custom Type" title="Custom Type"><br>
     <input type="text" v-model="npcData.npcSubtype" placeholder="Custom Subtype" title="Custom Subtype"><br>
     <input type="text" v-model="npcData.npcSpecies" placeholder="Custom Species" title="Custom Species"><br>
@@ -325,7 +330,7 @@
             <p><b>{{ npcData.npcXP }} XP </b><br>
                 <span>{{npcData.npcSpecies}} {{npcData.npcClass}}</span><br>
                 {{ npcData.npcAlignment }} {{ npcData.npcSize }} {{ npcData.npcType }} <span
-                        v-if="npcData.npcSubtype != ''">({{ npcData.npcSubtype }})</span><br>
+                        v-if="npcData.npcSubtype!=''">({{ npcData.npcSubtype }})</span><br>
                 <b>Init</b> <span v-if="npcData.npcInitiative >= 0">+</span>{{ npcData.npcInitiative }};
                 <span v-if="npcData.npcSenses != ''"><b>Senses</b> {{npcData.npcSenses}}; </span>
                 <b>Perception</b> <span v-if="npcData.npcPerception >= 0">+</span>{{npcData.npcPerception}}<br>
@@ -410,14 +415,12 @@
                 <b>Environment</b> {{npcData.npcEnv}}<br>
                 <b>Organization</b> {{npcData.npcOrg}}
             </p>
-            <div v-if="npcData.npcSpecials.length != 0">
+            <span v-if="npcData.npcSpecials.length != 0">
                 <h2>Special Abilities</h2>
-                <p>
                 <div v-for="special in npcData.npcSpecials">
                     <b>{{special.name}}</b> {{special.description}}
                 </div>
-                </p>
-            </div>
+            </span>
             <h2>Detailed Information</h2>
             <p>
                 <span v-if="npcData.npcTypeDetails!=null"><b> {{ npcData.npcType
@@ -427,8 +430,8 @@
                     }} </b> {{npcData.npcSubtypeDetails.description}} </span>
             </p>
         </div>
-    </div>
-</div>
+    </div> <!-- content -->
+</div> <!-- div -->
 <script src="./js/menus.js"></script>
 <script src="./js/arrays.js"></script>
 <script src="./js/sizeChart.js"></script>

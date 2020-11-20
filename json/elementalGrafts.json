@@ -1,13 +1,4 @@
 {
-  "grafts": [
-    "Air",
-    "Earth",
-    "Fire",
-    "Ice",
-    "Lightning",
-    "Magma",
-    "Water"
-  ],
   "Air": {
     "description": "",
     "train": [],

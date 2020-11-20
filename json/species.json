@@ -1,0 +1,21 @@
+{
+  "N/A": {},
+  "Android": {
+    "description": "(if the NPC is of the android race, it also gains the constructed, flat affect, and upgrade slot racial traits.)"
+  },
+  "Brenneri": {
+    "description": "If the NPC is of the brenneri race (page 8, AA3), it also gains the favored object and hold breath racial traits"
+  },
+  "Damai": {
+    "description": "gains the scrappy racial trait and Stealth and Survival as master skills"
+  },
+  "Dessamar": {
+    "description": "(Dessamar Imago or Dessamar Instar), it can use the following spells as spell-like abilities: 1/day—charm person; at will—detect magic and telepathic message. A dessamar imago has a land speed of 20 feet and an extraordinary fly speed of 20 feet with average maneuverability, as well as the fragile limbs and twinkle racial traits. A dessamar instar has a land speed of 30 feet and a climb speed of 30 feet, and a +2 racial bonus to KAC and saving throws against any effect that forces them to move or knocks them prone. An instar also has the dream dust and poor vision racial traits."
+  },
+  "Dirindi": {
+    "description": "gains the electrical affinity racial trait and Diplomacy and Perception as master skills."
+  },
+  "Dwarf": {
+    "description": "gains the slow but steady, stonecunning, traditional enemies, and weapon familiarity racial traits."
+  }
+}

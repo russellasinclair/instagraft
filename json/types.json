@@ -98,7 +98,7 @@
     ]
   },
   "Humanoid": {
-    "description": "A humanoid usually has two arms, two legs, and one head, or it has a humanlike torso, arms, and a head. Humanoids have few or no supernatural or extraordinary abilities, but most can speak and usually have well-developed societies. Must have a subtype that matches its race (such as human, lashunta, or shirren) or that is related to its race (such as goblinoid). Adjustments: +2 to one type of saving throw; ",
+    "description": "A humanoid usually has two arms, two legs, and one head, or it has a humanlike torso, arms, and a head. Humanoids have few or no supernatural or extraordinary abilities, but most can speak and usually have well-developed societies. Must have a subtype that matches its species (such as human, lashunta, or shirren) or that is related to its species (such as goblinoid). Adjustments: +2 to one type of saving throw; ",
     "trait": [],
     "adjustment": []
   },
@@ -158,7 +158,7 @@
     ]
   },
   "Outsider": {
-    "description": "An outsider is at least partially composed of the essence (but not necessarily the material) of a plane other than the Material Plane. Some creatures start out as another type and become outsiders when they attain a higher or lower state of spiritual existence., If the outsider is a member of a specific race (such as angel, devil, etc.), it must have a subtype to match its race. +2 to one type of saving throw",
+    "description": "An outsider is at least partially composed of the essence (but not necessarily the material) of a plane other than the Material Plane. Some creatures start out as another type and become outsiders when they attain a higher or lower state of spiritual existence., If the outsider is a member of a specific species (such as angel, devil, etc.), it must have a subtype to match its species. +2 to one type of saving throw",
     "trait": [],
     "adjustment": [
       {

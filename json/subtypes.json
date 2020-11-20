@@ -1,6 +1,6 @@
 {
   "Aeon": {
-    "description": "Aeons are a race of neutral outsiders who maintain the balance of reality.",
+    "description": "Aeons are a species of neutral outsiders who maintain the balance of reality.",
     "reference": "Alien Archive 2 pg. 136, Alien Archive pg. 133",
     "adjustment": [
       {
@@ -507,7 +507,7 @@
     "reference": "Alien Archive 3 pg. 149"
   },
   "Oni": {
-    "description": "Oni are evil spirits that take humanoid form to become native outsiders. (Oni gain the humanoid subtype graft of the race associated with their physical form. For example, a ja noi oni takes the form of a hobgoblin and therefore gains the goblinoid subtype graft, even though it is not a humanoid or a member of the hobgoblin race. Oni also gain the shapechanger subtype graft, with their change shape ability generally limited to humanoids of similar size.)",
+    "description": "Oni are evil spirits that take humanoid form to become native outsiders. (Oni gain the humanoid subtype graft of the species associated with their physical form. For example, a ja noi oni takes the form of a hobgoblin and therefore gains the goblinoid subtype graft, even though it is not a humanoid or a member of the hobgoblin species. Oni also gain the shapechanger subtype graft, with their change shape ability generally limited to humanoids of similar size.)",
     "reference": "Alien Archive 2 pg. 137",
     "adjustment": [
       {
@@ -658,7 +658,7 @@
     "specials": [
       {
         "npcSpecialsTemp": {
-          "Change Shape": "Source Alien Archive 2 pg. 149, Alien Archive pg. 152\nThe creature has the ability to assume the appearance of a specific creature or type of creature, but it retains most of its own physical qualities. If the form assumed has any of the following abilities, the creature gains them while in that form: blindsight (scent), darkvision, low-light vision, and swim 30 feet. The creature can retain its own breathing ability, or it can assume the ability to breathe in any environment the assumed shape can breathe in (including the no breath ability, which enables it to survive in the vacuum of space). If the ability does not specify what the creature can change shape into, it can assume the form of any creature of the humanoid type, but it can’t mimic a specific humanoid. Change shape grants a +10 bonus to Disguise checks to appear as a creature of the type and subtype of the new form, and the DC of the creature’s Disguise check is not modified as a result of altering major features or disguising itself as a different race or creature type.\n\nA creature can assume a form that is one size category smaller or larger than its original form and become that size. Unless otherwise stated, it can remain in an alternate form indefinitely. Some creatures can transform into unique forms with special modifiers and abilities. These creatures adjust their ability scores, as noted in their description."
+          "Change Shape": "Source Alien Archive 2 pg. 149, Alien Archive pg. 152\nThe creature has the ability to assume the appearance of a specific creature or type of creature, but it retains most of its own physical qualities. If the form assumed has any of the following abilities, the creature gains them while in that form: blindsight (scent), darkvision, low-light vision, and swim 30 feet. The creature can retain its own breathing ability, or it can assume the ability to breathe in any environment the assumed shape can breathe in (including the no breath ability, which enables it to survive in the vacuum of space). If the ability does not specify what the creature can change shape into, it can assume the form of any creature of the humanoid type, but it can’t mimic a specific humanoid. Change shape grants a +10 bonus to Disguise checks to appear as a creature of the type and subtype of the new form, and the DC of the creature’s Disguise check is not modified as a result of altering major features or disguising itself as a different species or creature type.\n\nA creature can assume a form that is one size category smaller or larger than its original form and become that size. Unless otherwise stated, it can remain in an alternate form indefinitely. Some creatures can transform into unique forms with special modifiers and abilities. These creatures adjust their ability scores, as noted in their description."
         }
       }
     ]
@@ -735,46 +735,79 @@
     "reference": "Alien Archive 2 pg. 137, Alien Archive pg. 136"
   },
   "Troop": {
-    "description": "",
-    "reference": "",
-    "trait": [],
-    "adjustment": []
+    "description": "This subtype is applied to a collection of sentient creatures that acts as a single creature (similar to a swarm, but usually as part of a military unit). A troop has a single pool of Hit Points, a single initiative modifier, and a single EAC and KAC. A troop attempts saving throws as a single creature.\n\nA single troop usually occupies a square (if it is made up of nonflying creatures) or a cube (if it is made up of flying creatures) 20 feet on a side, equal in size to a Gargantuan creature, though the actual size of the troop is the same as that of the component creatures. The area occupied by a troop is shapable, though the troop must remain in contiguous squares to accurately reffect the teamwork of trained military units. A troop has reach equal to that of the component creatures based on size and gear. A troop can move through squares occupied by enemies without impediment and vice versa, though such movement provokes attacks of opportunity as normal for its component creatures. A troop can move through any area large enough for its component creatures.\n\nBecause of the chaos of combat, spellcasting or concentrating on spells within the area of a troop or within its reach requires a successful caster level check (DC = 20 + spell level). Using skills that involve patience and concentration, such as Computers, within the area of a troop or within its reach requires a successful DC 20 Will saving throw.\n\nThe exact number of a troop’s component creatures varies, but in general, a troop of Small or Medium creatures consists of approximately 10 to 30 creatures. Larger creatures can form troops, but the area occupied by such a troop should increase proportionally according to the size of the component creatures (for example, a troop of Large creatures would occupy a 30-foot-square area, equal to a Colossal creature).\n\nAlthough troops are composed of a number of individual creatures, not all of these creatures’ gear will survive the rigors of combat. As a result, treat a troop as a single creature for the purposes of how much treasure is awarded for an encounter with the troop, as determined by the troop’s CR on Table 11–4: Wealth Gains per Encounter on page 391 of the Starfinder Core Rulebook.\nTraits: Troop attack, troop defenses, troop immunities.",
+    "reference": "Starfinder #21: Huskworld pg. 60"
   },
   "Velstrac": {
-    "description": "",
-    "reference": "",
-    "trait": [],
-    "adjustment": []
+    "description": "Velstracs are lawful evil outsiders native to the Shadow Plane who feed on fear and pain.",
+    "reference": "Alien Archive 2 pg. 137",
+    "specials": [
+      {
+        "npcSpecialsTemp": {
+          "Unnerving Gaze (Su)": "This gaze ability manipulates the perceptions of those who look upon a velstrac. Unnerving gaze has a range of 30 feet and can be negated by a Will save; the exact effects vary by velstrac. All velstracs are immune to this ability. This is a mind-affecting fear effect."
+        }
+      }
+    ],
+    "adjustment": [
+      {
+        "npcImmunities": "immunity to cold; "
+      },
+      {
+        "npcOtherAbilities": "regeneration 5 (suppressed by good or silver), unnerving gaze (see below).; "
+      },
+      {
+        "npcSenses": "Darkvision 60 ft.; "
+      }
+    ]
   },
   "Verthani": {
-    "description": "",
-    "reference": "",
-    "trait": [],
-    "adjustment": []
+    "description": "This subtype is applied to verthani and creatures related to verthani. (See species)",
+    "reference": "Alien Archive pg. 137",
+    "adjustment": [
+      {
+        "npcSenses": "Low-light vision; "
+      }
+    ]
   },
   "Vesk": {
-    "description": "",
-    "reference": "",
-    "trait": [],
-    "adjustment": []
+    "description": "This subtype is applied to vesk and creatures related to vesk. (See Species)",
+    "reference": "Alien Archive pg. 137",
+    "adjustment": [
+      {
+        "npcSenses": "Low-Light Vision; "
+      }
+    ]
   },
   "Vlaka": {
-    "description": "",
-    "reference": "",
-    "trait": [],
-    "adjustment": []
+    "description": "This subtype is applied to vlakas and other creatures related to vlakas. (see species)",
+    "reference": "Alien Archive 2 pg. 138",
+    "adjustment": [
+      {
+        "npcResistances": "Resistance 5 to cold;"
+      }
+    ]
   },
   "Water": {
-    "description": "",
-    "reference": "",
+    "description": "This subtype is usually applied to outsiders with a connection to the Plane of Water.",
+    "reference": "Alien Archive 2 pg. 138, Alien Archive pg. 137",
     "trait": [],
-    "adjustment": []
+    "adjustment": [
+      {
+        "npcOtherAbilities": "Swim Speed; "
+      }
+    ],
+    "masterSkills": [
+      "npcAthl"
+    ]
   },
   "Ysoki": {
-    "description": "",
-    "reference": "",
-    "trait": [],
-    "adjustment": []
+    "description": "This subtype is applied to ysoki and creatures related to ysoki. (See Species)",
+    "reference": "Alien Archive pg. 137",
+    "adjustment": [
+      {
+        "npcSenses": "Darkvision 60 ft; "
+      }
+    ]
   },
   "Anunnaki": {
     "description": "",

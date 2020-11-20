@@ -60,8 +60,6 @@ const menuData = {
     "Skittermander",
     "Spectra",
     "Strix",
-    "Swarm",
-    "Troop",
     "Velstrac",
     "Verthani",
     "Vesk",
@@ -121,7 +119,11 @@ const menuData = {
     "Shimreen",
     "Shirren",
     "Skittermander",
-    "Strix"
+    "Strix",
+    "Verthani",
+    "Vesk",
+    "Vlaka",
+    "Ysoki"
   ],
   templateGrafts: [
     "Aerial (CR 1+)",

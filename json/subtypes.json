@@ -386,22 +386,34 @@
     "reference": "Alien Archive pg. 135"
   },
   "Ikeshti": {
-    "description": "",
-    "reference": "",
-    "trait": [],
-    "adjustment": []
+    "description": "This subtype is applied to ikeshtis and creatures related to ikeshtis.",
+    "reference": "Alien Archive pg. 135; ",
+    "adjustment": [
+      {
+        "npcOtherAbilities": "Climb Speed"
+      }
+    ]
   },
   "Incorporeal": {
-    "description": "",
-    "reference": "",
-    "trait": [],
-    "adjustment": []
+    "description": "Creatures with this subtype have no physical bodies.",
+    "reference": "Alien Archive 3 pg. 148, Alien Archive pg. 135, Alien Archive 2 pg. 137",
+    "adjustment": [
+      {
+        "npcOtherAbilities": "Incorporeal"
+      }
+    ]
   },
   "Inevitable": {
-    "description": "",
-    "reference": "",
-    "trait": [],
-    "adjustment": []
+    "description": "Inevitables are construct-like outsiders built to enforce the laws of the universe.",
+    "reference": "Alien Archive pg. 135",
+    "adjustment": [
+      {
+        "npcSenses": "Darkvision 60 ft.; low-light vision; "
+      },
+      {
+        "npcOtherAbilities": "constructed; regeneration (suppressed by chaotic-aligned attacks); truespeech."
+      }
+    ]
   },
   "Kami": {
     "description": "",

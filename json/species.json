@@ -47,5 +47,8 @@
   },
   "Human": {
     "description": "human race, it gains an additional special ability of any type and an additional good skill."
+  },
+  "Ikeshti": {
+    "description": "ikeshti race, it also gains the desert survivor, shed skin, and squirt blood racial traits."
   }
 }

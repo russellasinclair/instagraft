@@ -103,8 +103,9 @@ const menuData = {
     'Half-Elf',
     'Halfing',
     'Hobgoblin',
-    'Kanobo',
     'Human',
+    'Ikeshti',
+    'Kanobo',
   ],
   templateGrafts: [
     'Aerial (CR 1+)',

@@ -108,6 +108,9 @@ const menuData = {
     'Kanobo',
     'Kasatha',
     'Khizar',
+    'Lashunta',
+    'Maraquoi',
+    'Orc',
   ],
   templateGrafts: [
     'Aerial (CR 1+)',

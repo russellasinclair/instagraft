@@ -503,22 +503,30 @@
     ]
   },
   "Native": {
-    "description": "",
-    "reference": "",
-    "trait": [],
-    "adjustment": []
+    "description": "Creatures that have this subtype are outsiders native to the Material Plane. They can be returned to life (such as with the raise dead or mystic cure spells), just as other living creatures can be.",
+    "reference": "Alien Archive 3 pg. 149"
   },
   "Oni": {
-    "description": "",
-    "reference": "",
-    "trait": [],
-    "adjustment": []
+    "description": "Oni are evil spirits that take humanoid form to become native outsiders. (Oni gain the humanoid subtype graft of the race associated with their physical form. For example, a ja noi oni takes the form of a hobgoblin and therefore gains the goblinoid subtype graft, even though it is not a humanoid or a member of the hobgoblin race. Oni also gain the shapechanger subtype graft, with their change shape ability generally limited to humanoids of similar size.)",
+    "reference": "Alien Archive 2 pg. 137",
+    "adjustment": [
+      {
+        "npcSenses": "Darkvision 60 ft.; low-light vision; "
+      },
+      {
+        "npcOtherAbilities": "regeneration (suppressed by acid or fire; "
+      }
+    ]
   },
   "Orc": {
-    "description": "",
-    "reference": "",
+    "description": "This subtype is applied to orcs and creatures who are related to orcs. (See Species)",
+    "reference": "Alien Archive 2 pg. 137, Alien Archive pg. 136",
     "trait": [],
-    "adjustment": []
+    "adjustment": [
+      {
+        "npcOtherAbilities": "gain darkvision 60 ft. and the ferocity universal creature rule; "
+      }
+    ]
   },
   "Pahtra": {
     "description": "",

@@ -62,5 +62,8 @@
   },
   "Maraquoi": {
     "description": "if the NPC is of the maraquoi race, it also gains blindsense (sound) 30 ft., a climb speed of 20 ft., the prehensile tail racial trait, and Survival as a master skill."
+  },
+  "Orc": {
+    "description": "if the creature is of the half-orc race, it also gains Intimidate and Survival as master skills."
   }
 }

@@ -378,16 +378,12 @@
     ]
   },
   "Halfling": {
-    "description": "",
-    "reference": "",
-    "trait": [],
-    "adjustment": []
+    "description": "This subtype is applied to halflings and creatures related to halflings. (see species)",
+    "reference": " Alien Archive pg. 135"
   },
   "Human": {
-    "description": "",
-    "reference": "",
-    "trait": [],
-    "adjustment": []
+    "description": "This subtype is applied to humans and creatures related to humans.\n",
+    "reference": "Alien Archive pg. 135"
   },
   "Ikeshti": {
     "description": "",

@@ -101,8 +101,10 @@ const menuData = {
     'Gnome',
     'Gray',
     'Half-Elf',
+    'Halfing',
     'Hobgoblin',
     'Kanobo',
+    'Human',
   ],
   templateGrafts: [
     'Aerial (CR 1+)',

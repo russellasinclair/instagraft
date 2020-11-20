@@ -1,10 +1,10 @@
 {
   "N/A": {},
   "Android": {
-    "description": "(if the NPC is of the android race, it also gains the constructed, flat affect, and upgrade slot racial traits.)"
+    "description": "(android race, it also gains the constructed, flat affect, and upgrade slot racial traits.)"
   },
   "Brenneri": {
-    "description": "If the NPC is of the brenneri race (page 8, AA3), it also gains the favored object and hold breath racial traits"
+    "description": "brenneri race (page 8, AA3), it also gains the favored object and hold breath racial traits"
   },
   "Damai": {
     "description": "gains the scrappy racial trait and Stealth and Survival as master skills"
@@ -19,27 +19,33 @@
     "description": "gains the slow but steady, stonecunning, traditional enemies, and weapon familiarity racial traits."
   },
   "Drow": {
-    "description": " if the NPC is of the drow race, it gains darkvision 60 ft. instead of low-light vision, as well as the drow immunities, drow magic, and light blindness racial traits"
+    "description": "drow race, it gains darkvision 60 ft. instead of low-light vision, as well as the drow immunities, drow magic, and light blindness racial traits"
   },
   "Elf": {
-    "description": " if the NPC is of the elven race, it gains the elven immunities and elven magic racial traits and Mysticism as a master skill; "
+    "description": "elven race, it gains the elven immunities and elven magic racial traits and Mysticism as a master skill; "
   },
   "Half-Elf": {
-    "description": "if the NPC is of the half-elven race, it gains the elven blood racial trait and an extra good skill."
+    "description": "half-elven race, it gains the elven blood racial trait and an extra good skill."
   },
   "Espraksa": {
-    "description": "If the NPC is of the espraksa race, it takes a –2 penalty to saving throws against mind-affecting effects, has a land speed of 30 feet and an extraordinary fly speed of 30 feet with average maneuverability, and gains the cold inured and snatch racial traits and the natural weapons (P) universal creature rule. An espraksa also gains Diplomacy and Sense Motive as good skills (although many espraksas have Sense Motive as a master skill)."
+    "description": "espraksa race, it takes a –2 penalty to saving throws against mind-affecting effects, has a land speed of 30 feet and an extraordinary fly speed of 30 feet with average maneuverability, and gains the cold inured and snatch racial traits and the natural weapons (P) universal creature rule. An espraksa also gains Diplomacy and Sense Motive as good skills (although many espraksas have Sense Motive as a master skill)."
   },
   "Gnome": {
-    "description": "if the NPC is of the gnome race it also gains the eternal hope and gnome magic racial traits and Culture as a master skill."
+    "description": "gnome race it also gains the eternal hope and gnome magic racial traits and Culture as a master skill."
   },
   "Gray": {
-    "description": " if the NPC is of the gray race, it also gains telepathy 100 ft. and the phase special ability."
+    "description": "gray race, it also gains telepathy 100 ft. and the phase special ability."
   },
   "Hobgoblin": {
-    "description": " if the NPC is of the hobgoblin race, it also gains the battle hardened racial trait and Intimidate and Stealth as master skills"
+    "description": "hobgoblin race, it also gains the battle hardened racial trait and Intimidate and Stealth as master skills"
   },
   "Kanobo": {
-    "description": "if the NPC is of the kanabo race, it gains the armor savant and kanabo magic racial traits."
+    "description": "kanabo (goblinoid) race, it gains the armor savant and kanabo magic racial traits."
+  },
+  "Halfling": {
+    "description": "halfling race, it gains the halfling luck and sneaky racial traits, Perception and Stealth as master skills, and Acrobatics and Athletics as good skills."
+  },
+  "Human": {
+    "description": "human race, it gains an additional special ability of any type and an additional good skill."
   }
 }

@@ -65,5 +65,11 @@
   },
   "Orc": {
     "description": "if the creature is of the half-orc race, it also gains Intimidate and Survival as master skills."
+  },
+  "Pathra": {
+    "description": "pahtra race, it also gains the nimble and wary racial traits, Acrobatics as a master skill, and Stealth as a master skill."
+  },
+  "Phentomite": {
+    "description": "phentomite race, it also gains the acclimated and heat tracking special abilities and Acrobatics and Athletics as master skills"
   }
 }

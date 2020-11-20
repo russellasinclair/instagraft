@@ -111,6 +111,8 @@ const menuData = {
     'Lashunta',
     'Maraquoi',
     'Orc',
+    'Pathra',
+    'Phentomite',
   ],
   templateGrafts: [
     'Aerial (CR 1+)',

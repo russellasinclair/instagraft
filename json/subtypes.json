@@ -524,45 +524,96 @@
     "trait": [],
     "adjustment": [
       {
-        "npcOtherAbilities": "gain darkvision 60 ft. and the ferocity universal creature rule; "
+        "npcSenses": "Darkvision 60 ft.; "
+      },
+      {
+        "npcOtherAbilities": "ferocity universal creature rule; "
       }
     ]
   },
   "Pahtra": {
-    "description": "",
-    "reference": "",
-    "trait": [],
-    "adjustment": []
+    "description": "This subtype is applied to pahtras and creatures related to pahtras. (See species)",
+    "reference": "Alien Archive 2 pg. 137",
+    "adjustment": [
+      {
+        "npcSenses": "Darkvision 60 ft.; low-light vision; "
+      }
+    ]
   },
   "Phentomite": {
-    "description": "",
-    "reference": "",
-    "trait": [],
-    "adjustment": []
+    "description": "This subtype is applied to phentomites and creatures related to phentomites. (see species)",
+    "reference": "Alien Archive 2 pg. 137",
+    "adjustment": [
+      {
+        "npcSenses": "Darkvision 60 ft.; "
+      }
+    ]
   },
   "Plantlike": {
-    "description": "",
-    "reference": "",
-    "trait": [],
-    "adjustment": []
+    "description": "Plantlike creatures have many of the characteristics of plants.",
+    "reference": "Alien Archive 3 pg. 149, Alien Archive pg. 136",
+    "adjustment": [
+      {
+        "npcOtherAbilities": "Most plantlike creatures have the plantlike universal creature rule; "
+      }
+    ]
   },
   "Protean": {
-    "description": "",
-    "reference": "",
-    "trait": [],
-    "adjustment": []
+    "description": "Proteans are serpentine outsiders of pure chaos native to the Maelstrom.",
+    "reference": "Alien Archive pg. 136",
+    "adjustment": [
+      {
+        "npcSenses": " Blindsense (distance and sense varies by protean type); "
+      },
+      {
+        "npcImmunities": "immunity to acid; "
+      },
+      {
+        "npcResistances": "resistance 10 to electricity and sonic; "
+      },
+      {
+        "npcOtherAbilities": "supernatural flight speed; amorphous; change shape; grab ability with its natural attacks.; "
+      }
+    ]
   },
   "Pyric Revenant": {
-    "description": "",
-    "reference": "",
-    "trait": [],
-    "adjustment": []
+    "description": "Pyric fire can turn a creature into a pyric revenant. (requires type Undead, Suggested Array: Combatant, Suggested Ability Scores: Strength, Dexterity.)",
+    "reference": "Starfinder #16: The Blind City pg. 60",
+    "adjustment": [
+      {
+        "npcImmunities": "immunity to fire; "
+      },
+      {
+        "npcOtherAbilities": "Dimly illuminated, pyric fire, susceptible to water; melee attacks deal half fire damage and impart pyric curse; gains a pyric bolt ranged attack that deals fire damage; speaks Aklo and might retain one or more languages spoken in life.; "
+      }
+    ],
+    "specials": [
+      {
+        "npcSpecialsTemp": {
+          "Burning Attacks": "A pyric revenant’s attacks have the burn critical hit effect that deals damage according to the creature’s CR, as follows: 3–5, 1d4; 6–10, 2d4; 11–15, 3d4; 16+ 4d4."
+        }
+      }
+    ]
   },
   "Pyric Wraith": {
-    "description": "",
-    "reference": "",
+    "description": "A pyric revenant can eventually become a pyric wraith.",
+    "reference": "Starfinder #16: The Blind City pg. 61",
     "trait": [],
-    "adjustment": []
+    "adjustment": [
+      {
+        "npcImmunities": "immunity to fire; "
+      },
+      {
+        "npcOtherAbilities": "ash consumption, illuminated, pyric fire; gains a touch attack; gains a pyric ray ranged attack; attacks deal fire damage, impart pyric curse, and have the burn critical hit effect (see Burning Attacks); speaks Aklo and might retain one or more languages spoken in life."
+      }
+    ],
+    "specials": [
+      {
+        "npcSpecialsTemp": {
+          "Burning Attacks": "A pyric Wraith’s attacks have the burn critical hit effect that deals damage according to the creature’s CR, as follows: 3–5, 1d4; 6–10, 2d4; 11–15, 3d4; 16+ 4d4."
+        }
+      }
+    ]
   },
   "Reptoid": {
     "description": "",

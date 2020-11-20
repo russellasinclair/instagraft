@@ -50,5 +50,11 @@
   },
   "Ikeshti": {
     "description": "ikeshti race, it also gains the desert survivor, shed skin, and squirt blood racial traits."
+  },
+  "Kasatha": {
+    "description": "kasatha race, it gains the desert stride and four-armed racial traits, Acrobatics and Athletics as master skills, and Culture as a good skill."
+  },
+  "Khizar": {
+    "description": "khizar race, it also gains the carbonic respiration, evergreen, and limited telepathy (including communication with non-mindless creatures of the plant type) racial traits, and gains Life Science and Survival as good skills."
   }
 }

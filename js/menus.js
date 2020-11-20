@@ -106,6 +106,8 @@ const menuData = {
     'Human',
     'Ikeshti',
     'Kanobo',
+    'Kasatha',
+    'Khizar',
   ],
   templateGrafts: [
     'Aerial (CR 1+)',

@@ -416,22 +416,47 @@
     ]
   },
   "Kami": {
-    "description": "",
-    "reference": "",
-    "trait": [],
-    "adjustment": []
+    "description": "Kami are native outsiders that protect animals, plants, objects, and locations, which the kami call their “wards.” Kami have no need to drink, eat, or sleep.",
+    "reference": "Alien Archive 3 pg. 148",
+    "adjustment": [
+      {
+        "npcOtherAbilities": "Fast Healing (See Below); telepathy 100 ft.; no breath; merge with ward (see below); some kami gain other abilities from having specific wards.; "
+      },
+      {
+        "npcImmunities": "immunity to bleed, mind-affecting effects, petrification, and polymorph; "
+      },
+      {
+        "npcSenses": "Darkvision 60 ft., low-light vision; "
+      },
+      {
+        "npcResistances": "resistance 10 to acid, electricity, and fire;"
+      }
+    ],
+    "specials": [
+      {
+        "npcSpecialsTemp": {
+          "Merge with Ward (Su)": "A kami has a specific ward—a creature with an Intelligence of –4 or lower, an object, or a location—listed in parentheses in the kami’s stat block. As a full action, a kami adjacent to its ward can merge body and mind with that ward. While merged, the kami can observe the surrounding region with its senses as if it were using its own body, as well as via any senses its ward might have. Typically, this trait allows a kami no control over its ward, although some kami (such as the tsukumogami) are exceptions. If the kami has no control over its ward, it can take no actions while merged other than to emerge from its ward as an action. The kami can emerge adjacent to the ward, provided the kami’s body is at least one size smaller than the ward. If the ward is a location, the kami can emerge at any point within that location. If the ward is destroyed while a kami is merged with it, the kami dies. If the ward is destroyed while the kami is not merged with it, the kami loses its merge with ward and fast healing traits, and the kami becomes sickened. It can take on a new ward by spending 7 days doing so, and it regains its traits and loses the sickened condition once it does.  Some kami have additional abilities and limitations relative to their wards."
+        }
+      },
+      {
+        "npcSpecialsTemp": {
+          "Fast Healing (Ex):": "A kami within 120 feet of or merged with its ward has fast healing. A kami of CR 10 or lower has fast healing 5, while one of CR 11 or higher has fast healing 10."
+        }
+      }
+    ]
   },
   "Kasatha": {
-    "description": "",
-    "reference": "",
-    "trait": [],
-    "adjustment": []
+    "description": "This subtype is applied to kasathas and creatures related to kasathas. (see species)",
+    "reference": "Alien Archive pg. 136"
   },
   "Khizar": {
-    "description": "",
-    "reference": "",
-    "trait": [],
-    "adjustment": []
+    "description": "This subtype is applied to khizars and creatures related to khizars. (see species)",
+    "reference": "Alien Archive 2 pg. 137",
+    "adjustment": [
+      {
+        "npcSenses": "Blindsense (vibration) 30 ft., blindsight (life) 30 ft.; "
+      }
+    ]
   },
   "Lashunta": {
     "description": "",

@@ -111,4 +111,7 @@
   "Ysoki": {
     "description": "ysoki species, it also gains the cheek pouches and moxie racial traits, Engineering and Stealth as master skills, and Survival as a good skill."
   }
+  "Kitsune": {
+    "description": "kitsune species, it also gains Acrobatics and Athletics as master skills and Disguise as a bonus good skill."
+  }
 }

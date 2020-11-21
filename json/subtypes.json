@@ -338,7 +338,7 @@
     ]
   },
   "Giant": {
-    "description": "This subtype is applied to giants and creatures related to giants.\n",
+    "description": "This subtype is applied to giants and creatures related to giants. ",
     "reference": "Alien Archive 2 pg. 136, Alien Archive pg. 135",
     "adjustment": [
       {
@@ -382,7 +382,7 @@
     "reference": " Alien Archive pg. 135"
   },
   "Human": {
-    "description": "This subtype is applied to humans and creatures related to humans.\n",
+    "description": "This subtype is applied to humans and creatures related to humans. ",
     "reference": "Alien Archive pg. 135"
   },
   "Ikeshti": {
@@ -625,7 +625,7 @@
     ]
   },
   "Reptoid Hybrid": {
-    "description": "A reptoid hybrid is a generally outcast humanoid who resembles their reptoid parent. (Required Creature Type: Humanoid (reptoid, one other humanoid subtype)..\nTraits: As the non-reptoid humanoid. A reptoid hybrid has no reptoid traits other than their appearance.)",
+    "description": "A reptoid hybrid is a generally outcast humanoid who resembles their reptoid parent. (Required Creature Type: Humanoid (reptoid, one other humanoid subtype).. Traits: As the non-reptoid humanoid. A reptoid hybrid has no reptoid traits other than their appearance.)",
     "reference": "Starfinder #27: Deceivers’ Moon pg. 59"
   },
   "Ryphorian": {
@@ -658,7 +658,7 @@
     "specials": [
       {
         "npcSpecialsTemp": {
-          "Change Shape": "Source Alien Archive 2 pg. 149, Alien Archive pg. 152\nThe creature has the ability to assume the appearance of a specific creature or type of creature, but it retains most of its own physical qualities. If the form assumed has any of the following abilities, the creature gains them while in that form: blindsight (scent), darkvision, low-light vision, and swim 30 feet. The creature can retain its own breathing ability, or it can assume the ability to breathe in any environment the assumed shape can breathe in (including the no breath ability, which enables it to survive in the vacuum of space). If the ability does not specify what the creature can change shape into, it can assume the form of any creature of the humanoid type, but it can’t mimic a specific humanoid. Change shape grants a +10 bonus to Disguise checks to appear as a creature of the type and subtype of the new form, and the DC of the creature’s Disguise check is not modified as a result of altering major features or disguising itself as a different species or creature type.\n\nA creature can assume a form that is one size category smaller or larger than its original form and become that size. Unless otherwise stated, it can remain in an alternate form indefinitely. Some creatures can transform into unique forms with special modifiers and abilities. These creatures adjust their ability scores, as noted in their description."
+          "Change Shape": "Source Alien Archive 2 pg. 149, Alien Archive pg. 152 The creature has the ability to assume the appearance of a specific creature or type of creature, but it retains most of its own physical qualities. If the form assumed has any of the following abilities, the creature gains them while in that form: blindsight (scent), darkvision, low-light vision, and swim 30 feet. The creature can retain its own breathing ability, or it can assume the ability to breathe in any environment the assumed shape can breathe in (including the no breath ability, which enables it to survive in the vacuum of space). If the ability does not specify what the creature can change shape into, it can assume the form of any creature of the humanoid type, but it can’t mimic a specific humanoid. Change shape grants a +10 bonus to Disguise checks to appear as a creature of the type and subtype of the new form, and the DC of the creature’s Disguise check is not modified as a result of altering major features or disguising itself as a different species or creature type.  A creature can assume a form that is one size category smaller or larger than its original form and become that size. Unless otherwise stated, it can remain in an alternate form indefinitely. Some creatures can transform into unique forms with special modifiers and abilities. These creatures adjust their ability scores, as noted in their description."
         }
       }
     ]
@@ -731,11 +731,11 @@
     ]
   },
   "Swarm": {
-    "description": "This subtype is applied to any collection of Fine, Diminutive, or Tiny creatures (usually vermin) that acts as a single creature. A swarm has a single pool of Hit Points, a single initiative modifier, and a single EAC and KAC. It attempts saving throws as a single creature. A single swarm usually occupies a square (if it is made up of nonflying creatures) or a cube (if it is made up of flying creatures) 10 feet on a side, but its reach is 0 feet. A swarm can move through cracks or holes large enough for its component creatures to fit through.\n\nIn order to attack, a swarm moves into an opponent’s space, which provokes an attack of opportunity. Spellcasting or concentrating on spells within the area of a swarm requires a successful caster level check (DC = 20 + spell level). Using skills that involve patience and concentration, such as Computers, within the area of a swarm requires a successful DC 20 Will saving throw.\nTraits: Swarm defenses, swarm immunities, distraction, swarm attack.",
+    "description": "This subtype is applied to any collection of Fine, Diminutive, or Tiny creatures (usually vermin) that acts as a single creature. A swarm has a single pool of Hit Points, a single initiative modifier, and a single EAC and KAC. It attempts saving throws as a single creature. A single swarm usually occupies a square (if it is made up of nonflying creatures) or a cube (if it is made up of flying creatures) 10 feet on a side, but its reach is 0 feet. A swarm can move through cracks or holes large enough for its component creatures to fit through.  In order to attack, a swarm moves into an opponent’s space, which provokes an attack of opportunity. Spellcasting or concentrating on spells within the area of a swarm requires a successful caster level check (DC = 20 + spell level). Using skills that involve patience and concentration, such as Computers, within the area of a swarm requires a successful DC 20 Will saving throw. Traits: Swarm defenses, swarm immunities, distraction, swarm attack.",
     "reference": "Alien Archive 2 pg. 137, Alien Archive pg. 136"
   },
   "Troop": {
-    "description": "This subtype is applied to a collection of sentient creatures that acts as a single creature (similar to a swarm, but usually as part of a military unit). A troop has a single pool of Hit Points, a single initiative modifier, and a single EAC and KAC. A troop attempts saving throws as a single creature.\n\nA single troop usually occupies a square (if it is made up of nonflying creatures) or a cube (if it is made up of flying creatures) 20 feet on a side, equal in size to a Gargantuan creature, though the actual size of the troop is the same as that of the component creatures. The area occupied by a troop is shapable, though the troop must remain in contiguous squares to accurately reffect the teamwork of trained military units. A troop has reach equal to that of the component creatures based on size and gear. A troop can move through squares occupied by enemies without impediment and vice versa, though such movement provokes attacks of opportunity as normal for its component creatures. A troop can move through any area large enough for its component creatures.\n\nBecause of the chaos of combat, spellcasting or concentrating on spells within the area of a troop or within its reach requires a successful caster level check (DC = 20 + spell level). Using skills that involve patience and concentration, such as Computers, within the area of a troop or within its reach requires a successful DC 20 Will saving throw.\n\nThe exact number of a troop’s component creatures varies, but in general, a troop of Small or Medium creatures consists of approximately 10 to 30 creatures. Larger creatures can form troops, but the area occupied by such a troop should increase proportionally according to the size of the component creatures (for example, a troop of Large creatures would occupy a 30-foot-square area, equal to a Colossal creature).\n\nAlthough troops are composed of a number of individual creatures, not all of these creatures’ gear will survive the rigors of combat. As a result, treat a troop as a single creature for the purposes of how much treasure is awarded for an encounter with the troop, as determined by the troop’s CR on Table 11–4: Wealth Gains per Encounter on page 391 of the Starfinder Core Rulebook.\nTraits: Troop attack, troop defenses, troop immunities.",
+    "description": "This subtype is applied to a collection of sentient creatures that acts as a single creature (similar to a swarm, but usually as part of a military unit). A troop has a single pool of Hit Points, a single initiative modifier, and a single EAC and KAC. A troop attempts saving throws as a single creature.  A single troop usually occupies a square (if it is made up of nonflying creatures) or a cube (if it is made up of flying creatures) 20 feet on a side, equal in size to a Gargantuan creature, though the actual size of the troop is the same as that of the component creatures. The area occupied by a troop is shapable, though the troop must remain in contiguous squares to accurately reffect the teamwork of trained military units. A troop has reach equal to that of the component creatures based on size and gear. A troop can move through squares occupied by enemies without impediment and vice versa, though such movement provokes attacks of opportunity as normal for its component creatures. A troop can move through any area large enough for its component creatures.  Because of the chaos of combat, spellcasting or concentrating on spells within the area of a troop or within its reach requires a successful caster level check (DC = 20 + spell level). Using skills that involve patience and concentration, such as Computers, within the area of a troop or within its reach requires a successful DC 20 Will saving throw.  The exact number of a troop’s component creatures varies, but in general, a troop of Small or Medium creatures consists of approximately 10 to 30 creatures. Larger creatures can form troops, but the area occupied by such a troop should increase proportionally according to the size of the component creatures (for example, a troop of Large creatures would occupy a 30-foot-square area, equal to a Colossal creature).  Although troops are composed of a number of individual creatures, not all of these creatures’ gear will survive the rigors of combat. As a result, treat a troop as a single creature for the purposes of how much treasure is awarded for an encounter with the troop, as determined by the troop’s CR on Table 11–4: Wealth Gains per Encounter on page 391 of the Starfinder Core Rulebook. Traits: Troop attack, troop defenses, troop immunities.",
     "reference": "Starfinder #21: Huskworld pg. 60"
   },
   "Velstrac": {
@@ -810,57 +810,51 @@
     ]
   },
   "Anunnaki": {
-    "description": "",
-    "reference": "",
-    "trait": [],
-    "adjustment": []
+    "description": "This subtype is applied to anunnaki and other creatures related to anunnaki. Anunnaki are a species of humanoid energy beings formed entirely of psychic energy.",
+    "reference": "Advanced Occult Guide pg. 418",
+    "adjustment": [
+      {
+        "npcSenses": "Blindsense (thought) 60 ft., darkvision 60 ft.; "
+      },
+      {
+        "npcOtherAbilities": "fast healing equal to CR, incorporeal; truespeech; change shape (any living creature that has species traits suitable for a PC), spaceflight (Mysticism); "
+      },
+      {
+        "npcImmunities": "immunity to disease, paralysis, poison, radiation, sleep, and staggered"
+      },
+      {
+        "npcfly": "80 feet (Su, perfect)"
+      }
+    ],
+    "specials": [
+      {
+        "npcSpecialsTemp": {
+          "Adapt ability (Ex)": "An anunnaki has environmental protections as if wearing armor with an item level equal to its CR, even while unarmored. Whenever an anunnaki attempts a saving throw and fails, they can spend 1 Resolve Point as a reaction to treat the result as a success. If the effect is an ongoing area effect, using this ability also grants the anunnaki immunity to that effect until the end of their next turn."
+        }
+      },
+      {
+        "npcSpecialsTemp": {
+          "Disintegration (Su)": "Anunnaki are able to use their mental powers to disrupt matter, tearing it asunder. They possess two natural weapons, one melee and one ranged with five range increments of 30 feet, that deal force damage to the target based on the anunnaki’s CR."
+        }
+      },
+      {
+        "npcSpecialsTemp": {
+          "Shape Sapience (Su)": "As a full action, an anunnaki can attempt a melee attack against an opponent’s EAC, which must be a living creature or a noncreature life form (such as a common plant). If the anunnaki hits, they can radically alter their opponent’s cognitive facilities in one of the following ways. A successful Will save negates this effect. The first time after its daily preparations that an anunnaki uses this ability against a specific creature, it costs no Resolve Points; otherwise it costs 1 Resolve Point to use. » Devolution: The target is afflicted with devolution corruption (see page 280) if it wasn’t already and gain 1d8 corruption points for every 3 CR that the anunnaki has. If the target was uplifted by an anunnaki’s shape sapience, the anunnaki can instead remove all effects of that ability, reverting them to their original state. » Mnemonic Editing: The target falls unconscious for 1 hour. If the target is already unconscious, the duration of this effect resets and the anunnaki can modify a number of years of the target’s memory equal to its CR, acting as modify memory except the effect is instantaneous and can only be reversed by psychic surgery or a similarly powerful effect. Instead of modifying the target’s memory in one of the ways described by modify memory, an anunnaki can change the creature’s statistics as if using a mnemonic editor. This ability doesn’t count towards the number of times that the target can benefit from a mnemonic editor of any type. Unlike other uses of modify memory, editing a creature’s statistics takes 1 hour, at the end of which the creature’s statistics are altered. If the anunnaki is interrupted before this process is completed, the target awakens feeling disoriented but is otherwise unchanged. » Uplift: The target’s Intelligence, Wisdom and Charisma scores increase to 2d4+3, rolling separately for each ability score. If the target’s ability score (or ability modifier) is naturally higher than the result rolled, the target gains a +1d3 enhancement bonus to rolls and checks associated with that ability score instead. A common plant that’s uplifted becomes a plant creature, while animals and vermin become magical"
+        }
+      }
+    ]
   },
   "Deoxyomorphic": {
-    "description": "",
-    "reference": "",
-    "trait": [],
-    "adjustment": []
-  },
-  "Great Old One": {
-    "description": "",
-    "reference": "",
-    "trait": [],
-    "adjustment": []
+    "description": "This subtype is applied to creatures that have had their genetic code altered or tampered with—sometimes willingly, sometimes unwillingly.",
+    "reference": "Advanced Occult Guide pg. 419"
   },
   "Kitsune": {
-    "description": "",
-    "reference": "",
-    "trait": [],
-    "adjustment": []
-  },
-  "Kumiho": {
-    "description": "",
-    "reference": "",
-    "trait": [],
-    "adjustment": []
-  },
-  "Levialogos": {
-    "description": "",
-    "reference": "",
-    "trait": [],
-    "adjustment": []
-  },
-  "Soulless": {
-    "description": "",
-    "reference": "",
-    "trait": [],
-    "adjustment": []
-  },
-  "Soulshell": {
-    "description": "",
-    "reference": "",
-    "trait": [],
-    "adjustment": []
-  },
-  "Uramae": {
-    "description": "",
-    "reference": "",
-    "trait": [],
-    "adjustment": []
+    "description": "This subtype is applied to kitsune and creatures related to kitsune. Kitsune are a species of vulpine, humanoid shapeshifters that assume human form. (see species)",
+    "reference": "Advanced Occult Guide pg. 419",
+    "adjustment": [
+      {
+        "npcSenses": "Low-light vision"
+      }
+    ]
   }
 }

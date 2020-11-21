@@ -123,7 +123,8 @@ const menuData = {
     "Verthani",
     "Vesk",
     "Vlaka",
-    "Ysoki"
+    "Ysoki",
+    "Kitsune"
   ],
   templateGrafts: [
     "Aerial (CR 1+)",

@@ -1,86 +1,96 @@
 {
   "Aerial (CR 1+)": {
-    "description": "Aerial creatures are native denizens of the Elemental Plane of Air, gas giant planets, or similar landless environments, and have unique adaptations to help them survive there.",
-    "trait": [],
+    "description": "Aerial creatures are native denizens of the Elemental Plane of Air, gas giant planets, or similar landless environments, and have unique adaptations to help them survive there. (Recommend Air Subtype)",
     "adjustment": [
       {
-        "npcSenses": "Darkvision 60 ft."
+        "npcOtherAbilities": "Fly Speed equal to creatures fastest movement; Half of the damage dealt by its natural attacks becomes electricity damage; if the creature is from the Elemental Plane of Air, it gains the extraplanar subtype when it isn’t on that plane"
       }
     ]
   },
   "Aqueous (CR 1+)": {
-    "description": "",
-    "train": [],
-    "adjustment": []
+    "description": "Aqueous creatures are native denizens of the Elemental Plane of Water or similar landless environments, able to survive both in and out of water. (Recommend water subtype graft)",
+    "trait": [],
+    "adjustment": [
+      {
+        "npcOtherAbilities": "Amphibious; natural attacks that deal bludgeoning or slashing damage deal piercing damage instead; natural attacks that deal electricity or fire damage deal cold damage instead; if the creature is from the Elemental Plane of Water, it gains the extraplanar subtype when it isn’t on that plane."
+      }
+    ]
   },
   "Astral": {
-    "description": "",
-    "train": [],
-    "adjustment": []
+    "description": "Astral creatures are natives of the Astral Plane, a vast silvery void between planes.",
+    "trait": [],
+    "adjustment": [
+      {
+        "npcDR": "DR/— with a value equal to creature’s CR – 10 (minimum DR 1/—)"
+      },
+      {
+        "npcOtherAbilities": "when the creature isn’t on the Astral Plane, it gains the extraplanar subtype."
+      }
+    ]
   },
   "Celestial": {
-    "description": "",
-    "train": [],
+    "description": "Celestial creatures are natives of one of the good-aligned Outer Planes.",
+    "trait": [],
     "adjustment": []
   },
   "Cthonic (CR 1+)": {
     "description": "",
-    "train": [],
+    "trait": [],
     "adjustment": []
   },
   "Cybernetic (CR 1/2+)": {
     "description": "",
-    "train": [],
+    "trait": [],
     "adjustment": []
   },
   "Entropic": {
     "description": "",
-    "train": [],
+    "trait": [],
     "adjustment": []
   },
   "Fiendish": {
     "description": "",
-    "train": [],
+    "trait": [],
     "adjustment": []
   },
   "Fiery (CR 1+)": {
     "description": "",
-    "train": [],
+    "trait": [],
     "adjustment": []
   },
   "Giant (CR 1+)": {
     "description": "",
-    "train": [],
+    "trait": [],
     "adjustment": []
   },
   "Miniature": {
     "description": "",
-    "train": [],
+    "trait": [],
     "adjustment": []
   },
   "Phrenic": {
     "description": "",
-    "train": [],
+    "trait": [],
     "adjustment": []
   },
   "Resolute": {
     "description": "",
-    "train": [],
+    "trait": [],
     "adjustment": []
   },
   "Synthetic": {
     "description": "",
-    "train": [],
+    "trait": [],
     "adjustment": []
   },
   "Two-Headed (CR 3+)": {
     "description": "",
-    "train": [],
+    "trait": [],
     "adjustment": []
   },
   "Umbral": {
     "description": "",
-    "train": [],
+    "trait": [],
     "adjustment": []
   }
 }

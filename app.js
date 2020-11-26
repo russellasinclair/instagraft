@@ -18,6 +18,7 @@ data.npcData = {
   npcClass: "",
   npcClassDetails: null,
   npcInitiative: null,
+  npcNotes: "",
   npcSenses: "",
   npcPerception: null,
   npcHP: null,

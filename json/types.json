@@ -1,7 +1,6 @@
 {
   "Aberration": {
     "description": "An aberration has a bizarre anatomy, strange abilities, an alien mindset, or any combination of the three.",
-    "trait": [],
     "adjustment": [
       {
         "npcSenses": "Darkvision 60 ft.; "
@@ -63,7 +62,6 @@
   },
   "Dragon": {
     "description": "A dragon is a reptilian creature, usually winged, with magical or otherwise unusual abilities.",
-    "trait": [],
     "adjustment": [
       {
         "npcFort": 2
@@ -84,7 +82,6 @@
   },
   "Fey": {
     "description": "A fey is a creature with supernatural abilities and connections to nature or to some other force or place.",
-    "trait": [],
     "adjustment": [
       {
         "npcFort": 2
@@ -99,12 +96,10 @@
   },
   "Humanoid": {
     "description": "A humanoid usually has two arms, two legs, and one head, or it has a humanlike torso, arms, and a head. Humanoids have few or no supernatural or extraordinary abilities, but most can speak and usually have well-developed societies. Must have a subtype that matches its species (such as human, lashunta, or shirren) or that is related to its species (such as goblinoid). Adjustments: +2 to one type of saving throw; ",
-    "trait": [],
     "adjustment": []
   },
   "Magical Beast": {
     "description": "Magical beasts are similar to animals but can have Intelligence modifiers greater than –4 (in which case the magical beast knows at least one language, though it can’t necessarily speak). Magical beasts usually have supernatural or extraordinary abilities.",
-    "trait": [],
     "adjustment": [
       {
         "npcFort": 2
@@ -122,7 +117,6 @@
   },
   "Monstrous Humanoid": {
     "description": "Monstrous humanoids are similar to humanoids, but they have monstrous or animalistic features. They often have magical abilities as well.",
-    "trait": [],
     "adjustment": [
       {
         "npcWill": 2
@@ -159,7 +153,6 @@
   },
   "Outsider": {
     "description": "An outsider is at least partially composed of the essence (but not necessarily the material) of a plane other than the Material Plane. Some creatures start out as another type and become outsiders when they attain a higher or lower state of spiritual existence., If the outsider is a member of a specific species (such as angel, devil, etc.), it must have a subtype to match its species. +2 to one type of saving throw",
-    "trait": [],
     "adjustment": [
       {
         "npcSenses": "Darkvision 60 ft."
@@ -171,7 +164,6 @@
   },
   "Plant": {
     "description": "This type describes vegetable creatures. Note that regular plants, such as those growing in gardens or fields, lack Wisdom and Charisma modifiers and are objects, not creatures, even though they are alive.",
-    "trait": [],
     "adjustment": [
       {
         "npcImmunities": "plant immunities; "

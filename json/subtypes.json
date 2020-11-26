@@ -24,12 +24,17 @@
     ]
   },
   "Aanung-an": {
-    "description": "Any creature that dies while performing dark rituals for evil purposes risks rising again as one of the occult dead. (Required Creature Type: Undead. Suggested Array: Spellcaster. Suggested Ability Scores: Intelligence, Wisdom, Charisma)",
+    "description": "Any creature that dies while performing dark rituals for evil purposes risks rising again as one of the occult dead. (Suggested Array: Spellcaster. Suggested Ability Scores: Intelligence, Wisdom, Charisma)",
     "specials": [
       {
         "npcSpecialsTemp": {
           "Ritual Scar (Su)": "An aanung-an that starts its turn grappling a creature can attempt to carve a ritual scar into its victim’s body as a standard action, afflicting it with potent magic. The aanung-an attempts a Mysticism check (DC = 20 + target’s level or CR). On a success, the aanung-an renews the grapple, and the target takes 1d6+4 slashing damage as the aanung-an claws a symbol into its body. The target must then succeed at a DC 15 Will saving throw or suffer one of the following effects of the aanung-an’s choice: bestow curse, slow, or suggestion. These effects function at the aanung-an’s caster level. Certain aanung-ans might inflict different or unique effects with this ability, at the GM’s discretion."
         }
+      }
+    ],
+    "requires": [
+      {
+        "npcType": "Undead"
       }
     ],
     "reference": "Starfinder #25: The Chimera Mystery pg. 55",
@@ -579,6 +584,11 @@
   "Pyric Revenant": {
     "description": "Pyric fire can turn a creature into a pyric revenant. (requires type Undead, Suggested Array: Combatant, Suggested Ability Scores: Strength, Dexterity.)",
     "reference": "Starfinder #16: The Blind City pg. 60",
+    "requires": [
+      {
+        "npcType": "Undead"
+      }
+    ],
     "adjustment": [
       {
         "npcImmunities": "immunity to fire; "
@@ -625,8 +635,13 @@
     ]
   },
   "Reptoid Hybrid": {
-    "description": "A reptoid hybrid is a generally outcast humanoid who resembles their reptoid parent. (Required Creature Type: Humanoid (reptoid, one other humanoid subtype).. Traits: As the non-reptoid humanoid. A reptoid hybrid has no reptoid traits other than their appearance.)",
-    "reference": "Starfinder #27: Deceivers’ Moon pg. 59"
+    "description": "A reptoid hybrid is a generally outcast humanoid who resembles their reptoid parent. (reptoid, one other humanoid subtype).. Traits: As the non-reptoid humanoid. A reptoid hybrid has no reptoid traits other than their appearance.)",
+    "reference": "Starfinder #27: Deceivers’ Moon pg. 59",
+    "requires": [
+      {
+        "npcType": "Humanoid"
+      }
+    ]
   },
   "Ryphorian": {
     "description": "This subtype is applied to ryphorians and creatures related to ryphorians. (See Species)",

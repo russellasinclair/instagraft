@@ -12,12 +12,10 @@
   },
   "Animal": {
     "description": "An animal is a living, nonhumanoid creature, usually a vertebrate with no magical abilities and no innate capacity for language or culture.",
-    "trait": [
+    "adjustment": [
       {
         "npcInt": -4
-      }
-    ],
-    "adjustment": [
+      },
       {
         "npcFort": 2
       },

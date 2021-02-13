@@ -1,5 +1,6 @@
+"use strict";
 var data = {};
-// https://www.aonsrd.com/TemplateGrafts.aspx?ItemName=All&Family=None
+const debugMode = true;
 
 data.npcData = {
   npcArray: "",
@@ -263,23 +264,35 @@ var app = new Vue({
             this.npcData.npcAbilityScore3Assigned) {
           return true;
         }
-        if (this.npcData.npcAbilityScore2Assigned ===
-            this.npcData.npcAbilityScore3Assigned) {
-          return true;
-        }
-        return false;
+        return this.npcData.npcAbilityScore2Assigned ===
+            this.npcData.npcAbilityScore3Assigned;
+
       }
     },
-    updateAbilities: function() {
+    updateAbilities: function () {
       updateAbilityScores();
     }
   }
 });
 
+function debugLog(text) {
+  if (debugMode) {
+    console.log(text)
+  }
+}
+
 function genericUpdateData(details, fullData) {
+
+  debugLog("Details = " + details + " : fullData = " + fullData);
+
   app.npcData[fullData] = details;
   for (let i in details.adjustment) {
     let stat = Object.getOwnPropertyNames(details.adjustment[i])[0];
+    debugLog("stat = " + stat);
+    debugLog("details.adjustment = " + details.adjustment[i][stat]);
+    if (app.npcData[stat].trim() !== "") {
+      app.npcData[stat] += ",";
+    }
     app.npcData[stat] += details.adjustment[i][stat];
   }
   for (let i in details.trait) {
@@ -329,8 +342,7 @@ function getStats(array, cr) {
       if (arrays[array][cr][i] !== undefined) {
         app.npcData[i] = arrays[array][cr][i];
       }
-      app.npcData.npcXP = xp[cr].toString().
-          replace(/\B(?=(\d{3})+(?!\d))/g, ","); //XP from CR
+      app.npcData.npcXP = xp[cr].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","); //XP from CR
       app.npcData.npcPerception = arrays[array][cr].npcGoodSkill; //Perception is a "Good" skill by default
     }
   } catch (error) {
@@ -341,7 +353,7 @@ function getStats(array, cr) {
 function parseData(filename, graftName, details) {
   let xhttp = new XMLHttpRequest();
   xhttp.onloadend = function() {
-    if (this.readyState == 4 && this.status == 200) {
+    if (this.readyState === 4 && this.status === 200) {
       let graft = JSON.parse(xhttp.responseText);
       genericUpdateData(graft[graftName], details);
     }

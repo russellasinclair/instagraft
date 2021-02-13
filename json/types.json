@@ -3,7 +3,7 @@
     "description": "An aberration has a bizarre anatomy, strange abilities, an alien mindset, or any combination of the three.",
     "adjustment": [
       {
-        "npcSenses": "Darkvision 60 ft.; "
+        "npcSenses": "Darkvision 60 ft."
       },
       {
         "npcWill": 2
@@ -23,7 +23,7 @@
         "npcRef": 2
       },
       {
-        "npcSenses": "Low-light vision; "
+        "npcSenses": "Low-light vision"
       }
     ]
   },
@@ -48,10 +48,10 @@
         "npcTypeAttackMod": 1
       },
       {
-        "npcImmunities": "construct immunities; "
+        "npcImmunities": "construct immunities"
       },
       {
-        "npcSenses": "Darkvision 60 ft.; Low-light vision; "
+        "npcSenses": "Darkvision 60 ft., Low-light vision"
       },
       {
         "npcOtherAbilities": "unliving"
@@ -71,10 +71,10 @@
         "npcWill": 2
       },
       {
-        "npcImmunities": "construct immunities; "
+        "npcImmunities": "construct immunities"
       },
       {
-        "npcSenses": "Darkvision 60 ft.; Low-light vision; "
+        "npcSenses": "Darkvision 60 ft., Low-light vision"
       }
     ]
   },
@@ -106,7 +106,7 @@
         "npcRef": 2
       },
       {
-        "npcSenses": "Darkvision 60 ft.; Low-light vision; "
+        "npcSenses": "Darkvision 60 ft., Low-light vision"
       },
       {
         "npcTypeAttackMod": 1
@@ -123,7 +123,7 @@
         "npcRef": 2
       },
       {
-        "npcSenses": "Darkvision 60 ft.; "
+        "npcSenses": "Darkvision 60 ft."
       },
       {
         "npcTypeAttackMod": 1
@@ -164,13 +164,13 @@
     "description": "This type describes vegetable creatures. Note that regular plants, such as those growing in gardens or fields, lack Wisdom and Charisma modifiers and are objects, not creatures, even though they are alive.",
     "adjustment": [
       {
-        "npcImmunities": "plant immunities; "
+        "npcImmunities": "plant immunities"
       },
       {
         "npcFort": 2
       },
       {
-        "npcSenses": "Low-light vision; "
+        "npcSenses": "Low-light vision"
       }
     ]
   },
@@ -183,7 +183,7 @@
     ],
     "adjustment": [
       {
-        "npcImmunities": "undead immunities; "
+        "npcImmunities": "undead immunities"
       },
       {
         "npcWill": 2
@@ -202,7 +202,7 @@
         "npcFort": 2
       },
       {
-        "npcSenses": "Darkvision 60 ft; "
+        "npcSenses": "Darkvision 60 ft"
       }
     ]
   }

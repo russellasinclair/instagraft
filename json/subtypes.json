@@ -4,10 +4,10 @@
     "reference": "Alien Archive 2 pg. 136, Alien Archive pg. 133",
     "adjustment": [
       {
-        "npcImmunities": "Immunity to cold, critical hits, and poison; "
+        "npcImmunities": "Immunity to cold, critical hits, and poison"
       },
       {
-        "npcResistances": "Resistance 10 to electricity and fire; "
+        "npcResistances": "Resistance 10 to electricity and fire"
       }
     ],
     "specials": [
@@ -40,7 +40,7 @@
     "reference": "Starfinder #25: The Chimera Mystery pg. 55",
     "adjustment": [
       {
-        "npcSenses": "Blindsense (thought) 30 ft.; "
+        "npcSenses": "Blindsense (thought) 30 ft."
       }
     ],
     "masterSkills": [
@@ -52,19 +52,19 @@
     "reference": "Alien Archive pg. 134",
     "adjustment": [
       {
-        "npcSenses": "Low-light vision; "
+        "npcSenses": "Low-light vision"
       },
       {
-        "npcSaveBonus": "+4 to saving throws against poison; "
+        "npcSaveBonus": "+4 to saving throws against poison"
       },
       {
-        "npcImmunities": "electricity; petrification; "
+        "npcImmunities": "electricity; petrification"
       },
       {
-        "npcResistances": "resistance 10 to cold and sonic; "
+        "npcResistances": "resistance 10 to cold and sonic"
       },
       {
-        "npcOtherAbilities": "healing channel (as per the healer mystic connection power); truespeech; speak with animals (as per the xenodruid mystic connection power); "
+        "npcOtherAbilities": "healing channel (as per the healer mystic connection power); truespeech; speak with animals (as per the xenodruid mystic connection power)"
       }
     ]
   },
@@ -73,7 +73,7 @@
     "reference": "Alien Archive pg. 134",
     "adjustment": [
       {
-        "npcOtherAbilities": "Flight (Perfect Maneuverability); "
+        "npcOtherAbilities": "Flight (Perfect Maneuverability)"
       }
     ],
     "masterSkills": [
@@ -85,7 +85,7 @@
     "reference": "Alien Archive pg. 134",
     "adjustment": [
       {
-        "npcSenses": "Low-light vision; Darkvision 60 ft.; "
+        "npcSenses": "Low-light vision; Darkvision 60 ft."
       }
     ]
   },
@@ -94,19 +94,19 @@
     "reference": "Alien Archive pg. 134",
     "adjustment": [
       {
-        "npcSenses": "Low-light vision; Darkvision 60 ft.; "
+        "npcSenses": "Low-light vision; Darkvision 60 ft."
       },
       {
-        "npcImmunities": "immunity to acid, cold, and petrification; "
+        "npcImmunities": "immunity to acid, cold, and petrification"
       },
       {
-        "npcResistances": "resistance 10 to electricity and fire; "
+        "npcResistances": "resistance 10 to electricity and fire"
       },
       {
-        "npcOtherAbilities": "truespeech; "
+        "npcOtherAbilities": "truespeech"
       },
       {
-        "npcSaveBonus": " +4 to saving throws against poison; "
+        "npcSaveBonus": " +4 to saving throws against poison"
       }
     ],
     "specials": [
@@ -130,19 +130,19 @@
     "reference": "Alien Archive pg. 134",
     "adjustment": [
       {
-        "npcSenses": "Low-light vision; Darkvision 60 ft.; "
+        "npcSenses": "Low-light vision; Darkvision 60 ft."
       },
       {
-        "npcSaveBonus": "+4 to saving throws against poison; "
+        "npcSaveBonus": "+4 to saving throws against poison"
       },
       {
-        "npcImmunities": "immunity to electricity and petrification; "
+        "npcImmunities": "immunity to electricity and petrification"
       },
       {
-        "npcResistances": "resistance 10 to cold and fire; "
+        "npcResistances": "resistance 10 to cold and fire"
       },
       {
-        "npcOtherAbilities": "truespeech; "
+        "npcOtherAbilities": "truespeech"
       }
     ],
     "specials": [
@@ -158,13 +158,13 @@
     "reference": "Alien Archive 2 pg. 136, Alien Archive pg. 134",
     "adjustment": [
       {
-        "npcSenses": "Low-light vision; Darkvision 60 ft.; "
+        "npcSenses": "Low-light vision; Darkvision 60 ft."
       },
       {
-        "npcImmunities": "immunity to electricity and petrification; "
+        "npcImmunities": "immunity to electricity and petrification"
       },
       {
-        "npcOtherAbilities": "truespeech; "
+        "npcOtherAbilities": "truespeech"
       }
     ]
   },
@@ -173,10 +173,10 @@
     "reference": "Alien Archive 3 pg. 148",
     "adjustment": [
       {
-        "npcSenses": "Darkvision 60 ft.; "
+        "npcSenses": "Darkvision 60 ft."
       },
       {
-        "npcOtherAbilities": "swim speed; "
+        "npcOtherAbilities": "swim speed"
       }
     ],
     "masterSkills": [
@@ -189,10 +189,10 @@
     "reference": " Alien Archive pg. 134",
     "adjustment": [
       {
-        "npcImmunities": "immunity to cold; "
+        "npcImmunities": "immunity to cold"
       },
       {
-        "npcWeaknesses": "vulnerable to fire; "
+        "npcWeaknesses": "vulnerable to fire"
       }
     ]
   },
@@ -201,13 +201,13 @@
     "reference": "Alien Archive pg. 134",
     "adjustment": [
       {
-        "npcResistances": "resistance 10 to cold, electricity, and fire; "
+        "npcResistances": "resistance 10 to cold, electricity, and fire"
       },
       {
-        "npcImmunities": "iImmunity to acid, death effects, disease, and poison; "
+        "npcImmunities": "iImmunity to acid, death effects, disease, and poison"
       },
       {
-        "npcOtherAbilities": "gains ability to summon allies; telepathy; "
+        "npcOtherAbilities": "gains ability to summon allies; telepathy"
       }
     ]
   },
@@ -216,7 +216,7 @@
     "reference": "Alien Archive 2 pg. 136",
     "adjustment": [
       {
-        "npcSenses": "Darkvision 60 ft.; "
+        "npcSenses": "Darkvision 60 ft."
       }
     ]
   },
@@ -225,13 +225,13 @@
     "reference": "Alien Archive 2 pg. 136, Alien Archive pg. 134",
     "adjustment": [
       {
-        "npcResistances": "resistance 10 to acid, cold, and fire; "
+        "npcResistances": "resistance 10 to acid, cold, and fire"
       },
       {
-        "npcImmunities": "Immunity to electricity and poison; "
+        "npcImmunities": "Immunity to electricity and poison"
       },
       {
-        "npcOtherAbilities": "summon allies; telepathy 100 ft.; "
+        "npcOtherAbilities": "summon allies; telepathy 100 ft."
       }
     ]
   },
@@ -240,7 +240,7 @@
     "reference": "Source Alien Archive 3 pg. 148",
     "adjustment": [
       {
-        "npcSenses": "Blindsense (scent) 30 ft., low-light vision; "
+        "npcSenses": "Blindsense (scent) 30 ft., low-light vision"
       }
     ]
   },
@@ -256,16 +256,16 @@
     ],
     "adjustment": [
       {
-        "npcResistances": "resistance 10 to acid and cold; "
+        "npcResistances": "resistance 10 to acid and cold"
       },
       {
-        "npcImmunities": "immunity to fire and poison; "
+        "npcImmunities": "immunity to fire and poison"
       },
       {
-        "npcOtherAbilities": "summon allies; telepathy 100 ft.; "
+        "npcOtherAbilities": "summon allies; telepathy 100 ft."
       },
       {
-        "npcSenses": "See in Darkness; "
+        "npcSenses": "See in Darkness"
       }
     ]
   },
@@ -274,7 +274,7 @@
     "reference": "Alien Archive 3 pg. 148",
     "adjustment": [
       {
-        "npcSenses": "Blindsight (electricity) 60 ft., low-light vision; "
+        "npcSenses": "Blindsight (electricity) 60 ft., low-light vision"
       }
     ]
   },
@@ -283,7 +283,7 @@
     "reference": "Alien Archive pg. 134",
     "adjustment": [
       {
-        "npcSenses": "Darkvision 60 ft.; "
+        "npcSenses": "Darkvision 60 ft."
       }
     ]
   },
@@ -293,10 +293,10 @@
     "trait": [],
     "adjustment": [
       {
-        "npcOtherAbilities": "Burrow speed; "
+        "npcOtherAbilities": "Burrow speed"
       },
       {
-        "npcSenses": "blindsense or blindsight (vibration) with a varied range; "
+        "npcSenses": "blindsense or blindsight (vibration) with a varied range"
       }
     ]
   },
@@ -305,7 +305,7 @@
     "reference": "Alien Archive 2 pg. 136, Alien Archive pg. 134",
     "adjustment": [
       {
-        "npcImmunities": "Elemental immunities; "
+        "npcImmunities": "Elemental immunities"
       }
     ]
   },
@@ -315,7 +315,7 @@
     "trait": [],
     "adjustment": [
       {
-        "npcSenses": "Low-light vision; "
+        "npcSenses": "Low-light vision"
       }
     ],
     "masterSkills": [
@@ -335,7 +335,7 @@
     "reference": " Alien Archive 3 pg. 148, Alien Archive 2 pg. 136, Alien Archive pg. 135",
     "adjustment": [
       {
-        "npcImmunities": "Immunity to fire; "
+        "npcImmunities": "Immunity to fire"
       },
       {
         "npcWeaknesses": "vulnerable to cold"
@@ -347,7 +347,7 @@
     "reference": "Alien Archive 2 pg. 136, Alien Archive pg. 135",
     "adjustment": [
       {
-        "npcSenses": "low-light vision; "
+        "npcSenses": "low-light vision"
       }
     ],
     "masterSkills": [
@@ -360,7 +360,7 @@
     "reference": "Alien Archive pg. 135",
     "adjustment": [
       {
-        "npcSenses": "low-light vision; "
+        "npcSenses": "low-light vision"
       }
     ]
   },
@@ -369,7 +369,7 @@
     "reference": "Alien Archive 2 pg. 136, Alien Archive pg. 135",
     "adjustment": [
       {
-        "npcSenses": "Darkvision 60 ft.; "
+        "npcSenses": "Darkvision 60 ft."
       }
     ]
   },
@@ -378,7 +378,7 @@
     "reference": "Alien Archive pg. 135",
     "adjustment": [
       {
-        "npcSenses": "Darkvision 60 ft.; "
+        "npcSenses": "Darkvision 60 ft."
       }
     ]
   },
@@ -392,7 +392,7 @@
   },
   "Ikeshti": {
     "description": "This subtype is applied to ikeshtis and creatures related to ikeshtis.",
-    "reference": "Alien Archive pg. 135; ",
+    "reference": "Alien Archive pg. 135",
     "adjustment": [
       {
         "npcOtherAbilities": "Climb Speed"
@@ -413,7 +413,7 @@
     "reference": "Alien Archive pg. 135",
     "adjustment": [
       {
-        "npcSenses": "Darkvision 60 ft.; low-light vision; "
+        "npcSenses": "Darkvision 60 ft.; low-light vision"
       },
       {
         "npcOtherAbilities": "constructed; regeneration (suppressed by chaotic-aligned attacks); truespeech."
@@ -425,13 +425,13 @@
     "reference": "Alien Archive 3 pg. 148",
     "adjustment": [
       {
-        "npcOtherAbilities": "Fast Healing (See Below); telepathy 100 ft.; no breath; merge with ward (see below); some kami gain other abilities from having specific wards.; "
+        "npcOtherAbilities": "Fast Healing (See Below); telepathy 100 ft.; no breath; merge with ward (see below); some kami gain other abilities from having specific wards."
       },
       {
-        "npcImmunities": "immunity to bleed, mind-affecting effects, petrification, and polymorph; "
+        "npcImmunities": "immunity to bleed, mind-affecting effects, petrification, and polymorph"
       },
       {
-        "npcSenses": "Darkvision 60 ft., low-light vision; "
+        "npcSenses": "Darkvision 60 ft., low-light vision"
       },
       {
         "npcResistances": "resistance 10 to acid, electricity, and fire;"
@@ -459,7 +459,7 @@
     "reference": "Alien Archive 2 pg. 137",
     "adjustment": [
       {
-        "npcSenses": "Blindsense (vibration) 30 ft., blindsight (life) 30 ft.; "
+        "npcSenses": "Blindsense (vibration) 30 ft., blindsight (life) 30 ft."
       }
     ]
   },
@@ -516,10 +516,10 @@
     "reference": "Alien Archive 2 pg. 137",
     "adjustment": [
       {
-        "npcSenses": "Darkvision 60 ft.; low-light vision; "
+        "npcSenses": "Darkvision 60 ft.; low-light vision"
       },
       {
-        "npcOtherAbilities": "regeneration (suppressed by acid or fire; "
+        "npcOtherAbilities": "regeneration (suppressed by acid or fire"
       }
     ]
   },
@@ -529,10 +529,10 @@
     "trait": [],
     "adjustment": [
       {
-        "npcSenses": "Darkvision 60 ft.; "
+        "npcSenses": "Darkvision 60 ft."
       },
       {
-        "npcOtherAbilities": "ferocity universal creature rule; "
+        "npcOtherAbilities": "ferocity universal creature rule"
       }
     ]
   },
@@ -541,7 +541,7 @@
     "reference": "Alien Archive 2 pg. 137",
     "adjustment": [
       {
-        "npcSenses": "Darkvision 60 ft.; low-light vision; "
+        "npcSenses": "Darkvision 60 ft.; low-light vision"
       }
     ]
   },
@@ -550,7 +550,7 @@
     "reference": "Alien Archive 2 pg. 137",
     "adjustment": [
       {
-        "npcSenses": "Darkvision 60 ft.; "
+        "npcSenses": "Darkvision 60 ft."
       }
     ]
   },
@@ -559,7 +559,7 @@
     "reference": "Alien Archive 3 pg. 149, Alien Archive pg. 136",
     "adjustment": [
       {
-        "npcOtherAbilities": "Most plantlike creatures have the plantlike universal creature rule; "
+        "npcOtherAbilities": "Most plantlike creatures have the plantlike universal creature rule"
       }
     ]
   },
@@ -568,16 +568,16 @@
     "reference": "Alien Archive pg. 136",
     "adjustment": [
       {
-        "npcSenses": " Blindsense (distance and sense varies by protean type); "
+        "npcSenses": " Blindsense (distance and sense varies by protean type)"
       },
       {
-        "npcImmunities": "immunity to acid; "
+        "npcImmunities": "immunity to acid"
       },
       {
-        "npcResistances": "resistance 10 to electricity and sonic; "
+        "npcResistances": "resistance 10 to electricity and sonic"
       },
       {
-        "npcOtherAbilities": "supernatural flight speed; amorphous; change shape; grab ability with its natural attacks.; "
+        "npcOtherAbilities": "supernatural flight speed; amorphous; change shape; grab ability with its natural attacks."
       }
     ]
   },
@@ -591,10 +591,10 @@
     ],
     "adjustment": [
       {
-        "npcImmunities": "immunity to fire; "
+        "npcImmunities": "immunity to fire"
       },
       {
-        "npcOtherAbilities": "Dimly illuminated, pyric fire, susceptible to water; melee attacks deal half fire damage and impart pyric curse; gains a pyric bolt ranged attack that deals fire damage; speaks Aklo and might retain one or more languages spoken in life.; "
+        "npcOtherAbilities": "Dimly illuminated, pyric fire, susceptible to water; melee attacks deal half fire damage and impart pyric curse; gains a pyric bolt ranged attack that deals fire damage; speaks Aklo and might retain one or more languages spoken in life."
       }
     ],
     "specials": [
@@ -611,7 +611,7 @@
     "trait": [],
     "adjustment": [
       {
-        "npcImmunities": "immunity to fire; "
+        "npcImmunities": "immunity to fire"
       },
       {
         "npcOtherAbilities": "ash consumption, illuminated, pyric fire; gains a touch attack; gains a pyric ray ranged attack; attacks deal fire damage, impart pyric curse, and have the burn critical hit effect (see Burning Attacks); speaks Aklo and might retain one or more languages spoken in life."
@@ -630,7 +630,7 @@
     "reference": "Alien Archive pg. 136",
     "adjustment": [
       {
-        "npcSenses": "low-light vision; "
+        "npcSenses": "low-light vision"
       }
     ]
   },
@@ -648,7 +648,7 @@
     "reference": "Alien Archive pg. 136",
     "adjustment": [
       {
-        "npcSenses": "low-light vision; "
+        "npcSenses": "low-light vision"
       }
     ]
   },
@@ -657,7 +657,7 @@
     "reference": "Alien Archive pg. 136",
     "adjustment": [
       {
-        "npcSenses": "low-light vision; "
+        "npcSenses": "low-light vision"
       }
     ]
   },
@@ -712,10 +712,10 @@
         "npcOtherAbilities": "void adaptation; DR 5/chaotic, evil, good, or law (CR 8; increases to DR/10 at CR 13, increases to DR/15 at CR 18); machine telepathy (see below); truespeech; slip drive; spaceflight (Mysticism)"
       },
       {
-        "npcImmunities": "Immunity to electricity; "
+        "npcImmunities": "Immunity to electricity"
       },
       {
-        "npcResistances": "resistance 5 to cold and sonic; spell resistance equal to 10 + CR; "
+        "npcResistances": "resistance 5 to cold and sonic; spell resistance equal to 10 + CR"
       }
     ],
     "specials": [
@@ -765,13 +765,13 @@
     ],
     "adjustment": [
       {
-        "npcImmunities": "immunity to cold; "
+        "npcImmunities": "immunity to cold"
       },
       {
-        "npcOtherAbilities": "regeneration 5 (suppressed by good or silver), unnerving gaze (see below).; "
+        "npcOtherAbilities": "regeneration 5 (suppressed by good or silver), unnerving gaze (see below)."
       },
       {
-        "npcSenses": "Darkvision 60 ft.; "
+        "npcSenses": "Darkvision 60 ft."
       }
     ]
   },
@@ -780,7 +780,7 @@
     "reference": "Alien Archive pg. 137",
     "adjustment": [
       {
-        "npcSenses": "Low-light vision; "
+        "npcSenses": "Low-light vision"
       }
     ]
   },
@@ -789,7 +789,7 @@
     "reference": "Alien Archive pg. 137",
     "adjustment": [
       {
-        "npcSenses": "Low-Light Vision; "
+        "npcSenses": "Low-Light Vision"
       }
     ]
   },
@@ -808,7 +808,7 @@
     "trait": [],
     "adjustment": [
       {
-        "npcOtherAbilities": "Swim Speed; "
+        "npcOtherAbilities": "Swim Speed"
       }
     ],
     "masterSkills": [
@@ -820,7 +820,7 @@
     "reference": "Alien Archive pg. 137",
     "adjustment": [
       {
-        "npcSenses": "Darkvision 60 ft; "
+        "npcSenses": "Darkvision 60 ft"
       }
     ]
   },
@@ -829,10 +829,10 @@
     "reference": "Advanced Occult Guide pg. 418",
     "adjustment": [
       {
-        "npcSenses": "Blindsense (thought) 60 ft., darkvision 60 ft.; "
+        "npcSenses": "Blindsense (thought) 60 ft., darkvision 60 ft."
       },
       {
-        "npcOtherAbilities": "fast healing equal to CR, incorporeal; truespeech; change shape (any living creature that has species traits suitable for a PC), spaceflight (Mysticism); "
+        "npcOtherAbilities": "fast healing equal to CR, incorporeal; truespeech; change shape (any living creature that has species traits suitable for a PC), spaceflight (Mysticism)"
       },
       {
         "npcImmunities": "immunity to disease, paralysis, poison, radiation, sleep, and staggered"

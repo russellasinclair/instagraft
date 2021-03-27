@@ -1,3 +1,5 @@
+# HEAVY REFACTORING OCCURRING IN NEW REPO - I'm leaving this here should anyone wish to continue this branch.
+
 # Instant Graftification
 
 Instant Graftification is a Javascript-based implementation of the Starfinder (an pen-and-paper RPG from Paizo) graft rules found in Appendix 1 of _Alien Archive_. The goal of this project is to enable Game Masters to easily generate printable stat blocks in a consistent, easy-to-use format. To this end, it intends to automate many of the calculations and adjustments for each graft, and insert them into a statistics block template page with a print/view version easily produced afterward. 
